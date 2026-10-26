@@ -69,7 +69,6 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
                         : settings.language == 'en'
                         ? (item['en'] ?? item['ku'])
                         : item['ku'])?.toString() ?? '';
-                    final icon = item['icon'] as String? ?? '📖';
                     final verses = item['verses'] as List<dynamic>? ?? [];
 
                     return Container(
@@ -87,7 +86,7 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
                         },
                         leading: CircleAvatar(
                           backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                          child: Text(icon, style: TextStyle(fontSize: 18)),
+                          child: Icon(Icons.bookmark_border_rounded, color: Theme.of(context).colorScheme.primary, size: 20),
                         ),
                         title: Text(
                           name,
@@ -150,9 +149,15 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '${topic['icon'] ?? '📖'}  $title',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  Row(
+                    children: [
+                      Icon(Icons.bookmark_border_rounded, color: Theme.of(context).colorScheme.primary, size: 22),
+                      const SizedBox(width: 10),
+                      Text(
+                        title,
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
+                      ),
+                    ],
                   ),
                   IconButton(
                     icon: Icon(Icons.close_rounded, size: 28),

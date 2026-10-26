@@ -844,10 +844,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                   backgroundColor: const Color(0xFFEF4444),
                   content: Text(
                     lang == 'ar'
-                        ? '❌ هذه الآية غير محملة للعمل بدون إنترنت. يرجى تفعيل الإنترنت أو تنزيلها أولاً.'
+                        ? 'هذه الآية غير محملة للعمل بدون إنترنت. يرجى تفعيل الإنترنت أو تنزيلها أولاً.'
                         : (lang == 'en'
-                            ? '❌ This ayah is not downloaded for offline listening. Please turn on internet or download it first.'
-                            : '❌ ئەم ئایەتە داونلۆد نەکراوە بۆ کارکردنی ئۆفلاین. تکایە سەرەتا بە ئینتەرنێت داونلۆدی بکە.'),
+                            ? 'This ayah is not downloaded for offline listening. Please turn on internet or download it first.'
+                            : 'ئەم ئایەتە داونلۆد نەکراوە بۆ کارکردنی ئۆفلاین. تکایە سەرەتا بە ئینتەرنێت داونلۆدی بکە.'),
                     style: const TextStyle(fontFamily: 'Rabar'),
                   ),
                 ),
@@ -1159,7 +1159,7 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    lang == 'ar' ? '🎯 الانتقال السريع' : (lang == 'en' ? '🎯 Quick Navigation' : '🎯 چوون بۆ دیاریکراو'),
+                    lang == 'ar' ? 'الانتقال السريع' : (lang == 'en' ? 'Quick Navigation' : 'چوون بۆ دیاریکراو'),
                     style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar', fontSize: 16),
                   ),
                   const SizedBox(height: 12),
@@ -1287,10 +1287,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
               backgroundColor: const Color(0xFFEF4444),
               content: Text(
                 lang == 'ar'
-                    ? '❌ لا يوجد اتصال بالإنترنت! يرجى تفعيل الإنترنت لتنزيل الصوت.'
+                    ? 'لا يوجد اتصال بالإنترنت! يرجى تفعيل الإنترنت لتنزيل الصوت.'
                     : (lang == 'en'
-                        ? '❌ No internet connection! Please turn on internet to download audio.'
-                        : '❌ هێڵی ئینتەرنێت کوژاوەتەوە! بۆ داونلۆدکردنی دەنگ تکایە سەرەتا ئینتەرنێت دابگیرسێنە.'),
+                        ? 'No internet connection! Please turn on internet to download audio.'
+                        : 'هێڵی ئینتەرنێت کوژاوەتەوە! بۆ داونلۆدکردنی دەنگ تکایە سەرەتا ئینتەرنێت دابگیرسێنە.'),
                 style: const TextStyle(fontFamily: 'Rabar'),
               ),
             ),
@@ -1376,10 +1376,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
             backgroundColor: const Color(0xFF10B981),
             content: Text(
               lang == 'ar'
-                  ? '✅ تم تنزيل السورة وجميع الآيات بنجاح للاستماع بدون إنترنت!'
+                  ? 'تم تنزيل السورة وجميع الآيات بنجاح للاستماع بدون إنترنت!'
                   : (lang == 'en'
-                      ? '✅ Surah and all Ayahs downloaded successfully for offline listening!'
-                      : '✅ سوورەت و سەرجەم ئایەتەکان بە سەرکەوتوویی داونلۆد کران بۆ کارکردنی ئۆفلاین!'),
+                      ? 'Surah and all Ayahs downloaded successfully for offline listening!'
+                      : 'سوورەت و سەرجەم ئایەتەکان بە سەرکەوتوویی داونلۆد کران بۆ کارکردنی ئۆفلاین!'),
               style: const TextStyle(fontFamily: 'Rabar'),
             ),
           ),
@@ -1390,10 +1390,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
             backgroundColor: const Color(0xFFF59E0B),
             content: Text(
               lang == 'ar'
-                  ? '⚠️ تم تنزيل ${actualDownloadedAyahs.length} من أصل $_totalVersesInSurah آية. انقطع الاتصال.'
+                  ? 'تم تنزيل ${actualDownloadedAyahs.length} من أصل $_totalVersesInSurah آية. انقطع الاتصال.'
                   : (lang == 'en'
-                      ? '⚠️ Downloaded ${actualDownloadedAyahs.length} of $_totalVersesInSurah ayahs. Connection interrupted.'
-                      : '⚠️ ${actualDownloadedAyahs.length} لە $_totalVersesInSurah ئایەت داونلۆد کران. هێڵی ئینتەرنێت پچڕا.'),
+                      ? 'Downloaded ${actualDownloadedAyahs.length} of $_totalVersesInSurah ayahs. Connection interrupted.'
+                      : '${actualDownloadedAyahs.length} لە $_totalVersesInSurah ئایەت داونلۆد کران. هێڵی ئینتەرنێت پچڕا.'),
               style: const TextStyle(fontFamily: 'Rabar'),
             ),
           ),
@@ -1404,10 +1404,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
             backgroundColor: const Color(0xFFEF4444),
             content: Text(
               lang == 'ar'
-                  ? '❌ فشل التنزيل. يرجى التحقق من اتصال الإنترنت.'
+                  ? 'فشل التنزيل. يرجى التحقق من اتصال الإنترنت.'
                   : (lang == 'en'
-                      ? '❌ Download failed. Please check your internet connection.'
-                      : '❌ داونلۆدکردن سەرکەوتوو نەبوو لەبەر نەبوونی هێڵی ئینتەرنێت.'),
+                      ? 'Download failed. Please check your internet connection.'
+                      : 'داونلۆدکردن سەرکەوتوو نەبوو لەبەر نەبوونی هێڵی ئینتەرنێت.'),
               style: const TextStyle(fontFamily: 'Rabar'),
             ),
           ),
@@ -1429,10 +1429,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
               backgroundColor: const Color(0xFFEF4444),
               content: Text(
                 lang == 'ar'
-                    ? '❌ لا يوجد اتصال بالإنترنت لتنزيل هذه الآية.'
+                    ? 'لا يوجد اتصال بالإنترنت لتنزيل هذه الآية.'
                     : (lang == 'en'
-                        ? '❌ No internet connection to download this Ayah.'
-                        : '❌ هێڵی ئینتەرنێت کوژاوەتەوە بۆ داونلۆدکردنی ئەم ئایەتە.'),
+                        ? 'No internet connection to download this Ayah.'
+                        : 'هێڵی ئینتەرنێت کوژاوەتەوە بۆ داونلۆدکردنی ئەم ئایەتە.'),
                 style: const TextStyle(fontFamily: 'Rabar'),
               ),
             ),
@@ -1471,10 +1471,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
             duration: const Duration(milliseconds: 1500),
             content: Text(
               lang == 'ar'
-                  ? '✅ تم تنزيل الآية $ayahNum للاستماع بدون إنترنت!'
+                  ? 'تم تنزيل الآية $ayahNum للاستماع بدون إنترنت!'
                   : (lang == 'en'
-                      ? '✅ Ayah $ayahNum downloaded for offline listening!'
-                      : '✅ ئایەتی $ayahNum داونلۆد کرا بۆ کارکردنی ئۆفلاین!'),
+                      ? 'Ayah $ayahNum downloaded for offline listening!'
+                      : 'ئایەتی $ayahNum داونلۆد کرا بۆ کارکردنی ئۆفلاین!'),
               style: const TextStyle(fontFamily: 'Rabar'),
             ),
           ),
@@ -1485,10 +1485,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
             backgroundColor: const Color(0xFFEF4444),
             content: Text(
               lang == 'ar'
-                  ? '❌ فشل تنزيل الآية. يرجى التحقق من اتصال الإنترنت.'
+                  ? 'فشل تنزيل الآية. يرجى التحقق من اتصال الإنترنت.'
                   : (lang == 'en'
-                      ? '❌ Failed to download Ayah. Please check internet connection.'
-                      : '❌ داونلۆدکردنی ئایەتەکە سەرکەوتوو نەبوو. هێڵی ئینتەرنێت پشکنە.'),
+                      ? 'Failed to download Ayah. Please check internet connection.'
+                      : 'داونلۆدکردنی ئایەتەکە سەرکەوتوو نەبوو. هێڵی ئینتەرنێت پشکنە.'),
               style: const TextStyle(fontFamily: 'Rabar'),
             ),
           ),
@@ -1537,10 +1537,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                   SizedBox(height: 16),
                   Text(
                     lang == 'ar'
-                        ? '🎙️ اختيار القارئ (${_recitersList.length} قارئ)'
+                        ? 'اختيار القارئ (${_recitersList.length} قارئ)'
                         : (lang == 'en'
-                            ? '🎙️ Select Reciter (${_recitersList.length} Reciters)'
-                            : '🎙️ هەڵبژاردنی قورئانخوێن (${_recitersList.length} قورئانخوێن)'),
+                            ? 'Select Reciter (${_recitersList.length} Reciters)'
+                            : 'هەڵبژاردنی قورئانخوێن (${_recitersList.length} قورئانخوێن)'),
                     style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar'),
                     textAlign: TextAlign.center,
                   ),
@@ -1575,7 +1575,6 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                       itemBuilder: (context, idx) {
                         final r = filtered[idx];
                         final isSelected = _selectedReciter != null && _selectedReciter['id'] == r['id'];
-                        final flag = r['flag'] ?? '🕋';
                         final displayName = lang == 'en'
                             ? (r['name_en'] ?? r['name_ku'] ?? '')
                             : (lang == 'ar' ? (r['name_ar'] ?? r['name_ku'] ?? '') : (r['name_ku'] ?? ''));
@@ -1595,7 +1594,19 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                             borderRadius: BorderRadius.circular(16),
                             clipBehavior: Clip.antiAlias,
                             child: ListTile(
-                              leading: Text(flag, style: TextStyle(fontSize: 24)),
+                              leading: Container(
+                                width: 38,
+                                height: 38,
+                                decoration: BoxDecoration(
+                                  color: (isSelected ? Theme.of(context).colorScheme.primary : Colors.white).withOpacity(0.08),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(
+                                  Icons.record_voice_over_rounded,
+                                  color: isSelected ? Theme.of(context).colorScheme.primary : Colors.white70,
+                                  size: 19,
+                                ),
+                              ),
                               title: Text(
                                 displayName,
                                 style: TextStyle(color: isSelected ? Theme.of(context).colorScheme.primary : Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
@@ -1717,10 +1728,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                     SizedBox(height: 16),
                     Text(
                       lang == 'ar'
-                          ? '⚙️ إعدادات النص والخط ووضع القراءة'
+                          ? 'إعدادات النص والخط ووضع القراءة'
                           : (lang == 'en'
-                              ? '⚙️ Text, Font & Display Settings'
-                              : '⚙️ ڕێکخستنی دەق و فۆنت و دۆخی خوێندنەوە'),
+                              ? 'Text, Font & Display Settings'
+                              : 'ڕێکخستنی دەق و فۆنت و دۆخی خوێندنەوە'),
                       style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                     ),
                     SizedBox(height: 14),
@@ -1762,7 +1773,7 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
 
                     // Quran Font Style Selector
                     Text(
-                      lang == 'ar' ? '✒️ نوع الخط العربي' : (lang == 'en' ? '✒️ Arabic Font Style' : '✒️ جۆری خەتی عەرەبی'),
+                      lang == 'ar' ? 'نوع الخط العربي' : (lang == 'en' ? 'Arabic Font Style' : 'جۆری خەتی عەرەبی'),
                       style: TextStyle(color: Colors.white70, fontFamily: 'Rabar', fontSize: 13),
                     ),
                     SizedBox(height: 8),
@@ -1807,19 +1818,19 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                     // Reading theme colors
                     Text(
                       lang == 'ar'
-                          ? '🌙 لون خلفية القراءة (حماية العين)'
+                          ? 'لون خلفية القراءة (حماية العين)'
                           : (lang == 'en'
-                              ? '🌙 Reading Background Theme (Eye Protection)'
-                              : '🌙 ڕەنگی پاشبنەمای خوێندنەوە (Eye Protection)'),
+                              ? 'Reading Background Theme (Eye Protection)'
+                              : 'ڕەنگی پاشبنەمای خوێندنەوە (Eye Protection)'),
                       style: TextStyle(color: Colors.white70, fontFamily: 'Rabar', fontSize: 13),
                     ),
                     SizedBox(height: 8),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        _buildColorChip('dark', lang == 'ar' ? '🌙 أسود' : (lang == 'en' ? '🌙 Dark' : '🌙 ڕەش'), Theme.of(context).scaffoldBackgroundColor, setModalState),
-                        _buildColorChip('sepia', lang == 'ar' ? '📜 سيبيا' : (lang == 'en' ? '📜 Sepia' : '📜 سێپیا (زەردباو)'), const Color(0xFF1C160E), setModalState),
-                        _buildColorChip('black', lang == 'ar' ? '🌑 داكن جداً' : (lang == 'en' ? '🌑 Midnight' : '🌑 تاریکی بەرز'), Colors.black, setModalState),
+                        _buildColorChip('dark', lang == 'ar' ? 'أسود' : (lang == 'en' ? 'Dark' : 'ڕەش'), Theme.of(context).scaffoldBackgroundColor, setModalState),
+                        _buildColorChip('sepia', lang == 'ar' ? 'سيبيا' : (lang == 'en' ? 'Sepia' : 'سێپیا (زەردباو)'), const Color(0xFF1C160E), setModalState),
+                        _buildColorChip('black', lang == 'ar' ? 'داكن جداً' : (lang == 'en' ? 'Midnight' : 'تاریکی بەرز'), Colors.black, setModalState),
                       ],
                     ),
                     SizedBox(height: 16),
@@ -1874,7 +1885,7 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
 
                     // Playback speed selector
                     Text(
-                      lang == 'ar' ? '⚡ سرعة التلاوة (Speed)' : (lang == 'en' ? '⚡ Audio Playback Speed' : '⚡ خێرایی دەنگی خوێندنەوە (Speed)'),
+                      lang == 'ar' ? 'سرعة التلاوة (Speed)' : (lang == 'en' ? 'Audio Playback Speed' : 'خێرایی دەنگی خوێندنەوە (Speed)'),
                       style: TextStyle(color: Colors.white70, fontFamily: 'Rabar', fontSize: 13),
                     ),
                     SizedBox(height: 8),
@@ -1918,7 +1929,7 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
 
                     // Hifz Repeat Mode (1x, 3x, 5x, 10x)
                     Text(
-                      lang == 'ar' ? '🧠 تكرار الآية للحفظ (وضع الحفظ)' : (lang == 'en' ? '🧠 Verse Repeat Count (Hifz Mode)' : '🧠 ژمارەی دووبارەبوونەوە بۆ لەبەرکردن (Hifz Mode)'),
+                      lang == 'ar' ? 'تكرار الآية للحفظ (وضع الحفظ)' : (lang == 'en' ? 'Verse Repeat Count (Hifz Mode)' : 'ژمارەی دووبارەبوونەوە بۆ لەبەرکردن (Hifz Mode)'),
                       style: TextStyle(color: Colors.white70, fontFamily: 'Rabar', fontSize: 13),
                     ),
                     SizedBox(height: 8),
@@ -2011,10 +2022,10 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
       ),
       builder: (context) {
         final tafsirHeader = lang == 'ar'
-            ? '📜 تفسير وتدبر الآية $verseNum'
+            ? 'تفسير وتدبر الآية $verseNum'
             : (lang == 'en'
-                ? '📜 Tafsir & Reflection • Ayah $verseNum'
-                : '📜 تەفسیری ڕێبەری کوردی • ئایەتی $verseNum');
+                ? 'Tafsir & Reflection • Ayah $verseNum'
+                : 'تەفسیری ڕێبەری کوردی • ئایەتی $verseNum');
         final tafsirContent = lang == 'ar'
             ? 'تفسير وتدبر الآية $verseNum:\n\nهذه الآية الكريمة تتضمن إرشادات ومواعظ قيّمة للمؤمنين في امتثال أوامر الله سبحانه وتعالى واجتناب نواهيه والتدبر في آياته.'
             : (lang == 'en'
@@ -2594,19 +2605,21 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                         children: [
                           Text(
                             lang == 'en'
-                                ? '🎧 Listen to full ${widget.surahNameEn}'
+                                ? 'Listen to full ${widget.surahNameEn}'
                                 : (lang == 'ar'
-                                    ? '🎧 الاستماع لسورة ${widget.surahNameAr}'
-                                    : '🎧 گوێگرتن لە تەواوی ${widget.surahNameKu}'),
+                                    ? 'الاستماع لسورة ${widget.surahNameAr}'
+                                    : 'گوێگرتن لە تەواوی ${widget.surahNameKu}'),
                             style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13, fontFamily: 'Rabar'),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 1,
                           ),
                           Row(
                             children: [
+                              Icon(Icons.record_voice_over_rounded, color: Theme.of(context).colorScheme.primary.withOpacity(0.9), size: 13),
+                              const SizedBox(width: 4),
                               Flexible(
                                 child: Text(
-                                  '🎙️ $reciterName',
+                                  reciterName,
                                   style: TextStyle(color: Theme.of(context).colorScheme.primary.withOpacity(0.9), fontSize: 11, fontFamily: 'Rabar', fontWeight: FontWeight.bold),
                                   overflow: TextOverflow.ellipsis,
                                   maxLines: 1,
@@ -2782,15 +2795,15 @@ class _SurahViewScreenState extends ConsumerState<SurahViewScreen> {
                             children: [
                               Text(
                                 startJuz == endJuz
-                                    ? (lang == 'ku' ? '📖 پارەی $startJuz' : (lang == 'ar' ? '📖 الجزء $startJuz' : '📖 Juz $startJuz'))
-                                    : (lang == 'ku' ? '📖 پارەی $startJuz - $endJuz' : (lang == 'ar' ? '📖 الأجزاء $startJuz - $endJuz' : '📖 Juz $startJuz - $endJuz')),
+                                    ? (lang == 'ku' ? 'پارەی $startJuz' : (lang == 'ar' ? 'الجزء $startJuz' : 'Juz $startJuz'))
+                                    : (lang == 'ku' ? 'پارەی $startJuz - $endJuz' : (lang == 'ar' ? 'الأجزاء $startJuz - $endJuz' : 'Juz $startJuz - $endJuz')),
                                 style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 12, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                               ),
                               const Text('•', style: TextStyle(color: Colors.white24)),
                               Text(
                                 startPage == endPage
-                                    ? (lang == 'ku' ? '📄 لاپەڕە $startPage' : (lang == 'ar' ? '📄 صفحة $startPage' : '📄 Page $startPage'))
-                                    : (lang == 'ku' ? '📄 لاپەڕە $startPage - $endPage' : (lang == 'ar' ? '📄 الصفحات $startPage - $endPage' : '📄 Pages $startPage - $endPage')),
+                                    ? (lang == 'ku' ? 'لاپەڕە $startPage' : (lang == 'ar' ? 'صفحة $startPage' : 'Page $startPage'))
+                                    : (lang == 'ku' ? 'لاپەڕە $startPage - $endPage' : (lang == 'ar' ? 'الصفحات $startPage - $endPage' : 'Pages $startPage - $endPage')),
                                 style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 12, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                               ),
                               const Text('•', style: TextStyle(color: Colors.white24)),

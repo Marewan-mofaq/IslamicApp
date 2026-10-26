@@ -210,8 +210,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final lang = settings.language;
 
     final title = lang == 'ar'
-        ? 'اختر لغة التطبيق 🌐'
-        : (lang == 'en' ? 'Choose App Language 🌐' : 'زمانی ئەپەکە هەڵبژێرە 🌐');
+        ? 'اختر لغة التطبيق'
+        : (lang == 'en' ? 'Choose App Language' : 'زمانی ئەپەکە هەڵبژێرە');
 
     final subtitle = lang == 'ar'
         ? 'يرجى اختيار لغتك المفضلة، يمكنك تغييرها لاحقاً من الإعدادات'
@@ -242,10 +242,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   )
                 ],
               ),
-              child: const Center(
-                child: Text(
-                  '🌍',
-                  style: TextStyle(fontSize: 44),
+              child: Center(
+                child: Icon(
+                  Icons.public_rounded,
+                  size: 46,
+                  color: theme.primaryColor,
                 ),
               ),
             ),
@@ -284,7 +285,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             code: 'ku',
             title: 'کوردی',
             subtitle: 'Kurdish - سۆرانی',
-            flagEmoji: '☀️',
+            icon: Icons.wb_sunny_rounded,
             isSelected: lang == 'ku',
             onTap: () {
               ref.read(settingsProvider.notifier).setLanguage('ku');
@@ -298,7 +299,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             code: 'ar',
             title: 'العربية',
             subtitle: 'Arabic - الفصحى',
-            flagEmoji: '🕌',
+            icon: Icons.mosque_rounded,
             isSelected: lang == 'ar',
             onTap: () {
               ref.read(settingsProvider.notifier).setLanguage('ar');
@@ -312,7 +313,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             code: 'en',
             title: 'English',
             subtitle: 'English Language',
-            flagEmoji: '🌐',
+            icon: Icons.language_rounded,
             isSelected: lang == 'en',
             onTap: () {
               ref.read(settingsProvider.notifier).setLanguage('en');
@@ -328,7 +329,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     required String code,
     required String title,
     required String subtitle,
-    required String flagEmoji,
+    required IconData icon,
     required bool isSelected,
     required VoidCallback onTap,
   }) {
@@ -356,7 +357,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
         ),
         child: Row(
           children: [
-            // Emoji / Flag badge
+            // Icon badge
             Container(
               width: 44,
               height: 44,
@@ -372,9 +373,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 ),
               ),
               child: Center(
-                child: Text(
-                  flagEmoji,
-                  style: const TextStyle(fontSize: 22),
+                child: Icon(
+                  icon,
+                  size: 22,
+                  color: isSelected ? theme.primaryColor : Colors.white70,
                 ),
               ),
             ),
@@ -490,10 +492,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
               color: theme.primaryColor.withOpacity(0.12),
               border: Border.all(color: theme.primaryColor.withOpacity(0.5), width: 2),
             ),
-            child: const Center(
-              child: Text(
-                '🕌',
-                style: TextStyle(fontSize: 48),
+            child: Center(
+              child: Icon(
+                Icons.mosque_rounded,
+                size: 48,
+                color: theme.primaryColor,
               ),
             ),
           ),
@@ -616,8 +619,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final lang = settings.language;
 
     final cityTitle = lang == 'ar'
-        ? 'اختر مدينتك 📍'
-        : (lang == 'en' ? 'Select Your City 📍' : 'شارەکەت هەڵبژێرە 📍');
+        ? 'اختر مدينتك'
+        : (lang == 'en' ? 'Select Your City' : 'شارەکەت هەڵبژێرە');
 
     final citySub = lang == 'ar'
         ? 'لتحديد مواقيت الصلاة بدقة، يرجى اختيار مدينتك:'
@@ -789,7 +792,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     final countryName = lang == 'ar'
                         ? (city.countryAr ?? city.countryKu)
                         : (lang == 'en' ? (city.countryEn ?? city.country) : city.countryKu);
-                    final flag = _getCountryFlag(city.country);
 
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8.0),
@@ -813,7 +815,25 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                           ),
                           child: Row(
                             children: [
-                              Text(flag, style: const TextStyle(fontSize: 20)),
+                              Container(
+                                width: 36,
+                                height: 36,
+                                decoration: BoxDecoration(
+                                  color: (isSelected ? theme.primaryColor : Colors.white).withOpacity(0.08),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: (isSelected ? theme.primaryColor : Colors.white).withOpacity(0.12),
+                                  ),
+                                ),
+                                alignment: Alignment.center,
+                                child: Icon(
+                                  city.country.toUpperCase() == 'IQ'
+                                      ? Icons.place_rounded
+                                      : Icons.public_rounded,
+                                  color: isSelected ? theme.primaryColor : Colors.white70,
+                                  size: 18,
+                                ),
+                              ),
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Column(
@@ -881,93 +901,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     }
   }
 
-  String _getCountryFlag(String countryCode) {
-    switch (countryCode.toUpperCase()) {
-      case 'IQ':
-        return '☀️';
-      case 'SA':
-        return '🇸🇦';
-      case 'AE':
-        return '🇦🇪';
-      case 'QA':
-        return '🇶🇦';
-      case 'KW':
-        return '🇰🇼';
-      case 'BH':
-        return '🇧🇭';
-      case 'OM':
-        return '🇴🇲';
-      case 'TR':
-        return '🇹🇷';
-      case 'IR':
-        return '🇮🇷';
-      case 'SY':
-        return '🇸🇾';
-      case 'PS':
-        return '🇵🇸';
-      case 'JO':
-        return '🇯🇴';
-      case 'LB':
-        return '🇱🇧';
-      case 'EG':
-        return '🇪🇬';
-      case 'YE':
-        return '🇾🇪';
-      case 'SD':
-        return '🇸🇩';
-      case 'MA':
-        return '🇲🇦';
-      case 'DZ':
-        return '🇩🇿';
-      case 'TN':
-        return '🇹🇳';
-      case 'LY':
-        return '🇱🇾';
-      case 'DE':
-        return '🇩🇪';
-      case 'GB':
-        return '🇬🇧';
-      case 'SE':
-        return '🇸🇪';
-      case 'NO':
-        return '🇳🇴';
-      case 'DK':
-        return '🇩🇰';
-      case 'FI':
-        return '🇫🇮';
-      case 'NL':
-        return '🇳🇱';
-      case 'BE':
-        return '🇧🇪';
-      case 'FR':
-        return '🇫🇷';
-      case 'CH':
-        return '🇨🇭';
-      case 'AT':
-        return '🇦🇹';
-      case 'IT':
-        return '🇮🇹';
-      case 'ES':
-        return '🇪🇸';
-      case 'GR':
-        return '🇬🇷';
-      case 'US':
-        return '🇺🇸';
-      case 'CA':
-        return '🇨🇦';
-      case 'AU':
-        return '🇦🇺';
-      case 'PK':
-        return '🇵🇰';
-      case 'MY':
-        return '🇲🇾';
-      case 'ID':
-        return '🇮🇩';
-      default:
-        return '🌍';
-    }
-  }
-
   Widget _buildFallbackCitiesList(AppThemePalette theme, String lang) {
     final fallbackList = [
       {'id': 'erbil', 'ku': 'هەولێر', 'ar': 'أربيل', 'en': 'Erbil'},
@@ -1024,8 +957,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final lang = settings.language;
 
     final notifTitle = lang == 'ar'
-        ? 'تنبيهات الأذان 🔔'
-        : (lang == 'en' ? 'Prayer Notifications 🔔' : 'ئاگادارکردنەوەی بانگەکان 🔔');
+        ? 'تنبيهات الأذان'
+        : (lang == 'en' ? 'Prayer Notifications' : 'ئاگادارکردنەوەی بانگەکان');
 
     final notifSub = lang == 'ar'
         ? 'للتذكير بمواقيت الصلاة والأذان في وقتها، يرجى السماح بالإشعارات عند ظهور نافذة النظام.'

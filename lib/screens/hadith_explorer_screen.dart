@@ -35,16 +35,16 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
   final TextEditingController _searchController = TextEditingController();
 
   // Categories list
-  static const List<Map<String, String>> _categories = [
-    {'id': 'all', 'name_ku': 'هەموو فەرموودەکان', 'name_ar': 'جميع الأحاديث', 'name_en': 'All Hadiths', 'icon': '📜'},
-    {'id': 'faith', 'name_ku': 'ئیمان و باوەڕ', 'name_ar': 'الإيمان والتوحيد', 'name_en': 'Faith & Belief', 'icon': '💖'},
-    {'id': 'prayer', 'name_ku': 'نوێژ و پەرستش', 'name_ar': 'الصلاة والعبادات', 'name_en': 'Prayer & Worship', 'icon': '🕌'},
-    {'id': 'ethics', 'name_ku': 'ڕەوشت و مامەڵە', 'name_ar': 'الأخلاق والآداب', 'name_en': 'Ethics & Manners', 'icon': '🤝'},
-    {'id': 'family', 'name_ku': 'خێزان و پەروەردە', 'name_ar': 'الأسرة والتربية', 'name_en': 'Family & Marriage', 'icon': '👨‍👩‍👧‍👦'},
-    {'id': 'fasting', 'name_ku': 'ڕۆژوو و ڕەمەزان', 'name_ar': 'الصيام ورمضان', 'name_en': 'Fasting & Ramadan', 'icon': '🌙'},
-    {'id': 'zakat', 'name_ku': 'زەکات و سەدەقە', 'name_ar': 'الزكاة والصدقات', 'name_en': 'Zakat & Charity', 'icon': '💰'},
-    {'id': 'dua', 'name_ku': 'دوعا و زیکرەکان', 'name_ar': 'الدعاء والأذكار', 'name_en': 'Dua & Adhkar', 'icon': '🛡️'},
-    {'id': 'books', 'name_ku': '📁 بەپێی کتێبەکان', 'name_ar': 'حسب الكتب', 'name_en': 'By Books', 'icon': '📚'},
+  static const List<Map<String, dynamic>> _categories = [
+    {'id': 'all', 'name_ku': 'هەموو فەرموودەکان', 'name_ar': 'جميع الأحاديث', 'name_en': 'All Hadiths', 'icon': Icons.history_edu_rounded},
+    {'id': 'faith', 'name_ku': 'ئیمان و باوەڕ', 'name_ar': 'الإيمان والتوحيد', 'name_en': 'Faith & Belief', 'icon': Icons.favorite_rounded},
+    {'id': 'prayer', 'name_ku': 'نوێژ و پەرستش', 'name_ar': 'الصلاة والعبادات', 'name_en': 'Prayer & Worship', 'icon': Icons.mosque_rounded},
+    {'id': 'ethics', 'name_ku': 'ڕەوشت و مامەڵە', 'name_ar': 'الأخلاق والآداب', 'name_en': 'Ethics & Manners', 'icon': Icons.handshake_rounded},
+    {'id': 'family', 'name_ku': 'خێزان و پەروەردە', 'name_ar': 'الأسرة والتربية', 'name_en': 'Family & Marriage', 'icon': Icons.people_alt_rounded},
+    {'id': 'fasting', 'name_ku': 'ڕۆژوو و ڕەمەزان', 'name_ar': 'الصيام ورمضان', 'name_en': 'Fasting & Ramadan', 'icon': Icons.nightlight_round},
+    {'id': 'zakat', 'name_ku': 'زەکات و سەدەقە', 'name_ar': 'الزكاة والصدقات', 'name_en': 'Zakat & Charity', 'icon': Icons.volunteer_activism_rounded},
+    {'id': 'dua', 'name_ku': 'دوعا و زیکرەکان', 'name_ar': 'الدعاء والأذكار', 'name_en': 'Dua & Adhkar', 'icon': Icons.security_rounded},
+    {'id': 'books', 'name_ku': 'بەپێی کتێبەکان', 'name_ar': 'حسب الكتب', 'name_en': 'By Books', 'icon': Icons.library_books_rounded},
   ];
 
   @override
@@ -163,10 +163,10 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
 
   Widget _buildHeaderTitle(bool isRTL, String lang) {
     String title = lang == 'ku'
-        ? '📖 گەنجینەی فەرموودە پێغەمبەرییەکان'
+        ? 'گەنجینەی فەرموودە پێغەمبەرییەکان'
         : lang == 'ar'
-            ? '📖 موسوعة الأحاديث النبوية'
-            : '📖 Holy Hadith Encyclopedia';
+            ? 'موسوعة الأحاديث النبوية'
+            : 'Holy Hadith Encyclopedia';
     if (_currentMode == 'chapters' && _selectedBookInfo != null) {
       title = lang == 'ku'
           ? (_selectedBookInfo!['name_ku'] ?? '')
@@ -230,15 +230,19 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
         itemCount: _categories.length,
         itemBuilder: (context, index) {
           final cat = _categories[index];
-          final id = cat['id'] ?? 'all';
-          final name = (lang == 'en' ? cat['name_en'] : lang == 'ar' ? cat['name_ar'] : cat['name_ku']) ?? cat['name_ku'] ?? '';
-          final icon = cat['icon'] ?? '📜';
+          final id = cat['id'] as String? ?? 'all';
+          final name = ((lang == 'en' ? cat['name_en'] : lang == 'ar' ? cat['name_ar'] : cat['name_ku']) ?? cat['name_ku'] ?? '') as String;
+          final icon = (cat['icon'] as IconData?) ?? Icons.history_edu_rounded;
           final isSelected = (_currentMode == 'feed' && _selectedCategoryId == id) || (_currentMode == 'books' && id == 'books');
 
           return Padding(
             padding: const EdgeInsetsDirectional.only(end: 8.0),
             child: ChoiceChip(
-              avatar: Text(icon, style: TextStyle(fontSize: 14)),
+              avatar: Icon(
+                icon,
+                size: 15,
+                color: isSelected ? Colors.black : Theme.of(context).colorScheme.primary,
+              ),
               label: Text(
                 name,
                 style: TextStyle(
@@ -553,7 +557,11 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                             shape: BoxShape.circle,
                           ),
                           child: Center(
-                            child: Text(b['icon'] ?? '📖', style: TextStyle(fontSize: 18)),
+                            child: Icon(
+                              (b['icon'] as IconData?) ?? Icons.menu_book_rounded,
+                              color: Theme.of(context).colorScheme.primary,
+                              size: 19,
+                            ),
                           ),
                         ),
                         Icon(Icons.auto_stories, color: Theme.of(context).colorScheme.primary),
@@ -586,7 +594,7 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
     );
   }
 
-  Future<void> _selectBook(Map<String, String> book) async {
+  Future<void> _selectBook(Map<String, dynamic> book) async {
     setState(() {
       _isLoading = true;
       _selectedBookKey = book['key'];

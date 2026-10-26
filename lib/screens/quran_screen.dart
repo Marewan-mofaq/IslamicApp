@@ -171,8 +171,8 @@ class _QuranScreenState extends ConsumerState<QuranScreen> with SingleTickerProv
                       final totalAyahs = surah['verses_count'] as int;
 
                       final localizedType = type == 'Meccan'
-                          ? (lang == 'ku' ? 'مەککی 🕋' : lang == 'ar' ? 'مكية 🕋' : 'Meccan 🕋')
-                          : (lang == 'ku' ? 'مەدەننی 🕌' : lang == 'ar' ? 'مدنية 🕌' : 'Medinan 🕌');
+                          ? (lang == 'ku' ? 'مەککی' : lang == 'ar' ? 'مكية' : 'Meccan')
+                          : (lang == 'ku' ? 'مەدەننی' : lang == 'ar' ? 'مدنية' : 'Medinan');
                       final startPage = surah['page'] as int? ?? (DataService.surahStartPages[id] ?? 1);
                       final pageLabel = lang == 'ku' ? 'لاپەڕە $startPage' : (lang == 'ar' ? 'ص $startPage' : 'p. $startPage');
 
@@ -293,7 +293,7 @@ class _QuranScreenState extends ConsumerState<QuranScreen> with SingleTickerProv
     final bookmarks = ref.watch(bookmarksProvider).where((b) => b.type == 'quran').toList();
     final isRTL = settings.language == 'ku' || settings.language == 'ar';
 
-    final title = settings.language == 'ku' ? '📖 قورئانی پیرۆز' : settings.language == 'ar' ? '📖 القرآن الكريم' : '📖 Holy Quran';
+    final title = settings.language == 'ku' ? 'قورئانی پیرۆز' : settings.language == 'ar' ? 'القرآن الكريم' : 'Holy Quran';
     final searchPlaceholder = settings.language == 'ku'
         ? 'گەڕان بەدوای ناوی سورەت، ژمارە، لاپەڕە یان پارە...'
         : settings.language == 'ar'
@@ -303,7 +303,14 @@ class _QuranScreenState extends ConsumerState<QuranScreen> with SingleTickerProv
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.menu_book_rounded, color: theme.primaryColor, size: 22),
+            const SizedBox(width: 8),
+            Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -513,15 +520,15 @@ class _QuranScreenState extends ConsumerState<QuranScreen> with SingleTickerProv
 
                           final localizedType = type == 'Meccan'
                               ? (settings.language == 'ku'
-                                  ? 'مەککی 🕋'
+                                  ? 'مەککی'
                                   : settings.language == 'ar'
-                                      ? 'مكية 🕋'
-                                      : 'Meccan 🕋')
+                                      ? 'مكية'
+                                      : 'Meccan')
                               : (settings.language == 'ku'
-                                  ? 'مەدەننی 🕌'
+                                  ? 'مەدەننی'
                                   : settings.language == 'ar'
-                                      ? 'مدنية 🕌'
-                                      : 'Medinan 🕌');
+                                      ? 'مدنية'
+                                      : 'Medinan');
 
                           final versesLabel = settings.language == 'ku'
                               ? 'ئایەت'

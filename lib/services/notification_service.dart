@@ -775,7 +775,7 @@ class NotificationService {
         }
         await _notificationsPlugin.zonedSchedule(
           501,
-          language == 'ar' ? '🌅 أذكار الصباح' : (language == 'en' ? '🌅 Morning Adhkar' : '🌅 زیکرەکانی بەیانیان'),
+          language == 'ar' ? 'أذكار الصباح' : (language == 'en' ? 'Morning Adhkar' : 'زیکرەکانی بەیانیان'),
           language == 'ar'
               ? 'ابدأ يومك بذكر الله وتحصين النفس بأذكار الصباح المباركة'
               : (language == 'en'
@@ -809,7 +809,7 @@ class NotificationService {
         }
         await _notificationsPlugin.zonedSchedule(
           502,
-          language == 'ar' ? '🌙 أذكار المساء' : (language == 'en' ? '🌙 Evening Adhkar' : '🌙 زیکرەکانی ئێواران'),
+          language == 'ar' ? 'أذكار المساء' : (language == 'en' ? 'Evening Adhkar' : 'زیکرەکانی ئێواران'),
           language == 'ar'
               ? 'حصّن نفسك وأهلك بأذكار المساء المأثورة عن النبي ﷺ'
               : (language == 'en'
@@ -843,7 +843,7 @@ class NotificationService {
         }
         await _notificationsPlugin.zonedSchedule(
           503,
-          language == 'ar' ? '🌌 أذكار النوم وسورة الملك' : (language == 'en' ? '🌌 Bedtime Adhkar & Surah Al-Mulk' : '🌌 زیکرەکانی خەوتن و سوورەتی موڵک'),
+          language == 'ar' ? 'أذكار النوم وسورة الملك' : (language == 'en' ? 'Bedtime Adhkar & Surah Al-Mulk' : 'زیکرەکانی خەوتن و سوورەتی موڵک'),
           language == 'ar'
               ? 'تلاوة سورة الملك المنجية وأذكار النوم قبل المنام'
               : (language == 'en'
@@ -877,7 +877,7 @@ class NotificationService {
         }
         await _notificationsPlugin.zonedSchedule(
           504,
-          language == 'ar' ? '🕌 سنن يوم الجمعة وسورة الكهف' : (language == 'en' ? '🕌 Friday Sunnahs & Surah Al-Kahf' : '🕌 سوننەتەکانی ڕۆژی هەینی و سوورەتی کەهف'),
+          language == 'ar' ? 'سنن يوم الجمعة وسورة الكهف' : (language == 'en' ? 'Friday Sunnahs & Surah Al-Kahf' : 'سوننەتەکانی ڕۆژی هەینی و سوورەتی کەهف'),
           language == 'ar'
               ? 'نورٌ ما بين الجمعتين: قراءة سورة الكهف والصلاة على النبي ﷺ'
               : (language == 'en'
@@ -915,8 +915,8 @@ class NotificationService {
     await schedulePrayerNotification(
       id: 9998,
       title: language == 'ar'
-          ? '🕌 تجربة صوت الأذان'
-          : (language == 'en' ? '🕌 Test Adhan Notification' : '🕌 تاقیکردنەوەی دەنگی بانگ'),
+          ? 'تجربة صوت الأذان'
+          : (language == 'en' ? 'Test Adhan Notification' : 'تاقیکردنەوەی دەنگی بانگ'),
       body: language == 'ar'
           ? 'الله أكبر، هذا اختبار فوري لصوت الأذان'
           : (language == 'en'

@@ -73,7 +73,7 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
     final isRTL = settings.language == 'ku' || settings.language == 'ar';
 
     final title = settings.language == 'ku' ? 'تەسبیه' : settings.language == 'ar' ? 'التسبيح' : 'Tasbih';
-    final tapHint = settings.language == 'ku' ? '👆 تاپ بکە بۆ ئەژمارکردن' : settings.language == 'ar' ? '👆 اضغط للعد' : '👆 Tap to count';
+    final tapHint = settings.language == 'ku' ? 'تاپ بکە بۆ ئەژمارکردن' : settings.language == 'ar' ? 'اضغط للعد' : 'Tap to count';
     
     final labelReset = settings.language == 'ku' ? 'سفر' : settings.language == 'ar' ? 'إعادة' : 'Reset';
     final labelPresets = settings.language == 'ku' ? 'ویردەکان' : settings.language == 'ar' ? 'الأذكار' : 'Presets';
@@ -188,9 +188,16 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
 
                 Column(
                   children: [
-                    Text(
-                      tapHint,
-                      style: TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.4)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.touch_app_rounded, size: 16, color: Colors.white.withOpacity(0.4)),
+                        const SizedBox(width: 6),
+                        Text(
+                          tapHint,
+                          style: TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.4), fontFamily: 'Rabar'),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 24),
 

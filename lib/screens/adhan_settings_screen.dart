@@ -33,7 +33,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'بانگی ناسر ئەلقەتامی',
       'name_ar': 'أذان ناصر القطامي',
       'name_en': 'Nasser Al-Qatami Adhan',
-      'icon': '🕋',
       'asset': 'audio/adhan/nasser.mp3',
       'url': 'https://www.islamcan.com/audio/adhan/azan5.mp3',
     },
@@ -42,7 +41,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'بانگی ئەحمەد ئەلعیمادی',
       'name_ar': 'أذان أحمد العمادي',
       'name_en': 'Ahmed Al-Imadi Adhan',
-      'icon': '🌙',
       'asset': 'audio/adhan/ahmed.mp3',
       'url': 'https://www.islamcan.com/audio/adhan/azan3.mp3',
     },
@@ -51,7 +49,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'بانگی ماجد ئەلحەمەسانی',
       'name_ar': 'أذان ماجد الحمثاني',
       'name_en': 'Majed Al-Hamathani Adhan',
-      'icon': '⭐',
       'asset': 'audio/adhan/majed.mp3',
       'url': 'https://www.islamcan.com/audio/adhan/azan2.mp3',
     },
@@ -60,7 +57,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'بانگی مختار حاج سلیمان',
       'name_ar': 'أذان مختار حاج سليمان',
       'name_en': 'Mokhtar Hadj Slimane Adhan',
-      'icon': '✨',
       'asset': 'audio/adhan/mokhtar.mp3',
       'url': 'https://www.islamcan.com/audio/adhan/azan4.mp3',
     },
@@ -72,7 +68,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'مشاری ڕاشید ئەلعەفاسی',
       'name_ar': 'مشاري راشد العفاسي',
       'name_en': 'Mishary Rashid Alafasy',
-      'icon': '🌅',
       'asset': 'audio/adhan/mishary_fajr.mp3',
       'url': '',
     },
@@ -81,7 +76,6 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
       'name_ku': 'حەرەمی مەککەی پیرۆز',
       'name_ar': 'المسجد الحرام بمكة',
       'name_en': 'Masjid Al-Haram Makkah',
-      'icon': '🕋',
       'asset': 'audio/adhan/makkah_fajr.mp3',
       'url': '',
     },
@@ -359,7 +353,11 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                         backgroundColor: isSelected
                             ? Theme.of(context).colorScheme.primary.withOpacity(0.2)
                             : Colors.white.withOpacity(0.05),
-                        child: Text(v['icon'] ?? '🕌', style: const TextStyle(fontSize: 16)),
+                        child: Icon(
+                          Icons.record_voice_over_rounded,
+                          size: 18,
+                          color: isSelected ? Theme.of(context).colorScheme.primary : Colors.white70,
+                        ),
                       ),
                       title: Text(
                         voiceName ?? '',
@@ -426,7 +424,11 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                         backgroundColor: isSelected
                             ? Theme.of(context).colorScheme.primary.withOpacity(0.2)
                             : Colors.white.withOpacity(0.05),
-                        child: Text(v['icon'] ?? '🌅', style: const TextStyle(fontSize: 16)),
+                        child: Icon(
+                          Icons.wb_twilight_rounded,
+                          size: 18,
+                          color: isSelected ? Theme.of(context).colorScheme.primary : Colors.white70,
+                        ),
                       ),
                       title: Text(
                         voiceName ?? '',
@@ -509,10 +511,10 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                     );
                     if (context.mounted) {
                       final snackText = settings.language == 'ku'
-                          ? '🔔 نۆتفیکەیشنەکە پاش ٣ چرکە دێت. دەتوانیت شاشەی مۆبایلەکە قفڵ بکەیت تا دەنگەکەی ببیستیت.'
+                          ? 'نۆتفیکەیشنەکە پاش ٣ چرکە دێت. دەتوانیت شاشەی مۆبایلەکە قفڵ بکەیت تا دەنگەکەی ببیستیت.'
                           : settings.language == 'ar'
-                              ? '🔔 سيصل الإشعار بعد ٣ ثوانٍ. يمكنك قفل الشاشة لسماع الصوت.'
-                              : '🔔 Test notification will arrive in 3s. You can lock your screen to hear it.';
+                              ? 'سيصل الإشعار بعد ٣ ثوانٍ. يمكنك قفل الشاشة لسماع الصوت.'
+                              : 'Test notification will arrive in 3s. You can lock your screen to hear it.';
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(snackText, style: const TextStyle(fontFamily: 'Rabar')),
@@ -621,12 +623,13 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                 child: Column(
                   children: [
                     SwitchListTile(
+                      secondary: Icon(Icons.wb_sunny_rounded, color: Theme.of(context).colorScheme.primary),
                       activeColor: Theme.of(context).colorScheme.primary,
                       value: _morningNotif,
                       title: Text(
                         settings.language == 'ar'
-                            ? '🌅 أذكار الصباح (من الفجر إلى العصر)'
-                            : (settings.language == 'en' ? '🌅 Morning Adhkar (Fajr to Asr)' : '🌅 زیکرەکانی بەیانیان (لە بەیانی تا عەسر)'),
+                            ? 'أذكار الصباح (من الفجر إلى العصر)'
+                            : (settings.language == 'en' ? 'Morning Adhkar (Fajr to Asr)' : 'زیکرەکانی بەیانیان (لە بەیانی تا عەسر)'),
                         style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                       ),
                       subtitle: Text(
@@ -639,12 +642,13 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                     ),
                     const Divider(color: Colors.white10, height: 1),
                     SwitchListTile(
+                      secondary: Icon(Icons.nights_stay_rounded, color: Theme.of(context).colorScheme.primary),
                       activeColor: Theme.of(context).colorScheme.primary,
                       value: _eveningNotif,
                       title: Text(
                         settings.language == 'ar'
-                            ? '🌙 أذكار المساء (من العصر إلى العشاء)'
-                            : (settings.language == 'en' ? '🌙 Evening Adhkar (Asr to Isha)' : '🌙 زیکرەکانی ئێواران (لە عەسر تا عیشا)'),
+                            ? 'أذكار المساء (من العصر إلى العشاء)'
+                            : (settings.language == 'en' ? 'Evening Adhkar (Asr to Isha)' : 'زیکرەکانی ئێواران (لە عەسر تا عیشا)'),
                         style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                       ),
                       subtitle: Text(
@@ -657,12 +661,13 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                     ),
                     const Divider(color: Colors.white10, height: 1),
                     SwitchListTile(
+                      secondary: Icon(Icons.bedtime_rounded, color: Theme.of(context).colorScheme.primary),
                       activeColor: Theme.of(context).colorScheme.primary,
                       value: _bedtimeNotif,
                       title: Text(
                         settings.language == 'ar'
-                            ? '🌌 أذكار النوم وسورة الملك (من العشاء إلى الفجر)'
-                            : (settings.language == 'en' ? '🌌 Bedtime Adhkar & Surah Al-Mulk (Isha to Fajr)' : '🌌 زیکرەکانی خەوتن و سوورەتی موڵک (لە عیشا تا بەیانی)'),
+                            ? 'أذكار النوم وسورة الملك (من العشاء إلى الفجر)'
+                            : (settings.language == 'en' ? 'Bedtime Adhkar & Surah Al-Mulk (Isha to Fajr)' : 'زیکرەکانی خەوتن و سوورەتی موڵک (لە عیشا تا بەیانی)'),
                         style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                       ),
                       subtitle: Text(
@@ -675,12 +680,13 @@ class _AdhanSettingsScreenState extends ConsumerState<AdhanSettingsScreen> {
                     ),
                     const Divider(color: Colors.white10, height: 1),
                     SwitchListTile(
+                      secondary: Icon(Icons.mosque_rounded, color: Theme.of(context).colorScheme.primary),
                       activeColor: Theme.of(context).colorScheme.primary,
                       value: _fridayNotif,
                       title: Text(
                         settings.language == 'ar'
-                            ? '🕌 سورة الكهف يوم الجمعة (٠٩:٠٠ ص)'
-                            : (settings.language == 'en' ? '🕌 Friday Surah Al-Kahf (09:00 AM)' : '🕌 سوورەتی کەهف لە ڕۆژی هەینیدا (٠٩:٠٠)'),
+                            ? 'سورة الكهف يوم الجمعة (٠٩:٠٠ ص)'
+                            : (settings.language == 'en' ? 'Friday Surah Al-Kahf (09:00 AM)' : 'سوورەتی کەهف لە ڕۆژی هەینیدا (٠٩:٠٠)'),
                         style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                       ),
                       subtitle: Text(

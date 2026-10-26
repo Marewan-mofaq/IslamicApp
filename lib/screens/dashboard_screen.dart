@@ -433,7 +433,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                   ],
                 ),
                 child: const Center(
-                  child: Text('🔥', style: TextStyle(fontSize: 38)),
+                  child: Icon(Icons.local_fire_department_rounded, size: 40, color: Colors.white),
                 ),
               ),
               const SizedBox(height: 18),
@@ -575,9 +575,9 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
 
   String _getHabitSubtitle(String lang, bool isCompleted, int count) {
     if (isCompleted) {
-      if (lang == 'ku') return 'ماشاءالله! هەموو پەرستشەکانت بەجێهێنا 🔥';
-      if (lang == 'ar') return 'ما شاء الله! أتممت جميع العبادات 🔥';
-      return 'Masha\'Allah! All worships completed 🔥';
+      if (lang == 'ku') return 'ماشاءالله! هەموو پەرستشەکانت بەجێهێنا';
+      if (lang == 'ar') return 'ما شاء الله! أتممت جميع العبادات';
+      return 'Masha\'Allah! All worships completed';
     }
     if (lang == 'ku') {
       if (count == 6 && !(_habits['quran'] ?? false)) {
@@ -774,13 +774,13 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
               );
             });
 
-            final prayerIcons = {
-              'Fajr': '🌅',
-              'Sunrise': '☀️',
-              'Dhuhr': '🌤️',
-              'Asr': '🌥️',
-              'Maghrib': '🌆',
-              'Isha': '🌙',
+            final prayerIcons = <String, IconData>{
+              'Fajr': Icons.wb_twilight_rounded,
+              'Sunrise': Icons.wb_sunny_rounded,
+              'Dhuhr': Icons.light_mode_rounded,
+              'Asr': Icons.cloud_queue_rounded,
+              'Maghrib': Icons.nightlight_round,
+              'Isha': Icons.bedtime_rounded,
             };
 
             final prayerLocalized = {
@@ -1134,9 +1134,10 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                                 ),
                               ],
                             ),
-                            child: Text(
-                              prayerIcons[nextPrayer['name']] ?? '🕌',
-                              style: const TextStyle(fontSize: 26),
+                            child: Icon(
+                              prayerIcons[nextPrayer['name']] ?? Icons.mosque_rounded,
+                              color: Theme.of(context).colorScheme.primary,
+                              size: 26,
                             ),
                           ),
                         ],
@@ -1205,7 +1206,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                       children: times.entries.map((entry) {
                         final pName = entry.key;
                         final pTime = entry.value;
-                        final icon = prayerIcons[pName] ?? '🕌';
+                        final icon = prayerIcons[pName] ?? Icons.mosque_rounded;
                         final localizedName = prayerLocalized[pName]?[langKey] ?? pName;
                         final isNext = nextPrayer['name'] == pName;
 
@@ -1234,7 +1235,11 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                             children: [
                               Row(
                                 children: [
-                                  Text(icon, style: const TextStyle(fontSize: 20)),
+                                  Icon(
+                                    icon,
+                                    size: 20,
+                                    color: isNext ? Theme.of(context).colorScheme.primary : Colors.white70,
+                                  ),
                                   const SizedBox(width: 12),
                                   Text(
                                     localizedName,
@@ -1323,17 +1328,22 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                                       strokeWidth: 6,
                                     ),
                                   ),
-                                  Text(
-                                    isWorshipCompletedToday ? '🔥' : '${(progressVal * 100).toInt()}%',
-                                    style: TextStyle(
-                                      color: isWorshipCompletedToday
-                                          ? Colors.orangeAccent
-                                          : Theme.of(context).colorScheme.primary,
-                                      fontFamily: 'Rabar',
-                                      fontSize: isWorshipCompletedToday ? 22 : 13,
-                                      fontWeight: FontWeight.bold,
+                                  if (isWorshipCompletedToday)
+                                    const Icon(
+                                      Icons.local_fire_department_rounded,
+                                      color: Colors.orangeAccent,
+                                      size: 26,
+                                    )
+                                  else
+                                    Text(
+                                      '${(progressVal * 100).toInt()}%',
+                                      style: TextStyle(
+                                        color: Theme.of(context).colorScheme.primary,
+                                        fontFamily: 'Rabar',
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
-                                  ),
                                 ],
                               ),
                               const SizedBox(width: 16),
@@ -1380,13 +1390,13 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                             spacing: 8,
                             runSpacing: 8,
                             children: [
-                              _buildHabitChip('fajr', settings.language == 'en' ? '🌅 Fajr' : settings.language == 'ar' ? '🌅 الفجر' : '🌅 بەیانی'),
-                              _buildHabitChip('dhuhr', settings.language == 'en' ? '🌤️ Dhuhr' : settings.language == 'ar' ? '🌤️ الظهر' : '🌤️ نیوەڕۆ'),
-                              _buildHabitChip('asr', settings.language == 'en' ? '🌥️ Asr' : settings.language == 'ar' ? '🌥️ العصر' : '🌥️ عەسڕ'),
-                              _buildHabitChip('maghrib', settings.language == 'en' ? '🌆 Maghrib' : settings.language == 'ar' ? '🌆 المغرب' : '🌆 مەغریب'),
-                              _buildHabitChip('isha', settings.language == 'en' ? '🌙 Isha' : settings.language == 'ar' ? '🌙 العشاء' : '🌙 عیشا'),
-                              _buildHabitChip('adhkar', settings.language == 'en' ? '📿 Adhkar' : settings.language == 'ar' ? '📿 الأذكار' : '📿 زیکرەکان'),
-                              _buildHabitChip('quran', settings.language == 'en' ? '📖 Quran' : settings.language == 'ar' ? '📖 القرآن' : '📖 قورئان'),
+                              _buildHabitChip('fajr', settings.language == 'en' ? 'Fajr' : settings.language == 'ar' ? 'الفجر' : 'بەیانی', Icons.wb_twilight_rounded),
+                              _buildHabitChip('dhuhr', settings.language == 'en' ? 'Dhuhr' : settings.language == 'ar' ? 'الظهر' : 'نیوەڕۆ', Icons.light_mode_rounded),
+                              _buildHabitChip('asr', settings.language == 'en' ? 'Asr' : settings.language == 'ar' ? 'العصر' : 'عەسڕ', Icons.cloud_queue_rounded),
+                              _buildHabitChip('maghrib', settings.language == 'en' ? 'Maghrib' : settings.language == 'ar' ? 'المغرب' : 'مەغریب', Icons.nightlight_round),
+                              _buildHabitChip('isha', settings.language == 'en' ? 'Isha' : settings.language == 'ar' ? 'العشاء' : 'عیشا', Icons.bedtime_rounded),
+                              _buildHabitChip('adhkar', settings.language == 'en' ? 'Adhkar' : settings.language == 'ar' ? 'الأذكار' : 'زیکرەکان', Icons.fingerprint_rounded),
+                              _buildHabitChip('quran', settings.language == 'en' ? 'Quran' : settings.language == 'ar' ? 'القرآن' : 'قورئان', Icons.menu_book_rounded),
                             ],
                           ),
                         ],
@@ -1427,7 +1437,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
     );
   }
 
-  Widget _buildHabitChip(String key, String label) {
+  Widget _buildHabitChip(String key, String label, IconData icon) {
     final isDone = _habits[key] ?? false;
     return BouncingButton(
       onTap: () {
@@ -1459,7 +1469,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(
-              isDone ? Icons.check_circle_rounded : Icons.circle_outlined,
+              isDone ? Icons.check_circle_rounded : icon,
               color: isDone ? Colors.black : Theme.of(context).colorScheme.primary,
               size: 15,
             ),
@@ -1496,8 +1506,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
       ),
       child: Row(
         children: [
-          Text('🌙', style: TextStyle(fontSize: 28)),
-          SizedBox(width: 14),
+          Icon(Icons.event_available_rounded, size: 28, color: Theme.of(context).colorScheme.primary),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -1789,7 +1799,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
   Widget _buildSunnahCard(String lang) {
     final title = lang == 'en' ? (_todaySunnah!['en'] ?? '') : lang == 'ar' ? (_todaySunnah!['ar'] ?? '') : (_todaySunnah!['ku'] ?? '');
     final desc = lang == 'en' ? (_todaySunnah!['source_en'] ?? '') : (_todaySunnah!['source_ku'] ?? '');
-    final icon = _todaySunnah!['icon'] ?? '☀️';
     final cardTitle = lang == 'en' ? 'Sunnah of the Day' : lang == 'ar' ? 'سنة اليوم' : 'سوننەتی ڕۆژ';
 
     return Container(
@@ -1808,7 +1817,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
               Expanded(
                 child: Row(
                   children: [
-                    Text(icon.toString(), style: const TextStyle(fontSize: 18)),
+                    Icon(Icons.wb_sunny_rounded, color: Theme.of(context).colorScheme.primary, size: 20),
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
@@ -1955,61 +1964,61 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
     final List<Map<String, dynamic>> items = [
       {
         'title': lang == 'ku' ? 'تەسبێح' : lang == 'ar' ? 'المسبحة' : 'Tasbih',
-        'icon': '📿',
+        'icon': Icons.fingerprint_rounded,
         'color': Theme.of(context).colorScheme.primary,
         'screen': const TasbihScreen(),
       },
       {
         'title': lang == 'ku' ? 'قیبلە' : lang == 'ar' ? 'القبلة' : 'Qibla',
-        'icon': '🧭',
+        'icon': Icons.explore_rounded,
         'color': const Color(0xFF10B981),
         'screen': const QiblaScreen(),
       },
       {
         'title': lang == 'ku' ? 'خەتم' : lang == 'ar' ? 'الختم' : 'Khatam',
-        'icon': '📖',
+        'icon': Icons.menu_book_rounded,
         'color': const Color(0xFF3B82F6),
         'screen': const KhatamTrackerScreen(),
       },
       {
         'title': lang == 'ku' ? 'چۆنیەتی نوێژ' : lang == 'ar' ? 'كيفية الصلاة' : 'How to Pray',
-        'icon': '🙏',
+        'icon': Icons.accessibility_new_rounded,
         'color': const Color(0xFF8B5CF6),
         'screen': const HowToPrayScreen(),
       },
       {
         'title': lang == 'ku' ? 'ناوەکان' : lang == 'ar' ? 'الأسماء' : '99 Names',
-        'icon': '✨',
+        'icon': Icons.auto_awesome_rounded,
         'color': const Color(0xFFF59E0B),
         'screen': NamesScreen(),
       },
       {
         'title': lang == 'ku' ? 'زەکات' : lang == 'ar' ? 'الزكاة' : 'Zakat',
-        'icon': '💰',
+        'icon': Icons.account_balance_wallet_rounded,
         'color': const Color(0xFF10B981),
         'screen': const ZakatScreen(),
       },
       {
         'title': lang == 'ku' ? 'چیرۆک' : lang == 'ar' ? 'القصص' : 'Stories',
-        'icon': '👶',
+        'icon': Icons.child_care_rounded,
         'color': const Color(0xFFEC4899),
         'screen': const KidsStoriesScreen(),
       },
       {
         'title': lang == 'ku' ? 'حەج و عومرە' : lang == 'ar' ? 'الحج والعمرة' : 'Hajj',
-        'icon': '🕋',
+        'icon': Icons.mosque_rounded,
         'color': const Color(0xFF64748B),
         'screen': HajjScreen(),
       },
       {
         'title': lang == 'ku' ? 'بابەتەکان' : lang == 'ar' ? 'المواضيع' : 'Topics',
-        'icon': '🗂️',
+        'icon': Icons.category_rounded,
         'color': Colors.cyan,
         'screen': const TopicsScreen(),
       },
       {
         'title': lang == 'ku' ? 'هەستەکان' : lang == 'ar' ? 'المشاعر' : 'Feelings',
-        'icon': '🎭',
+        'icon': Icons.sentiment_satisfied_alt_rounded,
         'color': Colors.pinkAccent,
         'screen': const SituationsScreen(),
       },
@@ -2021,9 +2030,15 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              lang == 'ku' ? '⚡ دەستڕاگەیشتنی خێرا' : lang == 'ar' ? '⚡ الوصول السريع' : '⚡ Quick Shortcuts',
-              style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Rabar'),
+            Row(
+              children: [
+                const Icon(Icons.bolt_rounded, color: Colors.amber, size: 20),
+                const SizedBox(width: 8),
+                Text(
+                  lang == 'ku' ? 'دەستڕاگەیشتنی خێرا' : lang == 'ar' ? 'الوصول السريع' : 'Quick Shortcuts',
+                  style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Rabar'),
+                ),
+              ],
             ),
           ],
         ),
@@ -2071,7 +2086,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                             color: itemColor.withOpacity(0.15),
                             shape: BoxShape.circle,
                           ),
-                          child: Text((item['icon'] ?? '✨').toString(), style: const TextStyle(fontSize: 20)),
+                          child: Icon(item['icon'] as IconData, color: itemColor, size: 20),
                         ),
                         const SizedBox(height: 6),
                         FittedBox(
@@ -2204,8 +2219,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
     if (isMorningTime) {
       if (isFriday) {
         title = lang == 'ar'
-            ? 'أذكار الصباح وسُورَة الكَهف 🕌'
-            : (lang == 'en' ? 'Morning Adhkar & Surah Al-Kahf 🕌' : 'زیکرەکانی بەیانیان و سوورەتی کەهف 🕌');
+            ? 'أذكار الصباح وسُورَة الكَهف'
+            : (lang == 'en' ? 'Morning Adhkar & Surah Al-Kahf' : 'زیکرەکانی بەیانیان و سوورەتی کەهف');
         subtitle = lang == 'ar'
             ? 'من الفجر إلى العصر: ابدأ يومك بأذكار الصباح وقراءة سورة الكهف المباركة'
             : (lang == 'en'
@@ -2300,8 +2315,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
       } else {
         // Morning Adhkar (Fajr to Asr)
         title = lang == 'ar'
-            ? 'أذكار الصباح 🌅'
-            : (lang == 'en' ? 'Morning Adhkar 🌅' : 'زیکرەکانی بەیانیان 🌅');
+            ? 'أذكار الصباح'
+            : (lang == 'en' ? 'Morning Adhkar' : 'زیکرەکانی بەیانیان');
         subtitle = lang == 'ar'
             ? 'من صلاة الفجر إلى العصر؛ ابدأ يومك بذكر الله وتحصين النفس بأذكار الصباح'
             : (lang == 'en'
@@ -2354,8 +2369,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
     } else if (isEveningTime) {
       // Evening Adhkar (Asr to Isha)
       title = lang == 'ar'
-          ? 'أذكار المساء 🌙'
-          : (lang == 'en' ? 'Evening Adhkar 🌙' : 'زیکرەکانی ئێواران 🌙');
+          ? 'أذكار المساء'
+          : (lang == 'en' ? 'Evening Adhkar' : 'زیکرەکانی ئێواران');
       subtitle = lang == 'ar'
           ? 'من صلاة العصر إلى العشاء؛ حصّن نفسك وبيتك بأذكار المساء المأثورة'
           : (lang == 'en'
@@ -2407,8 +2422,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
     } else {
       // Bedtime Adhkar & Surah Al-Mulk (Isha to Fajr)
       title = lang == 'ar'
-          ? 'أذكار النوم وسورة الملك 🌌'
-          : (lang == 'en' ? 'Bedtime Adhkar & Surah Al-Mulk 🌌' : 'زیکرەکانی خەوتن و سوورەتی موڵک 🌌');
+          ? 'أذكار النوم وسورة الملك'
+          : (lang == 'en' ? 'Bedtime Adhkar & Surah Al-Mulk' : 'زیکرەکانی خەوتن و سوورەتی موڵک');
       subtitle = lang == 'ar'
           ? 'من صلاة العشاء إلى الفجر؛ سورة الملك تنجي من عذاب القبر، مع أذكار النوم'
           : (lang == 'en'

@@ -58,21 +58,28 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
     final lang = settings.language;
 
     final title = lang == 'ar'
-        ? '🔋 دقة الأذان وإعدادات البطارية'
-        : (lang == 'en' ? '🔋 Battery & Adhan Accuracy' : '🔋 دڵنیابوون لە لێدانی بانگ و پاتری');
+        ? 'دقة الأذان وإعدادات البطارية'
+        : (lang == 'en' ? 'Battery & Adhan Accuracy' : 'دڵنیابوون لە لێدانی بانگ و پاتری');
 
     final brands = [
-      {'id': 'samsung', 'name': 'Samsung', 'icon': '📱'},
-      {'id': 'xiaomi', 'name': 'Xiaomi / Redmi / POCO', 'icon': '⚡'},
-      {'id': 'huawei', 'name': 'Huawei / Honor', 'icon': '🌸'},
-      {'id': 'oppo', 'name': 'Oppo / Vivo / Realme', 'icon': '✨'},
-      {'id': 'generic', 'name': lang == 'ar' ? 'أندرويد عام' : (lang == 'en' ? 'Other Android' : 'Android گشتی'), 'icon': '🤖'},
+      {'id': 'samsung', 'name': 'Samsung', 'icon': Icons.phone_android_rounded},
+      {'id': 'xiaomi', 'name': 'Xiaomi / Redmi / POCO', 'icon': Icons.bolt_rounded},
+      {'id': 'huawei', 'name': 'Huawei / Honor', 'icon': Icons.nature_people_rounded},
+      {'id': 'oppo', 'name': 'Oppo / Vivo / Realme', 'icon': Icons.auto_awesome_rounded},
+      {'id': 'generic', 'name': lang == 'ar' ? 'أندرويد عام' : (lang == 'en' ? 'Other Android' : 'Android گشتی'), 'icon': Icons.android_rounded},
     ];
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: const TextStyle(fontFamily: 'Rabar', fontWeight: FontWeight.bold, fontSize: 18)),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.battery_charging_full_rounded, color: theme.primaryColor, size: 22),
+            const SizedBox(width: 8),
+            Text(title, style: const TextStyle(fontFamily: 'Rabar', fontWeight: FontWeight.bold, fontSize: 18)),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
       ),
@@ -163,9 +170,13 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
                     return Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ChoiceChip(
-                        avatar: Text(b['icon']!),
+                        avatar: Icon(
+                          b['icon'] as IconData,
+                          size: 18,
+                          color: isSel ? Colors.black : theme.primaryColor,
+                        ),
                         label: Text(
-                          b['name']!,
+                          b['name'] as String,
                           style: TextStyle(
                             color: isSel ? Colors.black : Colors.white,
                             fontFamily: 'Rabar',
@@ -175,7 +186,7 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
                         selected: isSel,
                         selectedColor: theme.primaryColor,
                         backgroundColor: Theme.of(context).cardColor,
-                        onSelected: (_) => setState(() => _selectedBrand = b['id']!),
+                        onSelected: (_) => setState(() => _selectedBrand = b['id'] as String),
                       ),
                     );
                   }).toList(),
@@ -200,8 +211,8 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
                 icon: const Icon(Icons.settings, size: 22),
                 label: Text(
                   lang == 'ar'
-                      ? '⚙️ فتح إعدادات بطارية التطبيق'
-                      : (lang == 'en' ? '⚙️ Open App Battery Settings' : '⚙️ کردنەوەی ڕێکخستنی پاتری ئەپ'),
+                      ? 'فتح إعدادات بطارية التطبيق'
+                      : (lang == 'en' ? 'Open App Battery Settings' : 'کردنەوەی ڕێکخستنی پاتری ئەپ'),
                   style: const TextStyle(fontFamily: 'Rabar', fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -227,8 +238,8 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
                 icon: const Icon(Icons.volume_up, size: 20),
                 label: Text(
                   lang == 'ar'
-                      ? '🔊 تجربة صوت الأذان الآن'
-                      : (lang == 'en' ? '🔊 Test Adhan Sound Now' : '🔊 تاقیکردنەوەی دەنگی بانگ ئێستا'),
+                      ? 'تجربة صوت الأذان الآن'
+                      : (lang == 'en' ? 'Test Adhan Sound Now' : 'تاقیکردنەوەی دەنگی بانگ ئێستا'),
                   style: const TextStyle(fontFamily: 'Rabar', fontSize: 14, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -282,10 +293,10 @@ class _BatteryOptimizationScreenState extends ConsumerState<BatteryOptimizationS
         {
           'title': lang == 'ar' ? '٣. قفل التطبيق في الرام' : (lang == 'en' ? '3. Lock App in Recent Apps' : '٣. قفڵکردنی ئەپ لە لیستی ئەپە کراوەکاندا'),
           'desc': lang == 'ar'
-              ? 'افتح شاشة التطبيقات المفتوحة مؤخراً، اضغط مطولاً على التطبيق واضغط على أيقونة "القفل 🔒".'
+              ? 'افتح شاشة التطبيقات المفتوحة مؤخراً، اضغط مطولاً على التطبيق واضغط على أيقونة "القفل".'
               : (lang == 'en'
-                  ? 'Open Recent Apps screen, long press on Islam App and tap the Lock 🔒 icon.'
-                  : 'پەڕەی ئەپە کراوەکان بکەرەوە، دەست لەسەر ئەم ئەپە ڕابگرە و ئایکۆنی "قفڵ 🔒" دابگرە.'),
+                  ? 'Open Recent Apps screen, long press on Islam App and tap the Lock icon.'
+                  : 'پەڕەی ئەپە کراوەکان بکەرەوە، دەست لەسەر ئەم ئەپە ڕابگرە و ئایکۆنی "قفڵ" دابگرە.'),
         },
       ];
     } else if (brandId == 'huawei') {

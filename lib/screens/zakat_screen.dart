@@ -493,9 +493,15 @@ class _ZakatScreenState extends ConsumerState<ZakatScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      '💡 $fatwaTitle',
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: primaryColor),
+                    Row(
+                      children: [
+                        Icon(Icons.lightbulb_outline_rounded, size: 16, color: primaryColor),
+                        const SizedBox(width: 6),
+                        Text(
+                          fatwaTitle,
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: primaryColor, fontFamily: 'Rabar'),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 6),
                     Text(

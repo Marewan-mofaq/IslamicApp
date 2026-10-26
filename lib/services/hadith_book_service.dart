@@ -1,20 +1,21 @@
 import 'dart:convert';
 import 'dart:math' as math;
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../services/data_service.dart';
 
 class HadithBookService {
   // Book key mappings
-  static const List<Map<String, String>> books = [
-    { 'key': 'kurdish', 'name_ar': 'أحاديث مترجمة بالكردية', 'name_ku': 'فەرموودە بە کوردی', 'name_en': 'Kurdish Curated', 'icon': '🌟' },
-    { 'key': 'bukhari', 'name_ar': 'صحيح البخاري', 'name_ku': 'سەحیحی بوخاری', 'name_en': 'Sahih al-Bukhari', 'icon': '📗' },
-    { 'key': 'muslim', 'name_ar': 'صحيح مسلم', 'name_ku': 'سەحیحی موسلیم', 'name_en': 'Sahih Muslim', 'icon': '📕' },
-    { 'key': 'abudawud', 'name_ar': 'سنن أبي داود', 'name_ku': 'سونەنی ئەبوو داود', 'name_en': 'Sunan Abu Dawud', 'icon': '📘' },
-    { 'key': 'tirmidhi', 'name_ar': 'جامع الترمذي', 'name_ku': 'جامیعی تیرمیزی', 'name_en': 'Jami at-Tirmidhi', 'icon': '📙' },
-    { 'key': 'nasai', 'name_ar': 'سنن النسائي', 'name_ku': 'سونەنی نەسائی', 'name_en': "Sunan an-Nasa'i", 'icon': '📓' },
-    { 'key': 'ibnmajah', 'name_ar': 'سنن ابن ماجه', 'name_ku': 'سونەنی ئیبن ماجە', 'name_en': 'Sunan Ibn Majah', 'icon': '📔' },
-    { 'key': 'nawawi40', 'name_ar': 'الأربعون النووية', 'name_ku': 'چلی نەوەوی', 'name_en': "Nawawi's Forty Hadith", 'icon': '⭐' },
+  static const List<Map<String, dynamic>> books = [
+    { 'key': 'kurdish', 'name_ar': 'أحاديث مترجمة بالكردية', 'name_ku': 'فەرموودە بە کوردی', 'name_en': 'Kurdish Curated', 'icon': Icons.auto_awesome_rounded },
+    { 'key': 'bukhari', 'name_ar': 'صحيح البخاري', 'name_ku': 'سەحیحی بوخاری', 'name_en': 'Sahih al-Bukhari', 'icon': Icons.menu_book_rounded },
+    { 'key': 'muslim', 'name_ar': 'صحيح مسلم', 'name_ku': 'سەحیحی موسلیم', 'name_en': 'Sahih Muslim', 'icon': Icons.library_books_rounded },
+    { 'key': 'abudawud', 'name_ar': 'سنن أبي داود', 'name_ku': 'سونەنی ئەبوو داود', 'name_en': 'Sunan Abu Dawud', 'icon': Icons.book_rounded },
+    { 'key': 'tirmidhi', 'name_ar': 'جامع الترمذي', 'name_ku': 'جامیعی تیرمیزی', 'name_en': 'Jami at-Tirmidhi', 'icon': Icons.collections_bookmark_rounded },
+    { 'key': 'nasai', 'name_ar': 'سنن النسائي', 'name_ku': 'سونەنی نەسائی', 'name_en': "Sunan an-Nasa'i", 'icon': Icons.import_contacts_rounded },
+    { 'key': 'ibnmajah', 'name_ar': 'سنن ابن ماجه', 'name_ku': 'سونەنی ئیبن ماجە', 'name_en': 'Sunan Ibn Majah', 'icon': Icons.chrome_reader_mode_rounded },
+    { 'key': 'nawawi40', 'name_ar': 'الأربعون النووية', 'name_ku': 'چلی نەوەوی', 'name_en': "Nawawi's Forty Hadith", 'icon': Icons.star_rounded },
   ];
 
   static final Map<String, dynamic> _bookCache = {};

@@ -68,19 +68,6 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
     super.dispose();
   }
 
-  String _getCountryFlag(String countryCode) {
-    final code = countryCode.toUpperCase();
-    if (code == 'IQ') return '☀️';
-    if (code.length == 2) {
-      final a = code.codeUnitAt(0);
-      final b = code.codeUnitAt(1);
-      if (a >= 65 && a <= 90 && b >= 65 && b <= 90) {
-        return String.fromCharCodes([0x1F1E6 + (a - 65), 0x1F1E6 + (b - 65)]);
-      }
-    }
-    return '🌍';
-  }
-
   bool _matchesCategory(City city, String category) {
     if (category == 'all') return true;
     final code = city.country.toUpperCase();
@@ -118,25 +105,25 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
     final isRTL = lang == 'ku' || lang == 'ar';
 
     final categories = [
-      {'id': 'all', 'label': lang == 'ku' ? '🌐 هەمووی' : (lang == 'ar' ? '🌐 الكل' : '🌐 All')},
-      {'id': 'kurdistan_iraq', 'label': lang == 'ku' ? '☀️ کوردستان و عێراق' : (lang == 'ar' ? '☀️ كردستان والعراق' : '☀️ Kurdistan & Iraq')},
-      {'id': 'gulf', 'label': lang == 'ku' ? '🇸🇦 کەنداو' : (lang == 'ar' ? '🇸🇦 الخليج' : '🇸🇦 Gulf')},
-      {'id': 'levant_arab', 'label': lang == 'ku' ? '🌙 وڵاتانی عەرەبی' : (lang == 'ar' ? '🌙 الدول العربية' : '🌙 Arab World')},
-      {'id': 'europe', 'label': lang == 'ku' ? '🇪🇺 ئەوروپا' : (lang == 'ar' ? '🇪🇺 أوروبا' : '🇪🇺 Europe')},
-      {'id': 'turkey', 'label': lang == 'ku' ? '🇹🇷 تورکیا' : (lang == 'ar' ? '🇹🇷 تركيا' : '🇹🇷 Turkey')},
-      {'id': 'iran', 'label': lang == 'ku' ? '🇮🇷 ئێران' : (lang == 'ar' ? '🇮🇷 إيران' : '🇮🇷 Iran')},
-      {'id': 'americas', 'label': lang == 'ku' ? '🌎 ئەمریکا' : (lang == 'ar' ? '🌎 الأمريكتين' : '🌎 Americas')},
-      {'id': 'africa', 'label': lang == 'ku' ? '🌍 ئەفریقا' : (lang == 'ar' ? '🌍 أفريقيا' : '🌍 Africa')},
-      {'id': 'asia', 'label': lang == 'ku' ? '🌏 ئاسیا' : (lang == 'ar' ? '🌏 آسيا' : '🌏 Asia')},
+      {'id': 'all', 'label': lang == 'ku' ? 'هەمووی' : (lang == 'ar' ? 'الكل' : 'All'), 'icon': Icons.public_rounded},
+      {'id': 'kurdistan_iraq', 'label': lang == 'ku' ? 'کوردستان و عێراق' : (lang == 'ar' ? 'كردستان والعراق' : 'Kurdistan & Iraq'), 'icon': Icons.place_rounded},
+      {'id': 'gulf', 'label': lang == 'ku' ? 'کەنداو' : (lang == 'ar' ? 'الخليج' : 'Gulf'), 'icon': Icons.location_city_rounded},
+      {'id': 'levant_arab', 'label': lang == 'ku' ? 'وڵاتانی عەرەبی' : (lang == 'ar' ? 'الدول العربية' : 'Arab World'), 'icon': Icons.apartment_rounded},
+      {'id': 'europe', 'label': lang == 'ku' ? 'ئەوروپا' : (lang == 'ar' ? 'أوروبا' : 'Europe'), 'icon': Icons.travel_explore_rounded},
+      {'id': 'turkey', 'label': lang == 'ku' ? 'تورکیا' : (lang == 'ar' ? 'تركيا' : 'Turkey'), 'icon': Icons.explore_rounded},
+      {'id': 'iran', 'label': lang == 'ku' ? 'ئێران' : (lang == 'ar' ? 'إيران' : 'Iran'), 'icon': Icons.explore_rounded},
+      {'id': 'americas', 'label': lang == 'ku' ? 'ئەمریکا' : (lang == 'ar' ? 'الأمريكتين' : 'Americas'), 'icon': Icons.language_rounded},
+      {'id': 'africa', 'label': lang == 'ku' ? 'ئەفریقا' : (lang == 'ar' ? 'أفريقيا' : 'Africa'), 'icon': Icons.map_rounded},
+      {'id': 'asia', 'label': lang == 'ku' ? 'ئاسیا' : (lang == 'ar' ? 'آسيا' : 'Asia'), 'icon': Icons.public_rounded},
     ];
 
     final prayerNames = {
-      'Fajr': {'ku': 'بەیانی', 'ar': 'الفجر', 'en': 'Fajr', 'icon': '🌅'},
-      'Sunrise': {'ku': 'ڕۆژهەڵات', 'ar': 'الشروق', 'en': 'Sunrise', 'icon': '☀️'},
-      'Dhuhr': {'ku': 'نیوەڕۆ', 'ar': 'الظهر', 'en': 'Dhuhr', 'icon': '🌤️'},
-      'Asr': {'ku': 'عەسڕ', 'ar': 'العصر', 'en': 'Asr', 'icon': '🌥️'},
-      'Maghrib': {'ku': 'مەغریب', 'ar': 'المغرب', 'en': 'Maghrib', 'icon': '🌆'},
-      'Isha': {'ku': 'عیشا', 'ar': 'العشاء', 'en': 'Isha', 'icon': '🌙'},
+      'Fajr': {'ku': 'بەیانی', 'ar': 'الفجر', 'en': 'Fajr', 'icon': Icons.wb_twilight_rounded},
+      'Sunrise': {'ku': 'ڕۆژهەڵات', 'ar': 'الشروق', 'en': 'Sunrise', 'icon': Icons.wb_sunny_rounded},
+      'Dhuhr': {'ku': 'نیوەڕۆ', 'ar': 'الظهر', 'en': 'Dhuhr', 'icon': Icons.light_mode_rounded},
+      'Asr': {'ku': 'عەسڕ', 'ar': 'العصر', 'en': 'Asr', 'icon': Icons.cloud_queue_rounded},
+      'Maghrib': {'ku': 'مەغریب', 'ar': 'المغرب', 'en': 'Maghrib', 'icon': Icons.nightlight_round},
+      'Isha': {'ku': 'عیشا', 'ar': 'العشاء', 'en': 'Isha', 'icon': Icons.bedtime_rounded},
     };
 
     return Directionality(
@@ -244,8 +231,13 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                       return Padding(
                         padding: const EdgeInsets.only(right: 8),
                         child: FilterChip(
+                          avatar: Icon(
+                            cat['icon'] as IconData,
+                            size: 16,
+                            color: isCatSelected ? Colors.black : primaryColor,
+                          ),
                           label: Text(
-                            cat['label']!,
+                            cat['label'] as String,
                             style: TextStyle(
                               fontFamily: 'Rabar',
                               fontSize: 12.5,
@@ -257,7 +249,7 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                           onSelected: (_) {
                             HapticFeedback.selectionClick();
                             setState(() {
-                              _selectedCategory = cat['id']!;
+                              _selectedCategory = cat['id'] as String;
                             });
                           },
                           backgroundColor: Colors.white.withOpacity(0.05),
@@ -307,7 +299,6 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                           itemBuilder: (context, idx) {
                             final city = filteredCities[idx];
                             final isActive = city.id == settings.userCityId;
-                            final flag = _getCountryFlag(city.country);
                             final cityName = lang == 'ar'
                                 ? city.ar
                                 : (lang == 'en' ? city.en : city.ku);
@@ -353,18 +344,27 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.stretch,
                                   children: [
-                                    // Header: Flag + Name + Set Active Button
+                                    // Header: Location Icon + Name + Set Active Button
                                     Row(
                                       children: [
                                         Container(
                                           width: 42,
                                           height: 42,
                                           decoration: BoxDecoration(
-                                            color: Colors.white.withOpacity(0.06),
+                                            color: (isActive ? primaryColor : Colors.white).withOpacity(0.08),
                                             shape: BoxShape.circle,
+                                            border: Border.all(
+                                              color: (isActive ? primaryColor : Colors.white).withOpacity(0.12),
+                                            ),
                                           ),
                                           alignment: Alignment.center,
-                                          child: Text(flag, style: const TextStyle(fontSize: 22)),
+                                          child: Icon(
+                                            city.country.toUpperCase() == 'IQ'
+                                                ? Icons.place_rounded
+                                                : Icons.public_rounded,
+                                            color: isActive ? primaryColor : Colors.white70,
+                                            size: 20,
+                                          ),
                                         ),
                                         const SizedBox(width: 12),
                                         Expanded(
@@ -499,9 +499,10 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                                         children: [
                                           Row(
                                             children: [
-                                              Text(
-                                                prayerNames[nextPrayer['name']]?['icon'] ?? '🕌',
-                                                style: const TextStyle(fontSize: 15),
+                                              Icon(
+                                                (prayerNames[nextPrayer['name']]?['icon'] as IconData?) ?? Icons.mosque_rounded,
+                                                size: 16,
+                                                color: primaryColor,
                                               ),
                                               const SizedBox(width: 6),
                                               Text(
@@ -538,44 +539,44 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Fajr']?[lang] ?? 'Fajr',
+                                          title: (prayerNames['Fajr']?[lang] as String?) ?? 'Fajr',
                                           time: times['Fajr'] ?? '--:--',
-                                          icon: '🌅',
+                                          icon: Icons.wb_twilight_rounded,
                                           isNext: nextPrayer['name'] == 'Fajr',
                                           primaryColor: primaryColor,
                                         ),
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Sunrise']?[lang] ?? 'Sunrise',
+                                          title: (prayerNames['Sunrise']?[lang] as String?) ?? 'Sunrise',
                                           time: times['Sunrise'] ?? '--:--',
-                                          icon: '☀️',
+                                          icon: Icons.wb_sunny_rounded,
                                           isNext: false,
                                           primaryColor: primaryColor,
                                         ),
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Dhuhr']?[lang] ?? 'Dhuhr',
+                                          title: (prayerNames['Dhuhr']?[lang] as String?) ?? 'Dhuhr',
                                           time: times['Dhuhr'] ?? '--:--',
-                                          icon: '🌤️',
+                                          icon: Icons.light_mode_rounded,
                                           isNext: nextPrayer['name'] == 'Dhuhr',
                                           primaryColor: primaryColor,
                                         ),
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Asr']?[lang] ?? 'Asr',
+                                          title: (prayerNames['Asr']?[lang] as String?) ?? 'Asr',
                                           time: times['Asr'] ?? '--:--',
-                                          icon: '🌥️',
+                                          icon: Icons.cloud_queue_rounded,
                                           isNext: nextPrayer['name'] == 'Asr',
                                           primaryColor: primaryColor,
                                         ),
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Maghrib']?[lang] ?? 'Maghrib',
+                                          title: (prayerNames['Maghrib']?[lang] as String?) ?? 'Maghrib',
                                           time: times['Maghrib'] ?? '--:--',
-                                          icon: '🌆',
+                                          icon: Icons.nightlight_round,
                                           isNext: nextPrayer['name'] == 'Maghrib',
                                           primaryColor: primaryColor,
                                         ),
                                         _buildPrayerTimeChip(
-                                          title: prayerNames['Isha']?[lang] ?? 'Isha',
+                                          title: (prayerNames['Isha']?[lang] as String?) ?? 'Isha',
                                           time: times['Isha'] ?? '--:--',
-                                          icon: '🌙',
+                                          icon: Icons.bedtime_rounded,
                                           isNext: nextPrayer['name'] == 'Isha',
                                           primaryColor: primaryColor,
                                         ),
@@ -599,7 +600,7 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
   Widget _buildPrayerTimeChip({
     required String title,
     required String time,
-    required String icon,
+    required IconData icon,
     required bool isNext,
     required Color primaryColor,
   }) {
@@ -615,7 +616,11 @@ class _WorldPrayerTimesScreenState extends ConsumerState<WorldPrayerTimesScreen>
       ),
       child: Column(
         children: [
-          Text(icon, style: const TextStyle(fontSize: 13)),
+          Icon(
+            icon,
+            size: 15,
+            color: isNext ? primaryColor : Colors.white70,
+          ),
           const SizedBox(height: 2),
           Text(
             title,

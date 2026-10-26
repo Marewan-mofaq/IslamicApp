@@ -106,7 +106,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   ? h.arabic
                   : h.translationKu,
           subtitle: '${h.collection.toUpperCase()} - #${h.number}',
-          icon: '📜',
+          icon: Icons.history_edu_rounded,
           originalData: h,
         ));
       }
@@ -116,7 +116,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _adhkarData.forEach((catId, items) {
       final category = _adhkarCategories.firstWhere(
         (c) => c.id == catId,
-        orElse: () => AdhkarCategory(id: catId, ku: '', ar: '', en: '', icon: '📿', color: '#1B6B3A'),
+        orElse: () => AdhkarCategory(id: catId, ku: '', ar: '', en: '', icon: '', color: '#1B6B3A'),
       );
       final categoryName = lang == 'ar' ? category.ar : lang == 'en' ? category.en : category.ku;
 
@@ -133,7 +133,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     ? item.arabic
                     : (item.translationKu.isNotEmpty ? item.translationKu : item.arabic),
             subtitle: categoryName,
-            icon: '📿',
+            icon: Icons.fingerprint_rounded,
             originalData: {
               'categoryId': catId,
               'categoryName': categoryName,
@@ -174,7 +174,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           type: SearchResultType.qa,
           title: title.isNotEmpty ? title : qKu,
           subtitle: sub,
-          icon: '❓',
+          icon: Icons.help_outline_rounded,
           originalData: qa,
         ));
       }
@@ -199,7 +199,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               : lang == 'ar'
                   ? 'القرآن الكريم - سورة $nameAr'
                   : 'Holy Quran Reader - Surah $nameEn',
-          icon: '📖',
+          icon: Icons.menu_book_rounded,
           originalData: s,
         ));
       }
@@ -225,11 +225,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           type: SearchResultType.kids,
           title: lang == 'en' ? tEn : lang == 'ar' ? (tAr.isNotEmpty ? tAr : tKu) : tKu,
           subtitle: lang == 'ku'
-              ? 'چیرۆک بۆ منداڵان - ${s['icon']}'
+              ? 'چیرۆک بۆ منداڵان'
               : lang == 'ar'
-                  ? 'قصص أطفال - ${s['icon']}'
-                  : 'Kids World Story - ${s['icon']}',
-          icon: '🎡',
+                  ? 'قصص أطفال'
+                  : 'Kids World Story',
+          icon: Icons.child_care_rounded,
           originalData: s,
         ));
       }
@@ -622,7 +622,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
-                child: Text(res.icon, style: TextStyle(fontSize: 22)),
+                child: Icon(res.icon, color: typeColor, size: 22),
               ),
             ),
             title: Text(
@@ -676,7 +676,7 @@ class SearchResult {
   final SearchResultType type;
   final String title;
   final String subtitle;
-  final String icon;
+  final IconData icon;
   final dynamic originalData;
 
   SearchResult({

@@ -36,35 +36,35 @@ class WidgetService {
 
       final localizedPrayerNames = {
         'ku': {
-          'Fajr': '🌅 بەیانی',
-          'Sunrise': '☀️ ڕۆژهەڵات',
-          'Dhuhr': '🌤️ نیوەڕۆ',
-          'Asr': '🌥️ عەسر',
-          'Maghrib': '🌆 مەغریب',
-          'Isha': '🌙 عیشا',
+          'Fajr': 'بەیانی',
+          'Sunrise': 'ڕۆژهەڵات',
+          'Dhuhr': 'نیوەڕۆ',
+          'Asr': 'عەسر',
+          'Maghrib': 'مەغریب',
+          'Isha': 'عیشا',
         },
         'ar': {
-          'Fajr': '🌅 الفجر',
-          'Sunrise': '☀️ الشروق',
-          'Dhuhr': '🌤️ الظهر',
-          'Asr': '🌥️ العصر',
-          'Maghrib': '🌆 المغرب',
-          'Isha': '🌙 العشاء',
+          'Fajr': 'الفجر',
+          'Sunrise': 'الشروق',
+          'Dhuhr': 'الظهر',
+          'Asr': 'العصر',
+          'Maghrib': 'المغرب',
+          'Isha': 'العشاء',
         },
         'en': {
-          'Fajr': '🌅 Fajr',
-          'Sunrise': '☀️ Sunrise',
-          'Dhuhr': '🌤️ Dhuhr',
-          'Asr': '🌥️ Asr',
-          'Maghrib': '🌆 Maghrib',
-          'Isha': '🌙 Isha',
+          'Fajr': 'Fajr',
+          'Sunrise': 'Sunrise',
+          'Dhuhr': 'Dhuhr',
+          'Asr': 'Asr',
+          'Maghrib': 'Maghrib',
+          'Isha': 'Isha',
         },
       };
 
       final localizedTitles = {
-        'ku': '✨ کاتەکانی بانگ',
-        'ar': '✨ مواقيت الصلاة',
-        'en': '✨ Prayer Times',
+        'ku': 'کاتەکانی بانگ',
+        'ar': 'مواقيت الصلاة',
+        'en': 'Prayer Times',
       };
 
       final localizedNextLabels = {
@@ -92,11 +92,11 @@ class WidgetService {
       await HomeWidget.saveWidgetData<String>('widget_next_time', nextTime);
       await HomeWidget.saveWidgetData<String>('widget_remaining', remainingText);
 
-      await HomeWidget.saveWidgetData<String>('widget_fajr_name', langMap['Fajr'] ?? '🌅 بەیانی');
-      await HomeWidget.saveWidgetData<String>('widget_dhuhr_name', langMap['Dhuhr'] ?? '🌤️ نیوەڕۆ');
-      await HomeWidget.saveWidgetData<String>('widget_asr_name', langMap['Asr'] ?? '🌥️ عەسر');
-      await HomeWidget.saveWidgetData<String>('widget_maghrib_name', langMap['Maghrib'] ?? '🌆 مەغریب');
-      await HomeWidget.saveWidgetData<String>('widget_isha_name', langMap['Isha'] ?? '🌙 عیشا');
+      await HomeWidget.saveWidgetData<String>('widget_fajr_name', langMap['Fajr'] ?? 'بەیانی');
+      await HomeWidget.saveWidgetData<String>('widget_dhuhr_name', langMap['Dhuhr'] ?? 'نیوەڕۆ');
+      await HomeWidget.saveWidgetData<String>('widget_asr_name', langMap['Asr'] ?? 'عەسر');
+      await HomeWidget.saveWidgetData<String>('widget_maghrib_name', langMap['Maghrib'] ?? 'مەغریب');
+      await HomeWidget.saveWidgetData<String>('widget_isha_name', langMap['Isha'] ?? 'عیشا');
 
       await HomeWidget.saveWidgetData<String>('widget_fajr', prayerTimes['Fajr'] ?? '--:--');
       await HomeWidget.saveWidgetData<String>('widget_dhuhr', prayerTimes['Dhuhr'] ?? '--:--');
@@ -226,7 +226,7 @@ class WidgetService {
       final diffMinutes = diff.inMinutes;
 
       if (language == 'ar') {
-        if (diffMinutes <= 0) return 'حان الآن موعد الأذان 📢';
+        if (diffMinutes <= 0) return 'حان الآن موعد الأذان';
         final hours = diffMinutes ~/ 60;
         final mins = diffMinutes % 60;
         if (hours > 0) {
@@ -235,7 +235,7 @@ class WidgetService {
           return 'متبقي $mins دقيقة';
         }
       } else if (language == 'en') {
-        if (diffMinutes <= 0) return 'It is time for Adhan 📢';
+        if (diffMinutes <= 0) return 'It is time for Adhan';
         final hours = diffMinutes ~/ 60;
         final mins = diffMinutes % 60;
         if (hours > 0) {
@@ -245,7 +245,7 @@ class WidgetService {
         }
       } else {
         // Default Kurdish
-        if (diffMinutes <= 0) return 'کاتی بانگ هاتووە 📢';
+        if (diffMinutes <= 0) return 'کاتی بانگ هاتووە';
         final hours = diffMinutes ~/ 60;
         final mins = diffMinutes % 60;
         if (hours > 0) {

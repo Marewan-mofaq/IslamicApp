@@ -40,13 +40,20 @@ class HadithAdhkarScreen extends ConsumerWidget {
       child: Scaffold(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         appBar: AppBar(
-          title: Text(
-            settings.language == 'ku'
-                ? '📖 زیکر و فەرموودەکان'
-                : settings.language == 'ar'
-                    ? '📖 الأذكار والأحاديث'
-                    : '📖 Hadith & Adhkar',
-            style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar'),
+          title: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.menu_book_rounded, color: Theme.of(context).colorScheme.primary, size: 22),
+              const SizedBox(width: 8),
+              Text(
+                settings.language == 'ku'
+                    ? 'زیکر و فەرموودەکان'
+                    : settings.language == 'ar'
+                        ? 'الأذكار والأحاديث'
+                        : 'Hadith & Adhkar',
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar', fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
           centerTitle: true,
           backgroundColor: Theme.of(context).cardColor,

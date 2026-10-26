@@ -379,10 +379,10 @@ class _QuranAudioScreenState extends ConsumerState<QuranAudioScreen> {
       if (!hasNet) {
         if (mounted) {
           final failMsg = lang == 'ku'
-              ? '❌ هێڵی ئینتەرنێت کوژاوەتەوە! بۆ داونلۆدکردن تکایە ئینتەرنێت دابگیرسێنە.'
+              ? 'هێڵی ئینتەرنێت کوژاوەتەوە! بۆ داونلۆدکردن تکایە ئینتەرنێت دابگیرسێنە.'
               : lang == 'ar'
-                  ? '❌ لا يوجد اتصال بالإنترنت! يرجى تفعيل الإنترنت لتنزيل السورة.'
-                  : '❌ No internet connection! Please turn on internet to download.';
+                  ? 'لا يوجد اتصال بالإنترنت! يرجى تفعيل الإنترنت لتنزيل السورة.'
+                  : 'No internet connection! Please turn on internet to download.';
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               backgroundColor: const Color(0xFFEF4444),
@@ -525,7 +525,19 @@ class _QuranAudioScreenState extends ConsumerState<QuranAudioScreen> {
                   final isSelected = _selectedReciter != null && _selectedReciter['id'] == reciter['id'];
                   
                   return ListTile(
-                    leading: Text(reciter['flag'] ?? '🎙️', style: TextStyle(fontSize: 22)),
+                    leading: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: (isSelected ? Theme.of(context).colorScheme.primary : Colors.white).withOpacity(0.08),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.record_voice_over_rounded,
+                        color: isSelected ? Theme.of(context).colorScheme.primary : Colors.white70,
+                        size: 20,
+                      ),
+                    ),
                     title: Text(
                       reciter['name_ku'] ?? '',
                       style: TextStyle(
@@ -759,10 +771,10 @@ class _QuranAudioScreenState extends ConsumerState<QuranAudioScreen> {
     final theme = settings.palette;
     
     final title = settings.language == 'ku'
-        ? '🎧 دەنگی قورئان'
+        ? 'دەنگی قورئان'
         : settings.language == 'ar'
-            ? '🎧 تلاوات القرآن الكريم'
-            : '🎧 Quran Audio';
+            ? 'تلاوات القرآن الكريم'
+            : 'Quran Audio';
     final searchPlaceholder = settings.language == 'ku'
         ? 'گەڕان بەدوای سورەت...'
         : settings.language == 'ar'
@@ -782,7 +794,14 @@ class _QuranAudioScreenState extends ConsumerState<QuranAudioScreen> {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.headphones_rounded, color: theme.primaryColor, size: 22),
+            const SizedBox(width: 8),
+            Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -805,8 +824,15 @@ class _QuranAudioScreenState extends ConsumerState<QuranAudioScreen> {
                   ),
                   child: Row(
                     children: [
-                      Text(_selectedReciter['flag'] ?? '🎙️', style: TextStyle(fontSize: 22)),
-                      SizedBox(width: 12),
+                      Container(
+                        padding: const EdgeInsets.all(6),
+                        decoration: BoxDecoration(
+                          color: theme.primaryColor.withOpacity(0.12),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(Icons.record_voice_over_rounded, color: theme.primaryColor, size: 20),
+                      ),
+                      const SizedBox(width: 12),
                       Expanded(
                         child: Text(
                           settings.language == 'ku'

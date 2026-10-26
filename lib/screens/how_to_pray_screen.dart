@@ -46,17 +46,24 @@ class _HowToPrayScreenState extends ConsumerState<HowToPrayScreen> {
     final theme = settings.palette;
     final isRTL = settings.language == 'ku' || settings.language == 'ar';
 
-    final title = settings.language == 'ku' ? '🙏 چۆنیەتی نوێژکردن' : settings.language == 'ar' ? '🙏 كيفية الصلاة' : '🙏 How to Pray';
+    final title = settings.language == 'ku' ? 'چۆنیەتی نوێژکردن' : settings.language == 'ar' ? 'كيفية الصلاة' : 'How to Pray';
     final subtitle = settings.language == 'ku' ? 'فێرکاری هەنگاو بە هەنگاو' : settings.language == 'ar' ? 'دليل خطوة بخطوة' : 'Step-by-step prayer guide';
     
-    final sectionTypes = settings.language == 'ku' ? '🕌 جۆرەکانی نوێژ' : settings.language == 'ar' ? 'أنواع الصلاة' : 'Types of Prayer';
-    final sectionSteps = settings.language == 'ku' ? '📝 هەنگاوەکانی نوێژ' : settings.language == 'ar' ? 'خطوات الصلاة' : 'Prayer Steps';
+    final sectionTypes = settings.language == 'ku' ? 'جۆرەکانی نوێژ' : settings.language == 'ar' ? 'أنواع الصلاة' : 'Types of Prayer';
+    final sectionSteps = settings.language == 'ku' ? 'هەنگاوەکانی نوێژ' : settings.language == 'ar' ? 'خطوات الصلاة' : 'Prayer Steps';
     final rakaatLabel = settings.language == 'ku' ? 'رکعەت' : settings.language == 'ar' ? 'ركعة' : 'Rak\'at';
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.accessibility_new_rounded, color: theme.primaryColor, size: 22),
+            const SizedBox(width: 8),
+            Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -257,9 +264,10 @@ class _HowToPrayScreenState extends ConsumerState<HowToPrayScreen> {
                             title: Row(
                               textDirection: isRTL ? TextDirection.rtl : TextDirection.ltr,
                               children: [
-                                Text(
-                                  step['icon'] ?? '🤲',
-                                  style: TextStyle(fontSize: 20),
+                                Icon(
+                                  Icons.accessibility_new_rounded,
+                                  color: Theme.of(context).colorScheme.primary,
+                                  size: 20,
                                 ),
                                 SizedBox(width: 10),
                                 Expanded(

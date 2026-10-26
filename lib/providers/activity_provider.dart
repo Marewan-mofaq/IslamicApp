@@ -205,8 +205,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
     List<BadgeItem> activeBadges = List<BadgeItem>.from(state.badges);
     if (isCompleted && !activeBadges.any((b) => b.nameEn == 'Worship Devotee')) {
       activeBadges.add(BadgeItem(
-        nameKu: '✨ پارێزەری نوێژ و زیکر',
-        nameAr: '✨ مواظب الصلاة والذكر',
+        nameKu: 'پارێزەری نوێژ و زیکر',
+        nameAr: 'مواظب الصلاة والذكر',
         nameEn: 'Worship Devotee',
         earned: dateKey,
       ));
@@ -214,8 +214,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
 
     if (newStreak >= 3 && !activeBadges.any((b) => b.nameEn == '3-Day Worship Streak')) {
       activeBadges.add(BadgeItem(
-        nameKu: '🔥 بەردەوامی ٣ ڕۆژ',
-        nameAr: '🔥 مواظبة ٣ أيام',
+        nameKu: 'بەردەوامی ٣ ڕۆژ',
+        nameAr: 'مواظبة ٣ أيام',
         nameEn: '3-Day Worship Streak',
         earned: dateKey,
       ));
@@ -223,8 +223,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
 
     if (newStreak >= 7 && !activeBadges.any((b) => b.nameEn == '7-Day Worship Streak')) {
       activeBadges.add(BadgeItem(
-        nameKu: '⚡ بەردەوامی ٧ ڕۆژ',
-        nameAr: '⚡ مواظبة ٧ أيام',
+        nameKu: 'بەردەوامی ٧ ڕۆژ',
+        nameAr: 'مواظبة ٧ أيام',
         nameEn: '7-Day Worship Streak',
         earned: dateKey,
       ));
@@ -232,8 +232,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
 
     if (newStreak >= 30 && !activeBadges.any((b) => b.nameEn == '30-Day Master')) {
       activeBadges.add(BadgeItem(
-        nameKu: '👑 پێشەوای بەردەوامی',
-        nameAr: '👑 سيد المواظبة',
+        nameKu: 'پێشەوای بەردەوامی',
+        nameAr: 'سيد المواظبة',
         nameEn: '30-Day Master',
         earned: dateKey,
       ));
@@ -279,8 +279,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
     
     if (log[today]! >= 33 && !activeBadges.any((b) => b.nameEn == 'Dhikr Novice')) {
       activeBadges.add(BadgeItem(
-        nameKu: '🏅 ویردنووس',
-        nameAr: '🏅 ذاكر مبتدئ',
+        nameKu: 'ویردنووس',
+        nameAr: 'ذاكر مبتدئ',
         nameEn: 'Dhikr Novice',
         earned: today,
       ));
@@ -289,8 +289,8 @@ class ActivityNotifier extends StateNotifier<ActivityState> {
     final total = log.values.reduce((a, b) => a + b);
     if (total >= 100 && !activeBadges.any((b) => b.nameEn == 'Quran Reader')) {
       activeBadges.add(BadgeItem(
-        nameKu: '📖 قورئان خوێن',
-        nameAr: '📖 قارئ القرآن',
+        nameKu: 'قورئان خوێن',
+        nameAr: 'قارئ القرآن',
         nameEn: 'Quran Reader',
         earned: today,
       ));

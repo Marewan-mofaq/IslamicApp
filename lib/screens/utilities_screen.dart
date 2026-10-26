@@ -39,7 +39,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
     final isRTL = settings.language == 'ku' || settings.language == 'ar';
     final lang = settings.language;
 
-    final title = lang == 'ku' ? '✨ بەشەکانی تر' : lang == 'ar' ? '✨ أقسام أخرى' : '✨ Explore Sections';
+    final title = lang == 'ku' ? 'بەشەکانی تر' : lang == 'ar' ? 'أقسام أخرى' : 'Explore Sections';
     final searchHint = lang == 'ku' ? 'گەڕان لە بەشەکاندا...' : lang == 'ar' ? 'البحث في الأقسام...' : 'Search sections...';
 
     final List<Map<String, dynamic>> allItems = [
@@ -48,7 +48,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'کاتەکانی بانگی جیهان' : lang == 'ar' ? 'مواقيت الصلاة العالمية' : 'World Prayer Times',
         'desc': lang == 'ku' ? 'کاتەکانی بانگی هەموو شار و وڵاتانی جیهان' : lang == 'ar' ? 'أوقات الأذان لجميع دول ومدن العالم' : 'Prayer times for all countries & cities worldwide',
-        'icon': '🌐',
+        'icon': Icons.public_rounded,
         'color': const Color(0xFF0EA5E9),
         'screen': const WorldPrayerTimesScreen(),
       },
@@ -57,7 +57,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'تەسبێحی زیرەک' : lang == 'ar' ? 'المسبحة الإلكترونية' : 'Digital Tasbih',
         'desc': lang == 'ku' ? 'تەسبێحی ئەلیکترۆنی لەگەڵ ئاماری ژمارەکان' : lang == 'ar' ? 'مسبحة إلكترونية مع العداد' : 'Digital Tasbih with target count',
-        'icon': '📿',
+        'icon': Icons.fingerprint_rounded,
         'color': Theme.of(context).colorScheme.primary,
         'screen': const TasbihScreen(),
       },
@@ -66,7 +66,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'خەتمی قورئان' : lang == 'ar' ? 'ختم القرآن' : 'Khatam Tracker',
         'desc': lang == 'ku' ? 'پلاندانان بۆ خەتمکردنی قورئانی پیرۆز' : lang == 'ar' ? 'خطة تتبع ختم القرآن الكريم' : 'Plan and track your Quran recitation',
-        'icon': '📖',
+        'icon': Icons.menu_book_rounded,
         'color': const Color(0xFF10B981),
         'screen': const KhatamTrackerScreen(),
       },
@@ -75,7 +75,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'ئاراستەی قیبلە' : lang == 'ar' ? 'اتجاه القبلة' : 'Qibla Finder',
         'desc': lang == 'ku' ? 'دیاریکردنی ئاراستەی قیبلە بۆ نوێژ' : lang == 'ar' ? 'بوصلة دقيقة لتحديد القبلة' : 'Accurate compass for Qibla direction',
-        'icon': '🧭',
+        'icon': Icons.explore_rounded,
         'color': Theme.of(context).colorScheme.primary,
         'screen': const QiblaScreen(),
       },
@@ -84,7 +84,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'چۆنیەتی نوێژ' : lang == 'ar' ? 'كيفية الصلاة' : 'How to Pray',
         'desc': lang == 'ku' ? 'فێربوونی هەنگاو بە هەنگاوی نوێژکردن' : lang == 'ar' ? 'تعلم كيفية الصلاة خطوة بخطوة' : 'Step-by-step guide to Islamic prayer',
-        'icon': '🙏',
+        'icon': Icons.accessibility_new_rounded,
         'color': const Color(0xFF6366F1),
         'screen': const HowToPrayScreen(),
       },
@@ -93,7 +93,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'worship',
         'title': lang == 'ku' ? 'سوننەتەکانی ڕۆژانە' : lang == 'ar' ? 'سنن اليوم' : 'Daily Sunnahs',
         'desc': lang == 'ku' ? 'کردەوە و سوننەتە بەسوودەکانی پێغەمبەر' : lang == 'ar' ? 'السنن اليومية للنبي صلى الله عليه وسلم' : 'Daily Sunnah habits of Prophet Muhammad',
-        'icon': '📅',
+        'icon': Icons.wb_sunny_rounded,
         'color': const Color(0xFF10B981),
         'screen': const SunnahScreen(),
       },
@@ -102,7 +102,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'learning',
         'title': lang == 'ku' ? 'ناوە جوانەکانی خودا' : lang == 'ar' ? 'أسماء الله الحسنى' : '99 Names of Allah',
         'desc': lang == 'ku' ? 'ناوە پیرۆزەکانی الله لەگەڵ ماناکانیان' : lang == 'ar' ? 'أسماء الله الحسنى ومعانيها' : '99 Beautiful Names of Allah and meanings',
-        'icon': '✨',
+        'icon': Icons.auto_awesome_rounded,
         'color': const Color(0xFFF59E0B),
         'screen': const NamesScreen(),
       },
@@ -111,7 +111,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'learning',
         'title': lang == 'ku' ? 'پرسیار و وەڵام' : lang == 'ar' ? 'أسئلة وأجوبة' : 'Islamic Q&A',
         'desc': lang == 'ku' ? 'وەڵامی پرسیارە ئایینی و شەرعییەکان' : lang == 'ar' ? 'إجابات على الأسئلة الدينية' : 'Answers to common Islamic questions',
-        'icon': '❓',
+        'icon': Icons.help_outline_rounded,
         'color': const Color(0xFF8B5CF6),
         'screen': const QAScreen(),
       },
@@ -120,7 +120,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'learning',
         'title': lang == 'ku' ? 'چیرۆکی منداڵان' : lang == 'ar' ? 'قصص الأطفال' : 'Kids Stories',
         'desc': lang == 'ku' ? 'چیرۆکی ئامۆژگاری و پەروەردەیی منداڵان' : lang == 'ar' ? 'قصص إسلامية تعليمية للأطفال' : 'Educational Islamic stories for children',
-        'icon': '👶',
+        'icon': Icons.child_care_rounded,
         'color': const Color(0xFFEC4899),
         'screen': const KidsStoriesScreen(),
       },
@@ -129,7 +129,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'learning',
         'title': lang == 'ku' ? 'ڕێبەری حەج و عومرە' : lang == 'ar' ? 'دليل الحج والعمرة' : 'Hajj & Umrah Guide',
         'desc': lang == 'ku' ? 'ڕێنمایی و کارەکانی حەج و عومرە' : lang == 'ar' ? 'دليل شامل لخطوات الحج والعمرة' : 'Complete step-by-step Hajj & Umrah guide',
-        'icon': '🕋',
+        'icon': Icons.mosque_rounded,
         'color': const Color(0xFF64748B),
         'screen': const HajjScreen(),
       },
@@ -138,7 +138,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'learning',
         'title': lang == 'ku' ? 'بابەتەکانی قورئان' : lang == 'ar' ? 'مواضيع القرآن' : 'Quran Topics',
         'desc': lang == 'ku' ? 'دۆزینەوەی ئایەتەکان بەپێی بابەت' : lang == 'ar' ? 'استكشاف الآيات حسب الموضوع' : 'Explore Quranic verses categorized by topic',
-        'icon': '🗂️',
+        'icon': Icons.category_rounded,
         'color': Colors.cyan,
         'screen': const TopicsScreen(),
       },
@@ -147,7 +147,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'tools',
         'title': lang == 'ku' ? 'چۆن هەست دەکەیت؟' : lang == 'ar' ? 'بماذا تشعر؟' : 'How do you feel?',
         'desc': lang == 'ku' ? 'دوعا و ئایەت بەپێی باری دەروونیت' : lang == 'ar' ? 'أدعية وآيات للمشاعر المختلفة' : 'Quranic verses and duas for your current emotion',
-        'icon': '🎭',
+        'icon': Icons.sentiment_satisfied_alt_rounded,
         'color': Colors.blueAccent,
         'screen': const SituationsScreen(),
       },
@@ -156,7 +156,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'tools',
         'title': lang == 'ku' ? 'ژمێرەری زەکات' : lang == 'ar' ? 'حاسبة الزكاة' : 'Zakat Calculator',
         'desc': lang == 'ku' ? 'حیسابکردنی زەکاتی دارایی، زێڕ و زیو' : lang == 'ar' ? 'حساب زكاة المال والذهب' : 'Calculate Zakat on wealth and gold',
-        'icon': '💰',
+        'icon': Icons.account_balance_wallet_rounded,
         'color': Colors.amber,
         'screen': const ZakatScreen(),
       },
@@ -165,7 +165,7 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
         'category': 'tools',
         'title': lang == 'ku' ? 'دڵخوازەکان' : lang == 'ar' ? 'المفضلة' : 'Bookmarks',
         'desc': lang == 'ku' ? 'ئایەت و فەرموودە پاشەکەوتکراوەکانت' : lang == 'ar' ? 'المحفوظات الخاصة بك' : 'Your saved verses, hadiths, and adhkar',
-        'icon': '🔖',
+        'icon': Icons.bookmark_rounded,
         'color': Colors.orangeAccent,
         'screen': const BookmarksScreen(),
       },
@@ -236,10 +236,10 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
               child: Row(
                 children: [
-                  _buildCategoryPill('all', lang == 'ku' ? '✨ هەمووی' : lang == 'ar' ? '✨ الكل' : '✨ All'),
-                  _buildCategoryPill('worship', lang == 'ku' ? '🕌 عیبادەت' : lang == 'ar' ? '🕌 عبادة' : '🕌 Worship'),
-                  _buildCategoryPill('learning', lang == 'ku' ? '🎓 فێربوون' : lang == 'ar' ? '🎓 تعليم' : '🎓 Learning'),
-                  _buildCategoryPill('tools', lang == 'ku' ? '🛠️ ئامرازەکان' : lang == 'ar' ? '🛠️ أدوات' : '🛠️ Tools'),
+                  _buildCategoryPill('all', lang == 'ku' ? 'هەمووی' : lang == 'ar' ? 'الكل' : 'All', Icons.grid_view_rounded),
+                  _buildCategoryPill('worship', lang == 'ku' ? 'عیبادەت' : lang == 'ar' ? 'عبادة' : 'Worship', Icons.mosque_rounded),
+                  _buildCategoryPill('learning', lang == 'ku' ? 'فێربوون' : lang == 'ar' ? 'تعليم' : 'Learning', Icons.school_rounded),
+                  _buildCategoryPill('tools', lang == 'ku' ? 'ئامرازەکان' : lang == 'ar' ? 'أدوات' : 'Tools', Icons.build_circle_rounded),
                 ],
               ),
             ),
@@ -308,9 +308,10 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
                                             border: Border.all(color: color.withOpacity(0.3)),
                                           ),
                                           child: Center(
-                                            child: Text(
-                                              (item['icon'] ?? '✨').toString(),
-                                              style: const TextStyle(fontSize: 20),
+                                            child: Icon(
+                                              item['icon'] as IconData? ?? Icons.grid_view_rounded,
+                                              size: 20,
+                                              color: color,
                                             ),
                                           ),
                                         ),
@@ -359,11 +360,16 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
     );
   }
 
-  Widget _buildCategoryPill(String id, String label) {
+  Widget _buildCategoryPill(String id, String label, IconData icon) {
     final isSelected = _selectedCategory == id;
     return Padding(
       padding: const EdgeInsets.only(left: 8.0),
       child: ChoiceChip(
+        avatar: Icon(
+          icon,
+          size: 16,
+          color: isSelected ? Colors.black : Theme.of(context).colorScheme.primary,
+        ),
         label: Text(
           label,
           style: TextStyle(
@@ -413,7 +419,7 @@ class _NamesScreenState extends ConsumerState<NamesScreen> {
     final settings = ref.watch(settingsProvider);
     final lang = settings.language;
 
-    final screenTitle = lang == 'ku' ? '✨ ناوە جوانەکانی خودا (٩٩)' : lang == 'ar' ? '✨ أسماء الله الحسنى (٩٩)' : '✨ 99 Names of Allah';
+    final screenTitle = lang == 'ku' ? 'ناوە جوانەکانی خودا (٩٩)' : lang == 'ar' ? 'أسماء الله الحسنى (٩٩)' : '99 Names of Allah';
     final searchHint = lang == 'ku' ? 'گەڕان بەدوای نێودا...' : lang == 'ar' ? 'البحث عن اسم...' : 'Search by name...';
 
     return Scaffold(
@@ -554,7 +560,7 @@ class _SunnahScreenState extends ConsumerState<SunnahScreen> {
     final settings = ref.watch(settingsProvider);
     final lang = settings.language;
 
-    final screenTitle = lang == 'ku' ? '📅 سوننەتەکانی ڕۆژانە' : lang == 'ar' ? '📅 السنن اليومية' : '📅 Daily Sunnahs';
+    final screenTitle = lang == 'ku' ? 'سوننەتەکانی ڕۆژانە' : lang == 'ar' ? 'السنن اليومية' : 'Daily Sunnahs';
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -577,7 +583,6 @@ class _SunnahScreenState extends ConsumerState<SunnahScreen> {
               final item = list[idx];
               final title = lang == 'en' ? (item['en'] ?? '') : lang == 'ar' ? (item['ar'] ?? '') : (item['ku'] ?? '');
               final desc = lang == 'en' ? (item['source_en'] ?? '') : lang == 'ar' ? (item['source_ar'] ?? item['source_ku'] ?? '') : (item['source_ku'] ?? 'سەنەد');
-              final icon = item['icon'] ?? '🌙';
 
               return Container(
                 margin: const EdgeInsets.only(bottom: 14),
@@ -595,8 +600,8 @@ class _SunnahScreenState extends ConsumerState<SunnahScreen> {
                       children: [
                         Row(
                           children: [
-                            Text(icon, style: TextStyle(fontSize: 20)),
-                            SizedBox(width: 8),
+                            Icon(Icons.auto_awesome_rounded, size: 20, color: Theme.of(context).colorScheme.primary),
+                            const SizedBox(width: 8),
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(color: const Color(0xFF10B981).withOpacity(0.12), borderRadius: BorderRadius.circular(10)),
@@ -646,7 +651,7 @@ class _QAScreenState extends ConsumerState<QAScreen> {
     final settings = ref.watch(settingsProvider);
     final lang = settings.language;
 
-    final screenTitle = lang == 'ku' ? '❓ پرسیار و وەڵامی ئایینی' : lang == 'ar' ? '❓ أسئلة وأجوبة إسلامية' : '❓ Islamic Q&A';
+    final screenTitle = lang == 'ku' ? 'پرسیار و وەڵامی ئایینی' : lang == 'ar' ? 'أسئلة وأجوبة إسلامية' : 'Islamic Q&A';
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -728,9 +733,9 @@ class _HajjScreenState extends ConsumerState<HajjScreen> {
     final settings = ref.watch(settingsProvider);
     final lang = settings.language;
 
-    final screenTitle = lang == 'ku' ? '🕋 ڕێبەری حەج و عومرە' : lang == 'ar' ? '🕋 دليل الحج والعمرة' : '🕋 Hajj & Umrah Guide';
-    final tabUmrah = lang == 'ku' ? '🌸 کارەکانی عومرە' : lang == 'ar' ? '🌸 العمرة' : '🌸 Umrah Steps';
-    final tabHajj = lang == 'ku' ? '🕋 هەنگاوەکانی حەج' : lang == 'ar' ? '🕋 الحج' : '🕋 Hajj Steps';
+    final screenTitle = lang == 'ku' ? 'ڕێبەری حەج و عومرە' : lang == 'ar' ? 'دليل الحج والعمرة' : 'Hajj & Umrah Guide';
+    final tabUmrah = lang == 'ku' ? 'کارەکانی عومرە' : lang == 'ar' ? 'العمرة' : 'Umrah Steps';
+    final tabHajj = lang == 'ku' ? 'هەنگاوەکانی حەج' : lang == 'ar' ? 'الحج' : 'Hajj Steps';
 
     return DefaultTabController(
       length: 2,

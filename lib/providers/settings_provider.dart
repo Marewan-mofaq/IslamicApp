@@ -27,8 +27,8 @@ class AppThemePalette {
   static const List<AppThemePalette> themes = [
     AppThemePalette(
       id: 'gold',
-      nameKu: '🌙 زێڕینی درەوشاوە (Midnight Gold)',
-      nameAr: '🌙 الذهبي الملكي',
+      nameKu: 'زێڕینی درەوشاوە (Midnight Gold)',
+      nameAr: 'الذهبي الملكي',
       nameEn: 'Midnight Gold',
       primaryColor: Color(0xFFD4AF37),
       secondaryColor: Color(0xFFF59E0B),
@@ -37,8 +37,8 @@ class AppThemePalette {
     ),
     AppThemePalette(
       id: 'emerald',
-      nameKu: '🌿 سەوزی زومڕەتی (Emerald Green)',
-      nameAr: '🌿 الأخضر الزمردي',
+      nameKu: 'سەوزی زومڕەتی (Emerald Green)',
+      nameAr: 'الأخضر الزمردي',
       nameEn: 'Emerald Green',
       primaryColor: Color(0xFF10B981),
       secondaryColor: Color(0xFF059669),
@@ -47,8 +47,8 @@ class AppThemePalette {
     ),
     AppThemePalette(
       id: 'sapphire',
-      nameKu: '🔷 شینی یاقووتی (Royal Sapphire)',
-      nameAr: '🔷 الأزرق الملكي',
+      nameKu: 'شینی یاقووتی (Royal Sapphire)',
+      nameAr: 'الأزرق الملكي',
       nameEn: 'Royal Sapphire',
       primaryColor: Color(0xFF3B82F6),
       secondaryColor: Color(0xFF2563EB),
@@ -57,8 +57,8 @@ class AppThemePalette {
     ),
     AppThemePalette(
       id: 'obsidian',
-      nameKu: '🌌 مۆری شەوانە (Obsidian Purple)',
-      nameAr: '🌌 البنفسجي الملكي',
+      nameKu: 'مۆری شەوانە (Obsidian Purple)',
+      nameAr: 'البنفسجي الملكي',
       nameEn: 'Obsidian Purple',
       primaryColor: Color(0xFFA855F7),
       secondaryColor: Color(0xFF9333EA),
@@ -67,8 +67,8 @@ class AppThemePalette {
     ),
     AppThemePalette(
       id: 'crimson',
-      nameKu: '🔴 سووری گەش (Deep Crimson)',
-      nameAr: '🔴 القرمزي الدافئ',
+      nameKu: 'سووری گەش (Deep Crimson)',
+      nameAr: 'القرمزي الدافئ',
       nameEn: 'Deep Crimson',
       primaryColor: Color(0xFFEF4444),
       secondaryColor: Color(0xFFDC2626),
@@ -77,8 +77,8 @@ class AppThemePalette {
     ),
     AppThemePalette(
       id: 'teal',
-      nameKu: '🌊 شینی دەریا (Ocean Teal)',
-      nameAr: '🌊 الفيروزي البحري',
+      nameKu: 'شینی دەریا (Ocean Teal)',
+      nameAr: 'الفيروزي البحري',
       nameEn: 'Ocean Teal',
       primaryColor: Color(0xFF14B8A6),
       secondaryColor: Color(0xFF0D9488),

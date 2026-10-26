@@ -19,12 +19,12 @@ class QazaTrackerScreen extends ConsumerWidget {
         : 'Keep track of your missed daily prayers and work towards completing them.';
 
     final prayers = [
-      { 'id': 'fajr', 'ku': 'بەیانی', 'ar': 'الفجر', 'en': 'Fajr', 'icon': '🌅' },
-      { 'id': 'dhuhr', 'ku': 'نیوەڕۆ', 'ar': 'الظهر', 'en': 'Dhuhr', 'icon': '☀️' },
-      { 'id': 'asr', 'ku': 'عەسر', 'ar': 'العصر', 'en': 'Asr', 'icon': '🌤️' },
-      { 'id': 'maghrib', 'ku': 'مەغریب', 'ar': 'المغرب', 'en': 'Maghrib', 'icon': '🌆' },
-      { 'id': 'isha', 'ku': 'عیشا', 'ar': 'العشاء', 'en': 'Isha', 'icon': '🌙' },
-      { 'id': 'witr', 'ku': 'وێتر', 'ar': 'الوتر', 'en': 'Witr', 'icon': '✨' },
+      { 'id': 'fajr', 'ku': 'بەیانی', 'ar': 'الفجر', 'en': 'Fajr', 'icon': Icons.wb_twilight_rounded },
+      { 'id': 'dhuhr', 'ku': 'نیوەڕۆ', 'ar': 'الظهر', 'en': 'Dhuhr', 'icon': Icons.light_mode_rounded },
+      { 'id': 'asr', 'ku': 'عەسر', 'ar': 'العصر', 'en': 'Asr', 'icon': Icons.cloud_queue_rounded },
+      { 'id': 'maghrib', 'ku': 'مەغریب', 'ar': 'المغرب', 'en': 'Maghrib', 'icon': Icons.nightlight_round },
+      { 'id': 'isha', 'ku': 'عیشا', 'ar': 'العشاء', 'en': 'Isha', 'icon': Icons.bedtime_rounded },
+      { 'id': 'witr', 'ku': 'وێتر', 'ar': 'الوتر', 'en': 'Witr', 'icon': Icons.auto_awesome_rounded },
     ];
 
     final String langKey = settings.language == 'ar' ? 'ar' : settings.language == 'en' ? 'en' : 'ku';
@@ -79,7 +79,7 @@ Icon(Icons.edit, color: Theme.of(context).colorScheme.primary),
                   final prayer = prayers[idx];
                   final String prayerId = (prayer['id'] ?? '').toString();
                   final String prayerName = (prayer[langKey] ?? prayer['ku'] ?? '').toString();
-                  final String icon = (prayer['icon'] ?? '✨').toString();
+                  final IconData icon = prayer['icon'] as IconData? ?? Icons.mosque_rounded;
                   
                   // Get prayer count
                   int count = 0;
@@ -111,7 +111,7 @@ Icon(Icons.edit, color: Theme.of(context).colorScheme.primary),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Center(
-                                child: Text(icon, style: TextStyle(fontSize: 22)),
+                                child: Icon(icon, size: 22, color: Theme.of(context).colorScheme.primary),
                               ),
                             ),
                             SizedBox(width: 14),

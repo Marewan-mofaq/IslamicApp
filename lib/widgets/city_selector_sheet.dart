@@ -61,21 +61,6 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
     super.dispose();
   }
 
-  String _getCountryFlag(String countryCode) {
-    final code = countryCode.toUpperCase();
-    if (code == 'IQ') {
-      return '☀️';
-    }
-    if (code.length == 2) {
-      final a = code.codeUnitAt(0);
-      final b = code.codeUnitAt(1);
-      if (a >= 65 && a <= 90 && b >= 65 && b <= 90) {
-        return String.fromCharCodes([0x1F1E6 + (a - 65), 0x1F1E6 + (b - 65)]);
-      }
-    }
-    return '🌍';
-  }
-
   static const Set<String> _gulfCodes = {'SA', 'AE', 'QA', 'KW', 'BH', 'OM'};
   static const Set<String> _levantArabCodes = {
     'EG', 'JO', 'PS', 'SY', 'LB', 'YE', 'SD', 'MA', 'DZ', 'TN', 'LY', 'MR', 'SO', 'DJ', 'KM'
@@ -163,16 +148,16 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
     final isRTL = lang == 'ku' || lang == 'ar';
 
     final categories = [
-      {'id': 'all', 'label': lang == 'ku' ? '🌐 هەمووی (${widget.cities.length})' : (lang == 'ar' ? '🌐 الكل (${widget.cities.length})' : '🌐 All (${widget.cities.length})')},
-      {'id': 'kurdistan_iraq', 'label': lang == 'ku' ? '☀️ کوردستان و عێراق' : (lang == 'ar' ? '☀️ كردستان والعراق' : '☀️ Kurdistan & Iraq')},
-      {'id': 'gulf', 'label': lang == 'ku' ? '🇸🇦 کەنداو' : (lang == 'ar' ? '🇸🇦 الخليج' : '🇸🇦 Gulf')},
-      {'id': 'levant_arab', 'label': lang == 'ku' ? '🌙 وڵاتانی عەرەبی' : (lang == 'ar' ? '🌙 الدول العربية' : '🌙 Arab World')},
-      {'id': 'europe', 'label': lang == 'ku' ? '🇪🇺 ئەوروپا' : (lang == 'ar' ? '🇪🇺 أوروبا' : '🇪🇺 Europe')},
-      {'id': 'turkey', 'label': lang == 'ku' ? '🇹🇷 تورکیا' : (lang == 'ar' ? '🇹🇷 تركيا' : '🇹🇷 Turkey')},
-      {'id': 'iran', 'label': lang == 'ku' ? '🇮🇷 ئێران' : (lang == 'ar' ? '🇮🇷 إيران' : '🇮🇷 Iran')},
-      {'id': 'americas', 'label': lang == 'ku' ? '🌎 ئەمریکا' : (lang == 'ar' ? '🌎 الأمريكتين' : '🌎 Americas')},
-      {'id': 'africa', 'label': lang == 'ku' ? '🌍 ئەفریقا' : (lang == 'ar' ? '🌍 أفريقيا' : '🌍 Africa')},
-      {'id': 'asia', 'label': lang == 'ku' ? '🌏 ئاسیا' : (lang == 'ar' ? '🌏 آسيا' : '🌏 Asia')},
+      {'id': 'all', 'label': lang == 'ku' ? 'هەمووی (${widget.cities.length})' : (lang == 'ar' ? 'الكل (${widget.cities.length})' : 'All (${widget.cities.length})'), 'icon': Icons.public_rounded},
+      {'id': 'kurdistan_iraq', 'label': lang == 'ku' ? 'کوردستان و عێراق' : (lang == 'ar' ? 'كردستان والعراق' : 'Kurdistan & Iraq'), 'icon': Icons.place_rounded},
+      {'id': 'gulf', 'label': lang == 'ku' ? 'کەنداو' : (lang == 'ar' ? 'الخليج' : 'Gulf'), 'icon': Icons.location_city_rounded},
+      {'id': 'levant_arab', 'label': lang == 'ku' ? 'وڵاتانی عەرەبی' : (lang == 'ar' ? 'الدول العربية' : 'Arab World'), 'icon': Icons.apartment_rounded},
+      {'id': 'europe', 'label': lang == 'ku' ? 'ئەوروپا' : (lang == 'ar' ? 'أوروبا' : 'Europe'), 'icon': Icons.travel_explore_rounded},
+      {'id': 'turkey', 'label': lang == 'ku' ? 'تورکیا' : (lang == 'ar' ? 'تركيا' : 'Turkey'), 'icon': Icons.explore_rounded},
+      {'id': 'iran', 'label': lang == 'ku' ? 'ئێران' : (lang == 'ar' ? 'إيران' : 'Iran'), 'icon': Icons.explore_rounded},
+      {'id': 'americas', 'label': lang == 'ku' ? 'ئەمریکا' : (lang == 'ar' ? 'الأمريكتين' : 'Americas'), 'icon': Icons.language_rounded},
+      {'id': 'africa', 'label': lang == 'ku' ? 'ئەفریقا' : (lang == 'ar' ? 'أفريقيا' : 'Africa'), 'icon': Icons.map_rounded},
+      {'id': 'asia', 'label': lang == 'ku' ? 'ئاسیا' : (lang == 'ar' ? 'آسيا' : 'Asia'), 'icon': Icons.public_rounded},
     ];
 
     final filteredCities = widget.cities.where((c) {
@@ -383,8 +368,13 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
                           final cat = categories[idx];
                           final isSelected = _selectedCategory == cat['id'];
                           return ChoiceChip(
+                            avatar: Icon(
+                              cat['icon'] as IconData,
+                              size: 15,
+                              color: isSelected ? Colors.white : primaryColor,
+                            ),
                             label: Text(
-                              cat['label']!,
+                              cat['label'] as String,
                               style: TextStyle(
                                 fontSize: 12,
                                 fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
@@ -404,7 +394,7 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
                                 if (_selectedCategory == cat['id']) {
                                   _selectedCategory = 'all';
                                 } else {
-                                  _selectedCategory = cat['id']!;
+                                  _selectedCategory = cat['id'] as String;
                                 }
                               });
                             },
@@ -520,7 +510,6 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
                                     : lang == 'en'
                                         ? (city.countryEn ?? city.country)
                                         : city.countryKu;
-                                final flag = _getCountryFlag(city.country);
 
                                 final times = PrayerService.calculateTimes(
                                   latitude: city.lat,
@@ -556,16 +545,25 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
                                           children: [
                                             Row(
                                               children: [
-                                                // Flag Avatar
+                                                // Location Avatar
                                                 Container(
                                                   width: 38,
                                                   height: 38,
                                                   decoration: BoxDecoration(
-                                                    color: Colors.white.withOpacity(0.05),
+                                                    color: (isSelected ? primaryColor : Colors.white).withOpacity(0.08),
                                                     shape: BoxShape.circle,
+                                                    border: Border.all(
+                                                      color: (isSelected ? primaryColor : Colors.white).withOpacity(0.12),
+                                                    ),
                                                   ),
                                                   alignment: Alignment.center,
-                                                  child: Text(flag, style: const TextStyle(fontSize: 18)),
+                                                  child: Icon(
+                                                    city.country.toUpperCase() == 'IQ'
+                                                        ? Icons.place_rounded
+                                                        : Icons.public_rounded,
+                                                    color: isSelected ? primaryColor : Colors.white70,
+                                                    size: 19,
+                                                  ),
                                                 ),
                                                 const SizedBox(width: 12),
                                                 // City & Country
@@ -628,12 +626,12 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
                                               child: Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                  Text('🌅 ${times['Fajr']}', style: const TextStyle(fontSize: 11, color: Colors.white70)),
-                                                  Text('☀️ ${times['Sunrise']}', style: const TextStyle(fontSize: 11, color: Colors.white54)),
-                                                  Text('🌤️ ${times['Dhuhr']}', style: const TextStyle(fontSize: 11, color: Colors.white70)),
-                                                  Text('🌥️ ${times['Asr']}', style: const TextStyle(fontSize: 11, color: Colors.white70)),
-                                                  Text('🌆 ${times['Maghrib']}', style: const TextStyle(fontSize: 11, color: Colors.white70)),
-                                                  Text('🌙 ${times['Isha']}', style: const TextStyle(fontSize: 11, color: Colors.white70)),
+                                                  _buildMiniPrayerTime(Icons.wb_twilight_rounded, times['Fajr'] ?? '--:--'),
+                                                  _buildMiniPrayerTime(Icons.wb_sunny_rounded, times['Sunrise'] ?? '--:--', isDim: true),
+                                                  _buildMiniPrayerTime(Icons.light_mode_rounded, times['Dhuhr'] ?? '--:--'),
+                                                  _buildMiniPrayerTime(Icons.cloud_queue_rounded, times['Asr'] ?? '--:--'),
+                                                  _buildMiniPrayerTime(Icons.nightlight_round, times['Maghrib'] ?? '--:--'),
+                                                  _buildMiniPrayerTime(Icons.bedtime_rounded, times['Isha'] ?? '--:--'),
                                                 ],
                                               ),
                                             ),
@@ -653,6 +651,24 @@ class _CitySelectorSheetState extends State<CitySelectorSheet> {
           ),
         );
       },
+    );
+  }
+
+  Widget _buildMiniPrayerTime(IconData icon, String time, {bool isDim = false}) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, size: 12, color: isDim ? Colors.white38 : Colors.white60),
+        const SizedBox(width: 3),
+        Text(
+          time,
+          style: TextStyle(
+            fontSize: 10.5,
+            color: isDim ? Colors.white54 : Colors.white70,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ],
     );
   }
 }

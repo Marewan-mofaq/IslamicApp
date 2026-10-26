@@ -14,6 +14,20 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
   Map<String, dynamic>? _selectedSituation;
   Future<List<dynamic>>? _situationsFuture;
 
+  IconData _getSituationIcon(String id) {
+    switch (id) {
+      case 'sad': return Icons.sentiment_dissatisfied_rounded;
+      case 'angry': return Icons.warning_amber_rounded;
+      case 'anxious': case 'fear': return Icons.psychology_rounded;
+      case 'happy': case 'grateful': return Icons.sentiment_very_satisfied_rounded;
+      case 'confused': return Icons.help_outline_rounded;
+      case 'tired': case 'sick': return Icons.healing_rounded;
+      case 'guilty': case 'repentant': return Icons.favorite_rounded;
+      case 'lonely': return Icons.person_outline_rounded;
+      default: return Icons.volunteer_activism_rounded;
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -74,7 +88,7 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
                         : settings.language == 'en'
                         ? (item['title_en'] ?? item['title_ku'])
                         : item['title_ku'])?.toString() ?? '';
-                    final icon = (item['icon'] ?? '🤲').toString();
+                    final itemId = (item['id'] ?? '').toString();
                     
                     Color color = const Color(0xFF3B82F6);
                     try {
@@ -98,11 +112,18 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(icon, style: TextStyle(fontSize: 36)),
-                            SizedBox(height: 8),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: color.withOpacity(0.12),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(_getSituationIcon(itemId), size: 28, color: color),
+                            ),
+                            const SizedBox(height: 8),
                             Text(
                               name,
-                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
                             ),
                           ],
                         ),
@@ -163,9 +184,15 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    '${situation['icon'] ?? '🤲'}  $title',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: color),
+                  Row(
+                    children: [
+                      Icon(_getSituationIcon(situation['id']?.toString() ?? ''), color: color, size: 22),
+                      const SizedBox(width: 10),
+                      Text(
+                        title,
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: color, fontFamily: 'Rabar'),
+                      ),
+                    ],
                   ),
                   IconButton(
                     icon: Icon(Icons.close_rounded, size: 28),

@@ -185,7 +185,7 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
     final lang = settings.language;
     final primaryColor = Theme.of(context).colorScheme.primary;
 
-    final title = lang == 'ku' ? '🧭 ئاراستەی قیبلە' : lang == 'ar' ? '🧭 اتجاه القبلة' : '🧭 Qibla Compass';
+    final title = lang == 'ku' ? 'ئاراستەی قیبلە' : lang == 'ar' ? 'اتجاه القبلة' : 'Qibla Compass';
 
     double relativeAngle = (_qiblaAngle - _currentPhoneRotation).abs() % 360;
     if (relativeAngle > 180) relativeAngle = 360 - relativeAngle;
@@ -201,7 +201,14 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: TextStyle(color: primaryColor, fontFamily: 'Rabar')),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.explore_rounded, color: primaryColor, size: 22),
+            const SizedBox(width: 8),
+            Text(title, style: TextStyle(color: primaryColor, fontFamily: 'Rabar', fontWeight: FontWeight.bold)),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: Theme.of(context).cardColor,
         elevation: 0,
@@ -274,7 +281,7 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
                           Container(width: 1, height: 30, color: Colors.white10),
                           Row(
                             children: [
-                              const Text('🕋', style: TextStyle(fontSize: 18)),
+                              Icon(Icons.mosque_rounded, color: primaryColor, size: 20),
                               const SizedBox(width: 8),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -464,7 +471,13 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
                                       color: isAligned ? const Color(0xFF10B981) : primaryColor.withOpacity(0.3),
                                     ),
                                   ),
-                                  child: const Center(child: Text('🕋', style: TextStyle(fontSize: 26))),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.mosque_rounded,
+                                      size: 26,
+                                      color: isAligned ? const Color(0xFF10B981) : primaryColor,
+                                    ),
+                                  ),
                                 ),
 
                                 // Rotating Qibla Pointer Needle
@@ -527,7 +540,11 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(isAligned ? '✨ 🕋' : '🧭', style: const TextStyle(fontSize: 22)),
+                          Icon(
+                            isAligned ? Icons.check_circle_rounded : Icons.explore_rounded,
+                            color: isAligned ? const Color(0xFF10B981) : primaryColor,
+                            size: 24,
+                          ),
                           const SizedBox(width: 12),
                           Text(
                             isAligned
@@ -604,14 +621,23 @@ class _QiblaScreenState extends ConsumerState<QiblaScreen> with SingleTickerProv
                               textAlign: TextAlign.center,
                             ),
                             const SizedBox(height: 8),
-                            Text(
-                              lang == 'ku'
-                                  ? '💡 بۆ کالیبرەکردنەوەی وردبینی قیبلەپێو، مۆبایلەکەت بە شێوەی ژمارە (8) بجووڵێنە.'
-                                  : lang == 'ar'
-                                      ? '💡 لمعايرة البوصلة، حرك الهاتف في الهواء على شكل رقم (8).'
-                                      : '💡 To calibrate compass accuracy, wave phone in a figure-8 motion.',
-                              style: TextStyle(color: primaryColor.withOpacity(0.8), fontSize: 11, fontWeight: FontWeight.w500),
-                              textAlign: TextAlign.center,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.lightbulb_outline_rounded, size: 14, color: primaryColor.withOpacity(0.8)),
+                                const SizedBox(width: 6),
+                                Flexible(
+                                  child: Text(
+                                    lang == 'ku'
+                                        ? 'بۆ کالیبرەکردنەوەی وردبینی قیبلەپێو، مۆبایلەکەت بە شێوەی ژمارە (8) بجووڵێنە.'
+                                        : lang == 'ar'
+                                            ? 'لمعايرة البوصلة، حرك الهاتف في الهواء على شكل رقم (8).'
+                                            : 'To calibrate compass accuracy, wave phone in a figure-8 motion.',
+                                    style: TextStyle(color: primaryColor.withOpacity(0.8), fontSize: 11, fontWeight: FontWeight.w500),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),

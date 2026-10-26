@@ -25,7 +25,7 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
     final theme = settings.palette;
     final isRTL = settings.language == 'ku' || settings.language == 'ar';
     
-    final title = settings.language == 'ku' ? '🎡 بەشی منداڵان' : settings.language == 'ar' ? '🎡 عالم الأطفال' : "🎡 Kids' World";
+    final title = settings.language == 'ku' ? 'بەشی منداڵان' : settings.language == 'ar' ? 'عالم الأطفال' : "Kids' World";
     final subtitle = settings.language == 'ku'
         ? 'چیرۆکە خۆشەکان و وانە فێرکارییەکان'
         : settings.language == 'ar'
@@ -163,14 +163,15 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
                                   shape: BoxShape.circle,
                                   color: itemColor,
                                 ),
-                                child: Center(
-                                  child: Text(
-                                    item['icon'] ?? '📖',
-                                    style: TextStyle(fontSize: 28),
+                                child: const Center(
+                                  child: Icon(
+                                    Icons.child_care_rounded,
+                                    size: 28,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 14),
+                              const SizedBox(width: 14),
                               
                               // Info
                               Expanded(
@@ -179,24 +180,31 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
                                   children: [
                                     Text(
                                       storyTitle,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white,
                                         fontFamily: 'Rabar',
                                       ),
                                     ),
-                                    SizedBox(height: 6),
-                                    Text(
-                                      '🌟 $lesson',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.white.withOpacity(0.6),
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Rabar',
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
+                                    const SizedBox(height: 6),
+                                    Row(
+                                      children: [
+                                        const Icon(Icons.auto_awesome_rounded, size: 13, color: Colors.amberAccent),
+                                        const SizedBox(width: 4),
+                                        Expanded(
+                                          child: Text(
+                                            lesson,
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.white.withOpacity(0.7),
+                                              fontFamily: 'Rabar',
+                                            ),
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -304,10 +312,11 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                       color: Colors.white.withOpacity(0.2),
                       border: Border.all(color: Colors.white, width: 2),
                     ),
-                    child: Center(
-                      child: Text(
-                        story['icon'] ?? '📖',
-                        style: TextStyle(fontSize: 48),
+                    child: const Center(
+                      child: Icon(
+                        Icons.child_care_rounded,
+                        size: 48,
+                        color: Colors.white,
                       ),
                     ),
                   ),

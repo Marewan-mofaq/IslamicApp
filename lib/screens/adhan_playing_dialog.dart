@@ -162,18 +162,18 @@ class _AdhanPlayingDialogState extends State<AdhanPlayingDialog>
     final primaryColor = Theme.of(context).colorScheme.primary;
 
     final prayerTitles = {
-      'Fajr': {'ku': 'نوێژی بەیانی', 'ar': 'صلاة الفجر', 'en': 'Fajr Prayer', 'icon': '🌅'},
-      'Dhuhr': {'ku': 'نوێژی نیوەڕۆ', 'ar': 'صلاة الظهر', 'en': 'Dhuhr Prayer', 'icon': '🌤️'},
-      'Asr': {'ku': 'نوێژی عەسڕ', 'ar': 'صلاة العصر', 'en': 'Asr Prayer', 'icon': '🌥️'},
-      'Maghrib': {'ku': 'نوێژی مەغریب', 'ar': 'صلاة المغرب', 'en': 'Maghrib Prayer', 'icon': '🌆'},
-      'Isha': {'ku': 'نوێژی عیشا', 'ar': 'صلاة العشاء', 'en': 'Isha Prayer', 'icon': '🌙'},
+      'Fajr': {'ku': 'نوێژی بەیانی', 'ar': 'صلاة الفجر', 'en': 'Fajr Prayer', 'icon': Icons.wb_twilight_rounded},
+      'Dhuhr': {'ku': 'نوێژی نیوەڕۆ', 'ar': 'صلاة الظهر', 'en': 'Dhuhr Prayer', 'icon': Icons.light_mode_rounded},
+      'Asr': {'ku': 'نوێژی عەسڕ', 'ar': 'صلاة العصر', 'en': 'Asr Prayer', 'icon': Icons.cloud_queue_rounded},
+      'Maghrib': {'ku': 'نوێژی مەغریب', 'ar': 'صلاة المغرب', 'en': 'Maghrib Prayer', 'icon': Icons.nightlight_round},
+      'Isha': {'ku': 'نوێژی عیشا', 'ar': 'صلاة العشاء', 'en': 'Isha Prayer', 'icon': Icons.bedtime_rounded},
     };
 
     final prayerInfo = prayerTitles[widget.prayerName] ??
-        {'ku': 'کاتی بانگ', 'ar': 'وقت الأذان', 'en': 'Adhan Time', 'icon': '🕌'};
+        {'ku': 'کاتی بانگ', 'ar': 'وقت الأذان', 'en': 'Adhan Time', 'icon': Icons.mosque_rounded};
 
-    final prayerDisplayName = prayerInfo[widget.language] ?? widget.prayerName;
-    final prayerIcon = prayerInfo['icon'] ?? '🕌';
+    final prayerDisplayName = (prayerInfo[widget.language] as String?) ?? widget.prayerName;
+    final prayerIcon = (prayerInfo['icon'] as IconData?) ?? Icons.mosque_rounded;
 
     return Directionality(
       textDirection: isRTL ? TextDirection.rtl : TextDirection.ltr,
@@ -256,9 +256,10 @@ class _AdhanPlayingDialogState extends State<AdhanPlayingDialog>
                             ),
                           ),
                           child: Center(
-                            child: Text(
+                            child: Icon(
                               prayerIcon,
-                              style: const TextStyle(fontSize: 38),
+                              size: 40,
+                              color: primaryColor,
                             ),
                           ),
                         ),
