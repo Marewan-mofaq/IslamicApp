@@ -281,15 +281,11 @@ class StatsScreen extends ConsumerWidget {
                     itemCount: activity.badges.length,
                     itemBuilder: (context, idx) {
                       final badge = activity.badges[idx];
-                      
-                      // Split badge name into icon + text
-                      final partsKu = badge.nameKu.split(' ');
-                      final icon = partsKu[0];
                       final name = settings.language == 'ar' 
                           ? badge.nameAr 
                           : settings.language == 'en' 
                           ? badge.nameEn 
-                          : partsKu.skip(1).join(' ');
+                          : badge.nameKu;
 
                       return Container(
                         width: 100,
@@ -303,8 +299,8 @@ class StatsScreen extends ConsumerWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(icon, style: TextStyle(fontSize: 28)),
-                            SizedBox(height: 6),
+                            Icon(_getBadgeIcon(badge.nameEn), size: 28, color: Theme.of(context).colorScheme.primary),
+                            const SizedBox(height: 6),
                             Text(
                               name,
                               style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar'),
@@ -323,6 +319,25 @@ class StatsScreen extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  IconData _getBadgeIcon(String nameEn) {
+    switch (nameEn) {
+      case 'Worship Devotee':
+        return Icons.verified_user_rounded;
+      case '3-Day Worship Streak':
+        return Icons.local_fire_department_rounded;
+      case '7-Day Worship Streak':
+        return Icons.bolt_rounded;
+      case '30-Day Master':
+        return Icons.military_tech_rounded;
+      case 'Dhikr Novice':
+        return Icons.fingerprint_rounded;
+      case 'Quran Reader':
+        return Icons.menu_book_rounded;
+      default:
+        return Icons.emoji_events_rounded;
+    }
   }
 
   Widget _buildStatCard(IconData icon, Color color, String val, String label) {

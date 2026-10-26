@@ -103,6 +103,45 @@ class _AdhkarTabState extends ConsumerState<AdhkarTab> {
     super.dispose();
   }
 
+  IconData _getAdhkarCategoryIcon(String catId) {
+    switch (catId.toLowerCase()) {
+      case 'morning':
+        return Icons.wb_sunny_rounded;
+      case 'evening':
+        return Icons.nightlight_round;
+      case '2':
+        return Icons.bedtime_rounded;
+      case '3':
+        return Icons.wb_twilight_rounded;
+      case '4':
+      case '5':
+        return Icons.clean_hands_rounded;
+      case '6':
+      case '7':
+        return Icons.water_drop_rounded;
+      case '8':
+      case '9':
+        return Icons.home_rounded;
+      case '10':
+      case '11':
+      case '12':
+      case 'mosque':
+        return Icons.mosque_rounded;
+      case 'adhan':
+        return Icons.volume_up_rounded;
+      case 'prayer':
+        return Icons.access_time_filled_rounded;
+      case 'food':
+        return Icons.restaurant_rounded;
+      case 'travel':
+        return Icons.explore_rounded;
+      case 'hajj':
+        return Icons.flag_rounded;
+      default:
+        return Icons.auto_stories_rounded;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final settings = ref.watch(settingsProvider);
@@ -215,7 +254,7 @@ class _AdhkarTabState extends ConsumerState<AdhkarTab> {
                                   border: Border.all(color: catColor.withOpacity(0.4)),
                                 ),
                                 child: Center(
-                                  child: Text(cat.icon, style: TextStyle(fontSize: 22)),
+                                  child: Icon(_getAdhkarCategoryIcon(cat.id), color: catColor, size: 22),
                                 ),
                               ),
                               title: Text(
