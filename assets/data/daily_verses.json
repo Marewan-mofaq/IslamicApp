@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "ar": "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا ۝ وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ",
+    "ku": "هەر کەسێک لە خودا بترسێت و پارێزگار بێت، دەرچەی بۆ دروست دەکات و لە شوێنێکەوە ڕزقی دەدات کە بیری لێ ناکاتەوە.",
+    "en": "And whoever fears Allah - He will make for him a way out and provide for him from where he does not expect.",
+    "surah": "الطلاق",
+    "surah_number": 65,
+    "ayah_number": 2,
+    "ref": "الطلاق: ٢-٣"
+  },
+  {
+    "id": 2,
+    "ar": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+    "ku": "بەڕاستی لەگەڵ هەموو تەنگانەیەکدا ئاسودەیی و فراوانی هەیە، بە دڵنیاییەوە لەگەڵ هەموو تەنگانەیەکدا ئاسودەیی هەیە.",
+    "en": "For indeed, with hardship [will be] ease. Indeed, with hardship [will be] ease.",
+    "surah": "الشرح",
+    "surah_number": 94,
+    "ayah_number": 5,
+    "ref": "الشرح: ٥-٦"
+  },
+  {
+    "id": 3,
+    "ar": "قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ ۚ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا",
+    "ku": "بڵێ: ئەی بەندەکانم ئەوانەی زیادەڕۆیتان لەسەر خۆتان کردووە، لە ڕەحمەتی خودا بێهیوا مەبن؛ بەڕاستی خودا لە هەموو گوناهەکان خۆش دەبێت.",
+    "en": "Say, 'O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins.'",
+    "surah": "الزمر",
+    "surah_number": 39,
+    "ayah_number": 53,
+    "ref": "الزمر: ٥٣"
+  },
+  {
+    "id": 4,
+    "ar": "الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+    "ku": "ئەوانەی باوەڕیان هێناوە و دڵەکانیان بە یادی خودا دەحەسێتەوە؛ ئاگادار بن تەنها بە یادی خودا دڵەکان ئارام دەگرن.",
+    "en": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.",
+    "surah": "الرعد",
+    "surah_number": 13,
+    "ayah_number": 28,
+    "ref": "الرعد: ٢٨"
+  },
+  {
+    "id": 5,
+    "ar": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+    "ku": "یادم بکەن تا یادتان بکەم، و سوپاسم بکەن و سپڵەیی و بێباوەڕیم بەرامبەر مەکەن.",
+    "en": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 152,
+    "ref": "البقرة: ١٥٢"
+  },
+  {
+    "id": 6,
+    "ar": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
+    "ku": "ئەگەر بەندەکانم پرسیاری منیان لێ کردیت، ئەوا بێگومان من زۆر نزیکم؛ وەڵامی دوعای دوعاخواز دەدەمەوە کاتێک لێم دەپاڕێتەوە.",
+    "en": "And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 186,
+    "ref": "البقرة: ١٨٦"
+  },
+  {
+    "id": 7,
+    "ar": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ",
+    "ku": "لە داهاتوودا پەروەردگارت ئەوەندە بەخششت پێ دەبەخشێت هەتا بە تەواوی ڕازی دەبیت.",
+    "en": "And your Lord is going to give you, and you will be satisfied.",
+    "surah": "الضحى",
+    "surah_number": 93,
+    "ayah_number": 5,
+    "ref": "الضحى: ٥"
+  },
+  {
+    "id": 8,
+    "ar": "وَتَوَكَّلْ عَلَى اللَّهِ ۚ وَكَفَىٰ بِاللَّهِ وَكِيلًا",
+    "ku": "پشت بە خودا ببەستە لە هەموو کارەکانتدا، و خودا بەسە بۆ ئەوەی پشتیوان و کارساز بێت.",
+    "en": "And rely upon Allah; and sufficient is Allah as Disposer of affairs.",
+    "surah": "الأحزاب",
+    "surah_number": 33,
+    "ayah_number": 3,
+    "ref": "الأحزاب: ٣"
+  },
+  {
+    "id": 9,
+    "ar": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
+    "ku": "کۆڵ مەدەن و سست مەبن و خەمبار مەبن؛ ئێوە سەربەرز و باڵادەستن ئەگەر باوەڕدار بن.",
+    "en": "So do not weaken and do not grieve, and you will be superior if you are [true] believers.",
+    "surah": "آل عمران",
+    "surah_number": 3,
+    "ayah_number": 139,
+    "ref": "آل عمران: ١٣٩"
+  },
+  {
+    "id": 10,
+    "ar": "وَاصْبِرُوا ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+    "ku": "ئارامگر بن و بەرگە بگرن؛ بێگومان خودا هەمیشە لەگەڵ ئارامگران و خۆڕاگراندایە.",
+    "en": "And be patient. Indeed, Allah is with the patient.",
+    "surah": "الأنفال",
+    "surah_number": 8,
+    "ayah_number": 46,
+    "ref": "الأنفال: ٤٦"
+  },
+  {
+    "id": 11,
+    "ar": "وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+    "ku": "مژدە بدە بە خۆڕاگران؛ ئەوانەی کاتێک تووشی بەڵایەک دەبن دەڵێن: ئێمە موڵکی خوداین و بۆ لای ئەویش دەگەڕێینەوە.",
+    "en": "And give good tidings to the patient, who, when disaster strikes them, say, 'Indeed we belong to Allah, and indeed to Him we will return.'",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 155,
+    "ref": "البقرة: ١٥٥-١٥٦"
+  },
+  {
+    "id": 12,
+    "ar": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+    "ku": "سوێند بێت ئەگەر سوپاسگوزار بن، ئەوا بە دڵنیاییەوە چاکە و نیعمەتەکانتان بۆ زیاد دەکەم.",
+    "en": "If you are grateful, I will surely increase you [in favor].",
+    "surah": "إبراهيم",
+    "surah_number": 14,
+    "ayah_number": 7,
+    "ref": "إبراهيم: ٧"
+  },
+  {
+    "id": 13,
+    "ar": "وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ",
+    "ku": "ئێمە لە قورئانەوە ئەو ئایەتانە دەنێرینە خوارەوە کە شیفای دڵ و جەستە و ڕەحمەتن بۆ باوەڕداران.",
+    "en": "And We send down of the Quran that which is healing and mercy for the believers.",
+    "surah": "الإسراء",
+    "surah_number": 17,
+    "ayah_number": 82,
+    "ref": "الإسراء: ٨٢"
+  },
+  {
+    "id": 14,
+    "ar": "وَلَا تَيْأَسُوا مِن رَّوْحِ اللَّهِ ۖ إِنَّهُ لَا يَيْأَسُ مِن رَّوْحِ اللَّهِ إِلَّا الْقَوْمُ الْكَافِرُونَ",
+    "ku": "لە ڕەحمەت و دەرووکردنەوەی خودا بێهیوا مەبن؛ تەنها خەڵکانی بێباوەڕ لە ڕەحمەتی خودا بێهیوا دەبن.",
+    "en": "And do not despair of relief from Allah. Indeed, no one despairs of relief from Allah except the disbelieving people.",
+    "surah": "يوسف",
+    "surah_number": 12,
+    "ayah_number": 87,
+    "ref": "يوسف: ٨٧"
+  },
+  {
+    "id": 15,
+    "ar": "قَالَ لَا تَخَافَا ۖ إِنَّنِي مَعَكُمَا أَسْمَعُ وَأَرَىٰ",
+    "ku": "فەرمووی: مەترسن، بەڕاستی من لەگەڵ ئێوەدام و دەبیستم و دەبینم.",
+    "en": "He said, 'Fear not. Indeed, I am with you both; I hear and I see.'",
+    "surah": "طه",
+    "surah_number": 20,
+    "ayah_number": 46,
+    "ref": "طه: ٤٦"
+  },
+  {
+    "id": 16,
+    "ar": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+    "ku": "هیچ پەرستراوێک نییە شایەنی پەرستن بێت جگە لە تۆ، پاکی و بێگەردی بۆ تۆیە، بەڕاستی من لە ستەمکاران بووم.",
+    "en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
+    "surah": "الأنبياء",
+    "surah_number": 21,
+    "ayah_number": 87,
+    "ref": "الأنبياء: ٨٧"
+  },
+  {
+    "id": 17,
+    "ar": "وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ",
+    "ku": "پەروەردگارتان فەرموویەتی: هانام بۆ بهێنن و لێم بپاڕێنەوە، وەڵامتان دەدەمەوە.",
+    "en": "And your Lord says, 'Call upon Me; I will respond to you.'",
+    "surah": "غافر",
+    "surah_number": 40,
+    "ayah_number": 60,
+    "ref": "غافر: ٦٠"
+  },
+  {
+    "id": 18,
+    "ar": "حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+    "ku": "خودا بەسە بۆ من، هیچ پەرستراوێک نییە جگە لە ئەو، پشتم بە ئەو بەستووە و ئەو پەروەردگاری عەرشی گەورەیە.",
+    "en": "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+    "surah": "التوبة",
+    "surah_number": 9,
+    "ayah_number": 129,
+    "ref": "التوبة: ١٢٩"
+  },
+  {
+    "id": 19,
+    "ar": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "ku": "پەروەردگارمان! لە هاوسەرەکانمان و نەوەکانمان مایەی چاوڕوونی و دڵخۆشیمان پێ ببەخشە و بمانکە بە پێشەوای پارێزگاران.",
+    "en": "Our Lord, grant us from among our wives and offspring comfort to our eyes and make us a leader for the righteous.",
+    "surah": "الفرقان",
+    "surah_number": 25,
+    "ayah_number": 74,
+    "ref": "الفرقان: ٧٤"
+  },
+  {
+    "id": 20,
+    "ar": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ",
+    "ku": "خودا ڕووناکیکەرەوەی ئاسمانەکان و زەوییە.",
+    "en": "Allah is the Light of the heavens and the earth.",
+    "surah": "النور",
+    "surah_number": 24,
+    "ayah_number": 35,
+    "ref": "النور: ٣٥"
+  },
+  {
+    "id": 21,
+    "ar": "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ",
+    "ku": "ئێمە لە شادەماری ملیشی لە مرۆڤ نزیکترین بە زانست و دەسەڵاتمان.",
+    "en": "And We are closer to him than his jugular vein.",
+    "surah": "ق",
+    "surah_number": 50,
+    "ayah_number": 16,
+    "ref": "ق: ١٦"
+  },
+  {
+    "id": 22,
+    "ar": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ",
+    "ku": "ئەوانەی لە پێناوی ئێمەدا هەوڵ و تێکۆشان دەدەن، بە دڵنیاییەوە ڕێگاکانی خۆمانیان نیشان دەدەین؛ بێگومان خودا لەگەڵ چاکەکاراندایە.",
+    "en": "And those who strive for Us - We will surely guide them to Our ways. And indeed, Allah is with the doers of good.",
+    "surah": "العنكبوت",
+    "surah_number": 29,
+    "ayah_number": 69,
+    "ref": "العنكبوت: ٦٩"
+  },
+  {
+    "id": 23,
+    "ar": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ۝ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+    "ku": "ئەی نەفسی ئارامگرتوو بە باوەڕ و یاد! بگەڕێوە بۆ لای پەروەردگارت لە کاتێکدا تۆ لەو ڕازیت و ئەویش لە تۆ ڕازییە.",
+    "en": "O reassured soul, return to your Lord, well-pleased and pleasing [to Him].",
+    "surah": "الفجر",
+    "surah_number": 89,
+    "ayah_number": 27,
+    "ref": "الفجر: ٢٧-٢٨"
+  },
+  {
+    "id": 24,
+    "ar": "وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+    "ku": "ئەو لەگەڵتاندایە لە هەر کوێ بن؛ و خودا بە هەموو کردەوەکانتان بینایە.",
+    "en": "And He is with you wherever you are. And Allah, of what you do, is Seeing.",
+    "surah": "الحديد",
+    "surah_number": 57,
+    "ayah_number": 4,
+    "ref": "الحديد: ٤"
+  },
+  {
+    "id": 25,
+    "ar": "وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ",
+    "ku": "سەرکەوتن و کۆششم تەنها لەلایەن خوداوەیە؛ پشتم بە ئەو بەستووە و بۆ لای ئەویش دەگەڕێمەوە.",
+    "en": "And my success is not but through Allah. Upon Him I have relied, and to Him I return.",
+    "surah": "هود",
+    "surah_number": 11,
+    "ayah_number": 88,
+    "ref": "هود: ٨٨"
+  },
+  {
+    "id": 26,
+    "ar": "إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوا وَّالَّذِينَ هُم مُّحْسِنُونَ",
+    "ku": "بەڕاستی خودا لەگەڵ ئەوانەدایە کە لە گوناه خۆیان دەپارێزن و ئەوانەی لە کارەکانیاندا چاکەکارن.",
+    "en": "Indeed, Allah is with those who fear Him and those who are doers of good.",
+    "surah": "النحل",
+    "surah_number": 16,
+    "ayah_number": 128,
+    "ref": "النحل: ١٢٨"
+  },
+  {
+    "id": 27,
+    "ar": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى الْخَاشِعِينَ",
+    "ku": "داوای یارمەتی و کۆمەک بکەن بە ئارامگری و ئەنجامدانی نوێژ؛ و بەڕاستی نوێژ قورسە مەگەر بۆ ئەوانەی لە خودا ترساون.",
+    "en": "And seek help through patience and prayer, and indeed, it is difficult except for the humbly submissive [to Allah].",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 45,
+    "ref": "البقرة: ٤٥"
+  },
+  {
+    "id": 28,
+    "ar": "فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ ۚ إِنَّ اللَّهَ يُحِبُّ الْمُتَوَكِّلِينَ",
+    "ku": "کاتێک بڕیارت دا و دڵنیا بوویت، پشت بە خودا ببەستە؛ بێگومان خودا ئەو کەسانەی خۆش دەوێت کە پشتی پێ دەبەستن.",
+    "en": "Then when you have taken a decision, rely upon Allah. Indeed, Allah loves those who rely [upon Him].",
+    "surah": "آل عمران",
+    "surah_number": 3,
+    "ayah_number": 159,
+    "ref": "آل عمران: ١٥٩"
+  },
+  {
+    "id": 29,
+    "ar": "أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+    "ku": "ئاگادار بن، بێگومان دۆستانی خودا هیچ ترسێکیان لەسەر نییە و هیچ خەمۆک و دڵتەنگ نابن.",
+    "en": "Unquestionably, for the allies of Allah there will be no fear concerning them, nor will they grieve.",
+    "surah": "يونس",
+    "surah_number": 10,
+    "ayah_number": 62,
+    "ref": "يونس: ٦٢"
+  },
+  {
+    "id": 30,
+    "ar": "مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا",
+    "ku": "هەر ڕەحمەتێک کە خودا دەرگاکەی بۆ خەڵک بکاتەوە، هیچ کەسێک ناتوانێت پێشی پێ بگرێت.",
+    "en": "Whatever Allah grants to people of mercy - none can withhold it.",
+    "surah": "فاطر",
+    "surah_number": 35,
+    "ayah_number": 2,
+    "ref": "فاطر: ٢"
+  },
+  {
+    "id": 31,
+    "ar": "وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ ۖ وَعَسَىٰ أَن تُحِبُّوا شَيْئًا وَهُوَ شَرٌّ لَّكُمْ ۗ وَاللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ",
+    "ku": "لەوانەیە شتێکتان پێ ناخۆش بێت کەچی خێر و قازانجی ئێوەی تێدا بێت، و لەوانەیە شتێکتان پێ خۆش بێت کەچی زیانی بۆتان هەبێت؛ خودا دەزانێت و ئێوە نازانن.",
+    "en": "Perhaps you dislike a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allah knows, while you know not.",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 216,
+    "ref": "البقرة: ٢١٦"
+  },
+  {
+    "id": 32,
+    "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا ۝ وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا",
+    "ku": "ئەی ئەوانەی باوەڕتان هێناوە، زۆر یادی خودا بکەن و لە بەیانیان و ئێواراندا بە پاکی و بێگەردی ناوی ببەن.",
+    "en": "O you who have believed, remember Allah with much remembrance. And exalt Him morning and afternoon.",
+    "surah": "الأحزاب",
+    "surah_number": 33,
+    "ayah_number": 41,
+    "ref": "الأحزاب: ٤١-٤٢"
+  },
+  {
+    "id": 33,
+    "ar": "رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+    "ku": "پەروەردگارمان! لە لایەن خۆتەوە ڕەحمەتمان پێ ببەخشە و ڕێگای دروست و هیدایەتمان لە کارەکانماندا بۆ ئاسان بکە.",
+    "en": "Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
+    "surah": "الكهف",
+    "surah_number": 18,
+    "ayah_number": 10,
+    "ref": "الكهف: ١٠"
+  },
+  {
+    "id": 34,
+    "ar": "مَنْ عَمِلَ صَالِحًا مِّن ذَكَرٍ أَوْ أُنثَىٰ وَهُوَ مُؤْمِنٌ فَلَنُحْيِيَنَّهُ حَيَاةً طَيِّبَةً",
+    "ku": "هەر کەسێک لە نێر یان مێ کردەوەی چاک بکات لە کاتێکدا باوەڕدار بێت، بە دڵنیاییەوە ژیانێکی پاک و بەختەوەری پێ دەبەخشین.",
+    "en": "Whoever does righteousness, whether male or female, while he is a believer - We will surely cause him to live a good life.",
+    "surah": "النحل",
+    "surah_number": 16,
+    "ayah_number": 97,
+    "ref": "النحل: ٩٧"
+  },
+  {
+    "id": 35,
+    "ar": "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+    "ku": "و هەر کاتێک نەخۆش بکەوم، تەنها ئەو خودایە شیفام دەدات.",
+    "en": "And when I am ill, it is He who cures me.",
+    "surah": "الشعراء",
+    "surah_number": 26,
+    "ayah_number": 80,
+    "ref": "الشعراء: ٨٠"
+  },
+  {
+    "id": 36,
+    "ar": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+    "ku": "پەروەردگارم! من زۆر پێویستم بە هەر خێر و چاکەیەکە کە بۆم داببەزێنیت.",
+    "en": "My Lord, indeed I am, for whatever good You would send down to me, in need.",
+    "surah": "القصص",
+    "surah_number": 28,
+    "ayah_number": 24,
+    "ref": "القصص: ٢٤"
+  },
+  {
+    "id": 37,
+    "ar": "إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+    "ku": "تەنها خۆڕاگران و ئارامگران پاداشتەکەیان بە تەواوی و بەبێ سنوور و ژماردن پێ دەبەخشرێت.",
+    "en": "Indeed, the patient will be given their reward without account.",
+    "surah": "الزمر",
+    "surah_number": 39,
+    "ayah_number": 10,
+    "ref": "الزمر: ١٠"
+  },
+  {
+    "id": 38,
+    "ar": "اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَن يَشَاءُ ۖ وَهُوَ الْقَوِيُّ الْعَزِيزُ",
+    "ku": "خودا میهرەبان و بەسۆزە بەرامبەر بەندەکانی، ڕزق و ڕۆزی دەدات بە هەر کەسێک بیەوێت؛ و ئەو بەهێز و باڵادەستە.",
+    "en": "Allah is subtle with His servants; He gives provision to whom He wills. And He is the Powerful, the Exalted in Might.",
+    "surah": "الشورى",
+    "surah_number": 42,
+    "ayah_number": 19,
+    "ref": "الشورى: ١٩"
+  },
+  {
+    "id": 39,
+    "ar": "هُوَ الَّذِي أَنزَلَ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ لِيَزْدَادُوا إِيمَانًا مَّعَ إِيمَانِهِمْ",
+    "ku": "ئەو زاتەیە کە ئارامی و هێمنی لە دڵی باوەڕداران دابەزاند تاوەکو باوەڕێکی زیاتر بە باوەڕەکەیان زیاد ببێت.",
+    "en": "It is He who sent down tranquility into the hearts of the believers that they would increase faith upon faith.",
+    "surah": "الفتح",
+    "surah_number": 48,
+    "ayah_number": 4,
+    "ref": "الفتح: ٤"
+  },
+  {
+    "id": 40,
+    "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا تُوبُوا إِلَى اللَّهِ تَوْبَةً نَّصُوحًا",
+    "ku": "ئەی ئەوانەی باوەڕتان هێناوە، بە تۆبەیەکی ڕاستەقینە و دڵسۆزانە بگەڕێنەوە بۆ لای خودا.",
+    "en": "O you who have believed, repent to Allah with sincere repentance.",
+    "surah": "التحريم",
+    "surah_number": 66,
+    "ayah_number": 8,
+    "ref": "التحريم: ٨"
+  },
+  {
+    "id": 41,
+    "ar": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ ۝ وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّىٰ",
+    "ku": "بەڕاستی ڕزگاری بوو و سەرکەوت ئەوەی دەروونی خۆی پاک ڕاگرت و ناوی پەروەردگاری هێنا و نوێژی کرد.",
+    "en": "He has certainly succeeded who purifies himself, and mentions the name of his Lord and prays.",
+    "surah": "الأعلى",
+    "surah_number": 87,
+    "ayah_number": 14,
+    "ref": "الأعلى: ١٤-١٥"
+  },
+  {
+    "id": 42,
+    "ar": "وَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِّنَ اللَّيْلِ ۚ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ",
+    "ku": "نوێژ ئەنجام بدە لە هەردوو سەری ڕۆژدا و لە چەند بەشێکی شەودا؛ بێگومان چاکەکان خراپەکان دەسڕنەوە.",
+    "en": "And establish prayer at the two ends of the day and at the approach of the night. Indeed, good deeds do away with misdeeds.",
+    "surah": "هود",
+    "surah_number": 11,
+    "ayah_number": 114,
+    "ref": "هود: ١١٤"
+  },
+  {
+    "id": 43,
+    "ar": "إِنَّ رَبِّي قَرِيبٌ مُّجِيبٌ",
+    "ku": "بەڕاستی پەروەردگاری من هەمیشە نزیکە و وەڵامدەرەوەی دوعاکانە.",
+    "en": "Indeed, my Lord is near and responsive.",
+    "surah": "هود",
+    "surah_number": 11,
+    "ayah_number": 61,
+    "ref": "هود: ٦١"
+  },
+  {
+    "id": 44,
+    "ar": "قُل لَّن يُصِيبَنَا إِلَّا مَا كَتَبَ اللَّهُ لَنَا هُوَ مَوْلَانَا ۚ وَعَلَى اللَّهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
+    "ku": "بڵێ: هیچ کات تووشی هیچ ناڕەحەتییەک نابین مەگەر ئەوەی خودا بۆی نووسیبین، ئەو پەروەردگار و پشتیوانی ئێمەیە و با باوەڕداران تەنها پشت بە ئەو ببەستن.",
+    "en": "Say, 'Never will we be struck except by what Allah has decreed for us; He is our protector.' And upon Allah let the believers rely.",
+    "surah": "التوبة",
+    "surah_number": 9,
+    "ayah_number": 51,
+    "ref": "التوبة: ٥١"
+  },
+  {
+    "id": 45,
+    "ar": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+    "ku": "و هەمیشە بڵێ: پەروەردگارم! زانست و تێگەیشتنم بۆ زیاد بکە.",
+    "en": "And say, 'My Lord, increase me in knowledge.'",
+    "surah": "طه",
+    "surah_number": 20,
+    "ayah_number": 114,
+    "ref": "طه: ١١٤"
+  },
+  {
+    "id": 46,
+    "ar": "إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ ۗ وَلَذِكْرُ اللَّهِ أَكْبَرُ",
+    "ku": "بەڕاستی نوێژ ڕێگری دەکات لە بێڕەوشتی و کاری ناپەسەند، و بێگومان یادی خودا لە هەموو شتێک گەورەترە.",
+    "en": "Indeed, prayer prohibits immorality and wrongdoing, and the remembrance of Allah is greater.",
+    "surah": "العنكبوت",
+    "surah_number": 29,
+    "ayah_number": 45,
+    "ref": "العنكبوت: ٤٥"
+  },
+  {
+    "id": 47,
+    "ar": "وَقُولُوا لِلنَّاسِ حُسْنًا",
+    "ku": "لەگەڵ خەڵکیدا بە قسەی جوان و ڕەفتاری چاک و بەڕێزانە بدوێن.",
+    "en": "And speak to people good [words].",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 83,
+    "ref": "البقرة: ٨٣"
+  },
+  {
+    "id": 48,
+    "ar": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ",
+    "ku": "یارمەتی و پشتیوانی یەکتر بن لە چاکەکاری و لەخواترساندا، و هەرگیز یارمەتی یەکتر مەدەن لەسەر گوناه و دەستدرێژیکردن.",
+    "en": "And cooperate in righteousness and piety, but do not cooperate in sin and aggression.",
+    "surah": "المائدة",
+    "surah_number": 5,
+    "ayah_number": 2,
+    "ref": "المائدة: ٢"
+  },
+  {
+    "id": 49,
+    "ar": "إِنَّ مَعِيَ رَبِّي سَيَهْدِينِ",
+    "ku": "بەڕاستی پەروەردگارم لەگەڵمدایە و ڕێنماییم دەکات بەرەو دەرچە و سەرکەوتن.",
+    "en": "Indeed, with me is my Lord; He will guide me.",
+    "surah": "الشعراء",
+    "surah_number": 26,
+    "ayah_number": 62,
+    "ref": "الشعراء: ٦٢"
+  },
+  {
+    "id": 50,
+    "ar": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+    "ku": "خودایە کە هیچ پەرستراوێک نییە شایەنی پەرستن بێت جگە لە ئەو، زیندووی هەمیشەیی و ڕاگری بوونەوەرە؛ نە وەنەوز دەیگرێت و نە خەو.",
+    "en": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep.",
+    "surah": "البقرة",
+    "surah_number": 2,
+    "ayah_number": 255,
+    "ref": "البقرة: ٢٥٥"
+  }
+]

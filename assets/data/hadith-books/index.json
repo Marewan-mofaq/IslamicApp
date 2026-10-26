@@ -1,0 +1,58 @@
+[
+  {
+    "key": "bukhari",
+    "name_ar": "صحيح البخاري",
+    "name_ku": "سەحیحی بوخاری",
+    "name_en": "Sahih al-Bukhari",
+    "totalHadiths": 7277,
+    "totalChapters": 97
+  },
+  {
+    "key": "muslim",
+    "name_ar": "صحيح مسلم",
+    "name_ku": "سەحیحی موسلیم",
+    "name_en": "Sahih Muslim",
+    "totalHadiths": 7459,
+    "totalChapters": 57
+  },
+  {
+    "key": "abudawud",
+    "name_ar": "سنن أبي داود",
+    "name_ku": "سونەنی ئەبوو داود",
+    "name_en": "Sunan Abu Dawud",
+    "totalHadiths": 5276,
+    "totalChapters": 43
+  },
+  {
+    "key": "tirmidhi",
+    "name_ar": "جامع الترمذي",
+    "name_ku": "جامیعی تیرمیزی",
+    "name_en": "Jami at-Tirmidhi",
+    "totalHadiths": 4053,
+    "totalChapters": 49
+  },
+  {
+    "key": "nasai",
+    "name_ar": "سنن النسائي",
+    "name_ku": "سونەنی نەسائی",
+    "name_en": "Sunan an-Nasa'i",
+    "totalHadiths": 5768,
+    "totalChapters": 52
+  },
+  {
+    "key": "ibnmajah",
+    "name_ar": "سنن ابن ماجه",
+    "name_ku": "سونەنی ئیبن ماجە",
+    "name_en": "Sunan Ibn Majah",
+    "totalHadiths": 4345,
+    "totalChapters": 38
+  },
+  {
+    "key": "nawawi40",
+    "name_ar": "الأربعون النووية",
+    "name_ku": "چلی نەوەوی",
+    "name_en": "Nawawi's Forty Hadith",
+    "totalHadiths": 42,
+    "totalChapters": 1
+  }
+]

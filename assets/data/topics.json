@@ -1,0 +1,578 @@
+[
+  {
+    "id": "faith",
+    "ku": "باوەڕ (ئیمان)",
+    "ar": "الإيمان",
+    "en": "Faith",
+    "icon": "✨",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 285,
+        "title": "باوەڕ بە پێغەمبەران"
+      },
+      {
+        "surah": 3,
+        "verse": 191,
+        "title": "بیروکردنەوە"
+      },
+      {
+        "surah": 4,
+        "verse": 136,
+        "title": "پایەکانی ئیمان"
+      }
+    ]
+  },
+  {
+    "id": "gratitude",
+    "ku": "سوپاسگوزاری (شوکر)",
+    "ar": "الشكر",
+    "en": "Gratitude",
+    "icon": "🤲",
+    "verses": [
+      {
+        "surah": 14,
+        "verse": 7,
+        "title": "زیادبوونی نیعمەت"
+      },
+      {
+        "surah": 2,
+        "verse": 152,
+        "title": "یادی خودا"
+      },
+      {
+        "surah": 16,
+        "verse": 114,
+        "title": "شوکرانەی خودا"
+      }
+    ]
+  },
+  {
+    "id": "repentance",
+    "ku": "تەوبە و گەڕانەوە",
+    "ar": "التوبة",
+    "en": "Repentance",
+    "icon": "🌱",
+    "verses": [
+      {
+        "surah": 39,
+        "verse": 53,
+        "title": "بێئومێد نەبوون"
+      },
+      {
+        "surah": 66,
+        "verse": 8,
+        "title": "تەوبەی ڕاستەقینە"
+      },
+      {
+        "surah": 2,
+        "verse": 222,
+        "title": "خۆشەویستی تەوبەکاران"
+      }
+    ]
+  },
+  {
+    "id": "parents",
+    "ku": "دایک و باوک",
+    "ar": "الوالدين",
+    "en": "Parents",
+    "icon": "❤️",
+    "verses": [
+      {
+        "surah": 17,
+        "verse": 23,
+        "title": "حەقی دایک و باوک"
+      },
+      {
+        "surah": 31,
+        "verse": 14,
+        "title": "وەسێتی خودا"
+      },
+      {
+        "surah": 46,
+        "verse": 15,
+        "title": "باشی لەگەڵیان"
+      }
+    ]
+  },
+  {
+    "id": "knowledge",
+    "ku": "زانست و خوێندن",
+    "ar": "العلم",
+    "en": "Knowledge",
+    "icon": "📚",
+    "verses": [
+      {
+        "surah": 20,
+        "verse": 114,
+        "title": "داوای زیادبوونی زانست"
+      },
+      {
+        "surah": 39,
+        "verse": 9,
+        "title": "یەکسانی زانایان"
+      },
+      {
+        "surah": 96,
+        "verse": 1,
+        "title": "یەکەم فەرمانی خوێندن"
+      }
+    ]
+  },
+  {
+    "id": "patience",
+    "ku": "ئارامگری (صبر)",
+    "ar": "الصبر",
+    "en": "Patience",
+    "icon": "⏳",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 153,
+        "title": "داوای یارمەتی بە سەبر"
+      },
+      {
+        "surah": 3,
+        "verse": 200,
+        "title": "بەردەوامی لە سەبر"
+      },
+      {
+        "surah": 103,
+        "verse": 3,
+        "title": "ئامۆژگاری سەبر"
+      }
+    ]
+  },
+  {
+    "id": "brotherhood",
+    "ku": "برایەتی و تەبایی",
+    "ar": "الأخوة",
+    "en": "Brotherhood",
+    "icon": "🤝",
+    "verses": [
+      {
+        "surah": 49,
+        "verse": 10,
+        "title": "ئیمانداران بران"
+      },
+      {
+        "surah": 3,
+        "verse": 103,
+        "title": "دەستگرتن بە گوریسی خودا"
+      },
+      {
+        "surah": 8,
+        "verse": 63,
+        "title": "تەبایی دڵەکان"
+      }
+    ]
+  },
+  {
+    "id": "justice",
+    "ku": "دادپەروەری",
+    "ar": "العدل",
+    "en": "Justice",
+    "icon": "⚖️",
+    "verses": [
+      {
+        "surah": 4,
+        "verse": 135,
+        "title": "دادپەروەری بۆ خودا"
+      },
+      {
+        "surah": 5,
+        "verse": 8,
+        "title": "ڕق نەبێتە هۆی نادادی"
+      },
+      {
+        "surah": 16,
+        "verse": 90,
+        "title": "فەرمان بە دادپەروەری"
+      }
+    ]
+  },
+  {
+    "id": "ethics",
+    "ku": "ڕەوشت و مامەڵە",
+    "ar": "الأخلاق",
+    "en": "Ethics",
+    "icon": "🌟",
+    "verses": [
+      {
+        "surah": 49,
+        "verse": 11,
+        "title": "گاڵتە نەکردن"
+      },
+      {
+        "surah": 49,
+        "verse": 12,
+        "title": "خۆپاراستن لە گومان"
+      },
+      {
+        "surah": 68,
+        "verse": 4,
+        "title": "ڕەوشتی بەرز"
+      }
+    ]
+  },
+  {
+    "id": "nature",
+    "ku": "سروشت و گەردوون",
+    "ar": "الطبيعة",
+    "en": "Nature",
+    "icon": "🌍",
+    "verses": [
+      {
+        "surah": 30,
+        "verse": 22,
+        "title": "جیاوازی زمانەکان"
+      },
+      {
+        "surah": 41,
+        "verse": 53,
+        "title": "نیشانەکانی خودا"
+      },
+      {
+        "surah": 88,
+        "verse": 17,
+        "title": "حوشتر و ئاسمان"
+      }
+    ]
+  },
+  {
+    "id": "women",
+    "ku": "پێگە و مافی ئافرەت",
+    "ar": "المرأة في الإسلام",
+    "en": "Women in Islam",
+    "icon": "🧕",
+    "verses": [
+      {
+        "surah": 4,
+        "verse": 1,
+        "title": "دروستبوونی مرۆڤ"
+      },
+      {
+        "surah": 4,
+        "verse": 19,
+        "title": "مامەڵە لەگەڵیان"
+      },
+      {
+        "surah": 33,
+        "verse": 35,
+        "title": "پاداشتی یەکسان"
+      }
+    ]
+  },
+  {
+    "id": "wealth",
+    "ku": "ماڵ و سەروەت",
+    "ar": "المال والإنفاق",
+    "en": "Wealth & Spending",
+    "icon": "💰",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 261,
+        "title": "پاداشتی بەخشین"
+      },
+      {
+        "surah": 3,
+        "verse": 92,
+        "title": "بەخشینی خۆشەویستترین"
+      },
+      {
+        "surah": 57,
+        "verse": 7,
+        "title": "خەلیفەبوون لە ماڵدا"
+      }
+    ]
+  },
+  {
+    "id": "afterlife",
+    "ku": "مردن و دوارۆژ",
+    "ar": "الموت والآخرة",
+    "en": "Death & Afterlife",
+    "icon": "⏳",
+    "verses": [
+      {
+        "surah": 3,
+        "verse": 185,
+        "title": "چێشتنی مردن"
+      },
+      {
+        "surah": 50,
+        "verse": 19,
+        "title": "سەکراتی مردن"
+      },
+      {
+        "surah": 39,
+        "verse": 68,
+        "title": "فووکردن بە سوردا"
+      }
+    ]
+  },
+  {
+    "id": "paradise",
+    "ku": "بەهەشت و دۆزەخ",
+    "ar": "الجنة والنار",
+    "en": "Paradise & Hell",
+    "icon": "🏡",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 25,
+        "title": "خۆشییەکانی بەهەشت"
+      },
+      {
+        "surah": 56,
+        "verse": 12,
+        "title": "نزیکبووەکانی بەهەشت"
+      },
+      {
+        "surah": 78,
+        "verse": 21,
+        "title": "سزای ستەمکاران"
+      }
+    ]
+  },
+  {
+    "id": "marriage",
+    "ku": "هاوسەرگیری و خێزان",
+    "ar": "الزواج والأسرة",
+    "en": "Marriage & Family",
+    "icon": "💍",
+    "verses": [
+      {
+        "surah": 30,
+        "verse": 21,
+        "title": "ئارامی و میهرەبانی"
+      },
+      {
+        "surah": 2,
+        "verse": 187,
+        "title": "وەک پۆشاک بۆ یەکتر"
+      },
+      {
+        "surah": 25,
+        "verse": 74,
+        "title": "دوعای خێزانی چاک"
+      }
+    ]
+  },
+  {
+    "id": "prophets",
+    "ku": "پێغەمبەران",
+    "ar": "الأنبياء",
+    "en": "Prophets",
+    "icon": "👤",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 285,
+        "title": "باوەڕ بە هەموویان"
+      },
+      {
+        "surah": 33,
+        "verse": 40,
+        "title": "کۆتا پێغەمبەر"
+      },
+      {
+        "surah": 21,
+        "verse": 107,
+        "title": "ڕەحمەت بۆ گەردوون"
+      }
+    ]
+  },
+  {
+    "id": "angels",
+    "ku": "فریشتەکان",
+    "ar": "الملائكة",
+    "en": "Angels",
+    "icon": "✨",
+    "verses": [
+      {
+        "surah": 66,
+        "verse": 6,
+        "title": "گوێڕایەڵی بێ مەرج"
+      },
+      {
+        "surah": 82,
+        "verse": 10,
+        "title": "پارێزەر و نووسەر"
+      },
+      {
+        "surah": 13,
+        "verse": 11,
+        "title": "پارێزەرانی مرۆڤ"
+      }
+    ]
+  },
+  {
+    "id": "time",
+    "ku": "کات و مێژوو",
+    "ar": "الوقت والتاريخ",
+    "en": "Time & History",
+    "icon": "🕰️",
+    "verses": [
+      {
+        "surah": 103,
+        "verse": 1,
+        "title": "سوێند بە کات"
+      },
+      {
+        "surah": 93,
+        "verse": 1,
+        "title": "سوێند بە بەیانی"
+      },
+      {
+        "surah": 22,
+        "verse": 47,
+        "title": "ڕۆژێک لای خودا"
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "ku": "تەندروستی و خۆراک",
+    "ar": "الصحة والغذاء",
+    "en": "Health & Food",
+    "icon": "🍇",
+    "verses": [
+      {
+        "surah": 2,
+        "verse": 168,
+        "title": "خواردنی پاک و حەڵاڵ"
+      },
+      {
+        "surah": 7,
+        "verse": 31,
+        "title": "زێدەڕۆیی نەکردن"
+      },
+      {
+        "surah": 16,
+        "verse": 69,
+        "title": "شیفا لە هەنگویندا"
+      }
+    ]
+  },
+  {
+    "id": "animals",
+    "ku": "ئاژەڵەکان",
+    "ar": "الحيوانات",
+    "en": "Animals",
+    "icon": "🐎",
+    "verses": [
+      {
+        "surah": 6,
+        "verse": 38,
+        "title": "ئومەتن وەک ئێمە"
+      },
+      {
+        "surah": 24,
+        "verse": 45,
+        "title": "دروستبوونیان لە ئاو"
+      },
+      {
+        "surah": 16,
+        "verse": 5,
+        "title": "سوودی ئاژەڵەکان"
+      }
+    ]
+  },
+  {
+    "id": "sincerity",
+    "ku": "ئیخڵاس و دڵسۆزی",
+    "ar": "الإخلاص",
+    "en": "Sincerity",
+    "icon": "💎",
+    "verses": [
+      {
+        "surah": 98,
+        "verse": 5,
+        "title": "پەرستنی بێگەرد"
+      },
+      {
+        "surah": 39,
+        "verse": 2,
+        "title": "دڵسۆزی لە ئایندا"
+      },
+      {
+        "surah": 39,
+        "verse": 11,
+        "title": "فەرمانی ئیخڵاس"
+      }
+    ]
+  },
+  {
+    "id": "forgiveness",
+    "ku": "لێبوردن و چاوپۆشی",
+    "ar": "العفو والصفح",
+    "en": "Forgiveness",
+    "icon": "🕊️",
+    "verses": [
+      {
+        "surah": 42,
+        "verse": 40,
+        "title": "پاداشتی لێبوردن"
+      },
+      {
+        "surah": 3,
+        "verse": 134,
+        "title": "چاوپۆشی لە خەڵک"
+      },
+      {
+        "surah": 24,
+        "verse": 22,
+        "title": "حەز دەکەن لێتان ببورن"
+      }
+    ]
+  },
+  {
+    "id": "oppression",
+    "ku": "ستەم و نادادی",
+    "ar": "الظلم",
+    "en": "Oppression",
+    "icon": "🚫",
+    "verses": [
+      {
+        "surah": 14,
+        "verse": 42,
+        "title": "ئاگاداری لە ستەمکاران"
+      },
+      {
+        "surah": 11,
+        "verse": 113,
+        "title": "پشتنەبەستن بە ستەم"
+      },
+      {
+        "surah": 42,
+        "verse": 42,
+        "title": "تاوانی سەر ستەمکاران"
+      }
+    ]
+  },
+  {
+    "id": "hijab",
+    "ku": "حیجاب و داوێنپاکی",
+    "ar": "الحجاب والعفة",
+    "en": "Modesty & Hijab",
+    "icon": "🛡️",
+    "verses": [
+      {
+        "surah": 24,
+        "verse": 30,
+        "title": "پاراستنی چاو"
+      },
+      {
+        "surah": 24,
+        "verse": 31,
+        "title": "حیجابی ئافرەتان"
+      },
+      {
+        "surah": 33,
+        "verse": 59,
+        "title": "پۆشاکی پارێزەر"
+      }
+    ]
+  }
+]

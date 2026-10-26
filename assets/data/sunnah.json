@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "icon": "🌙",
+    "ku": "پێش خەوتن دەستنوێژ بگرە و لەسەر لای ڕاستی جەستەت بخەوە.",
+    "ar": "توضأ قبل النوم ونَمْ على شقك الأيمن.",
+    "en": "Perform Wudu before sleeping and sleep on your right side.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 2,
+    "icon": "📖",
+    "ku": "پێش خەوتن سورەتی (المُلك) بخوێنە؛ ڕزگارت دەکات لە سزای گۆڕ.",
+    "ar": "اقرأ سورة الملك قبل النوم؛ فإنها تنجي من عذاب القبر.",
+    "en": "Recite Surah Al-Mulk before sleeping; it protects from the punishment of the grave.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 3,
+    "icon": "🤲",
+    "ku": "ناوی خودا بهێنە (بِسْمِ اللَّهِ)، بە دەستی ڕاستت خواردن بخۆ و لەوەی بەرامبەرت بخۆ.",
+    "ar": "سَمِّ الله وكُل بيمينك وكُل مما يليك.",
+    "en": "Say Bismillah, eat with your right hand, and eat from what is in front of you.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 4,
+    "icon": "🏠",
+    "ku": "کاتێک دەچیتە ژوورەوە بۆ ماڵەوە (بِسْمِ اللَّهِ) بڵێ؛ تاوەکو شەیتان لەگەڵتدا نەیەتە ژوورەوە.",
+    "ar": "قل (بسم الله) عند دخول المنزل؛ حتى لا يدخل الشيطان معك.",
+    "en": "Say 'Bismillah' when entering your home so Shaytan cannot enter with you.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 5,
+    "icon": "🪥",
+    "ku": "پێش هەر نوێژێک مسواک بەکاربهێنە؛ دەم و ددان پاک دەکاتەوە و ڕەزامەندی پەروەردگاری تێدایە.",
+    "ar": "استعمل السواك عند كل صلاة؛ فإنه مطهرة للفم مرضاة للرب.",
+    "en": "Use Miswak before every prayer; it cleanses the mouth and pleases the Lord.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 6,
+    "icon": "☀️",
+    "ku": "دوو ڕەکاتی سوننەتی بەیانی بەجێمەهێڵە؛ لە دونیا و هەرچی تێدایەتی باشترە.",
+    "ar": "لا تترك ركعتي الفجر؛ فهما خير من الدنيا وما فيها.",
+    "en": "Never leave the two Sunnah rakats of Fajr; they are better than the world and all in it.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 7,
+    "icon": "🤝",
+    "ku": "بە ڕووی خۆش و زەردەخەنەوە لە برای موسڵمانت بڕوانە؛ زەردەخەنەکەت سەدەقەیە.",
+    "ar": "تبسمك في وجه أخيك صدقة.",
+    "en": "Smiling in the face of your brother is charity.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 8,
+    "icon": "🌿",
+    "ku": "ڕۆژانە ١٠٠ جار بڵێ: (سُبْحَانَ اللَّهِ وَبِحَمْدِهِ)؛ گوناهەکانت دەسڕدرێنەوە ئەگەرچی وەک کەفی دەریاش زۆر بن.",
+    "ar": "قل (سبحان الله وبحمده) مائة مرة؛ تُحَطّ خطاياك وإن كانت مثل زبد البحر.",
+    "en": "Say 'SubhanAllah wa bihamdihi' 100 times daily; your sins will be forgiven even if like sea foam.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 9,
+    "icon": "🕌",
+    "ku": "دواى هەر نوێژێکی فەرز (آية الكرسي) بخوێنە؛ هیچ شتێک لە نێوان تۆ و بەهەشتدا نامێنێت تەنها مردن نەبێت.",
+    "ar": "اقرأ آية الكرسي دبر كل صلاة مكتوبة؛ لم يمنعك من دخول الجنة إلا أن تموت.",
+    "en": "Recite Ayat Al-Kursi after every obligatory prayer; nothing prevents you from Paradise except death.",
+    "source_ku": "سنن النسائي",
+    "source_ar": "سنن النسائي",
+    "source_en": "Sunan An-Nasa'i"
+  },
+  {
+    "id": 10,
+    "icon": "🌅",
+    "ku": "بەردەوام بە لەسەر زیکرەکانی بەیانیان و ئێواران: (اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا).",
+    "ar": "حافظ على أذكار الصباح والمساء: (اللهم بك أصبحنا وبك أمسينا).",
+    "en": "Recite morning and evening remembrance: 'Allahumma bika asbahna wa bika amsayna'.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 11,
+    "icon": "🧹",
+    "ku": "تەنگانە و ئازار لە ڕێگەی خەڵکی دوور بخەرەوە؛ ئەوە پاداشتێکی گەورە و سەدەقەیە.",
+    "ar": "إماطة الأذى عن الطريق صدقة.",
+    "en": "Removing harmful objects from the path is charity.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 12,
+    "icon": "💧",
+    "ku": "لە کاتی دەستنوێژگرتندا دەست بە زێدەڕۆیی (ئیسراف) مەکە لە ئاودا، ئەگەر لەسەر ڕووبارێکی ڕەوانیش بایت.",
+    "ar": "لا تسرف في الماء ولو كنت على نهر جَارٍ.",
+    "en": "Do not waste water while performing Wudu, even if you are at a flowing river.",
+    "source_ku": "سنن ابن ماجه",
+    "source_ar": "سنن ابن ماجه",
+    "source_en": "Sunan Ibn Majah"
+  },
+  {
+    "id": 13,
+    "icon": "✨",
+    "ku": "ڕۆژانە ١٢ ڕەکات سوننەتی ڕەواتب (پێش و دوای نوێژە فەرزەکان) بکە؛ خودا کۆشکێکت لە بەهەشتدا بۆ دروست دەکات.",
+    "ar": "صلِّ اثنتي عشرة ركعة تطوعاً في اليوم والليلة؛ يبنِ الله لك بيتاً في الجنة.",
+    "en": "Pray 12 Voluntary Sunnah rakats daily; Allah will build a house for you in Paradise.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 14,
+    "icon": "🤲",
+    "ku": "دوعای نێوان بانگ و ئیقامە ڕەت ناکرێتەوە؛ لەو کاتەدا دوعا و پاڕانەوە زۆر بکە.",
+    "ar": "الدعاء لا يُرَدُّ بين الأذان والإقامة؛ فأكثروا من الدعاء.",
+    "en": "Supplication made between Adhan and Iqamah is not rejected.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 15,
+    "icon": "🌙",
+    "ku": "ڕۆژانی دووشەممە و پێنجشەممە بەڕۆژوو بە؛ چونکە کردارەکانی بەندە لەو دوو ڕۆژەدا بەرز دەکرێنەوە بۆ لای خودا.",
+    "ar": "صُم يومي الاثنين والخميس؛ تعرض فيهما الأعمال على الله.",
+    "en": "Fast on Mondays and Thursdays; deeds are presented to Allah on these days.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 16,
+    "icon": "📜",
+    "ku": "ڕۆژی جومعە سورەتی (الكهف) بخوێنە؛ ڕووناکییەکت بۆ دەنێرێت لە نێوان دوو جومعەدا.",
+    "ar": "اقرأ سورة الكهف يوم الجمعة؛ أضاء لك من النور ما بين الجمعتين.",
+    "en": "Recite Surah Al-Kahf on Friday; it illuminates light for you between the two Fridays.",
+    "source_ku": "مستدرك الحاكم",
+    "source_ar": "مستدرك الحاكم",
+    "source_en": "Mustadrak Al-Hakim"
+  },
+  {
+    "id": 17,
+    "icon": "🥣",
+    "ku": "پێش بەڕۆژووبوون نانی پاشیو (سەحوری) بخۆ؛ چونکە لە پاشیوکردندا بەرەکەت هەیە.",
+    "ar": "تسحروا؛ فإن في السحور بركة.",
+    "en": "Eat Suhoor before fasting; indeed there is blessing in Suhoor.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 18,
+    "icon": "🌴",
+    "ku": "لە کاتی بانگی ئێوارەدا بە خورما یان ئاو بەڕۆژووبوونەکەت بشکێنە.",
+    "ar": "إفطار الصائم على تمر أو ماء.",
+    "en": "Break your fast with dates or water.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 19,
+    "icon": "🤍",
+    "ku": "خۆڕاگر بە و تووڕە مەبە؛ پێغەمبەر ﷺ چەندین جار ئامۆژگاری کرد: (لا تَغْضَبْ - تووڕە مەبە).",
+    "ar": "لا تغضب ولك الجنة.",
+    "en": "Do not become angry; the Prophet ﷺ repeatedly advised: 'Do not be angry'.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 20,
+    "icon": "💎",
+    "ku": "زۆر بڵێ: (لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ)؛ چونکە گەنجینەیەکە لە گەنجینەکانی بەهەشت.",
+    "ar": "أكثر من قول (لا حول ولا قوة إلا بالله)؛ فإنها كنز من كنوز الجنة.",
+    "en": "Recite 'La hawla wa la quwwata illa billah' often; it is a treasure from Paradise.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 21,
+    "icon": "⭐",
+    "ku": "ئیسلام لەسەر ٥ پایە دامەزراوە: شەهادەتدان، نوێژکردن، زەکاتدان، ڕۆژووی ڕەمەزان، و حەجکردن.",
+    "ar": "بُني الإسلام على خمس: شهادة أن لا إله إلا الله، وإقام الصلاة، وإيتاء الزكاة، وصوم رمضان، وحج البيت.",
+    "en": "Islam is built on five pillars: Shahada, Prayer, Zakat, Fasting, and Hajj.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 22,
+    "icon": "📣",
+    "ku": "کاتێک گوێت لە بانگ بوو، وەڵامی بانگبێژ بدەرەوە بە دووبارەکردنەوەی هەمان وشەکانی.",
+    "ar": "إذا سمعتم النداء فقولوا مثل ما يقول المؤذن.",
+    "en": "When you hear the Adhan, repeat the words of the muezzin.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 23,
+    "icon": "🛡️",
+    "ku": "سورەتەکانی (الإخلاص، الفلق، الناس) بەیانیان و ئێواران ٣ جار بخوێنە؛ لە هەموو بەڵا و خراپەیەک دەپارێزرێیت.",
+    "ar": "اقرأ المعوذات ثلاث مرات صباحاً ومساءً؛ تكفيك من كل شيء.",
+    "en": "Recite Surah Al-Ikhlas, Al-Falaq, and An-Nas 3 times morning and evening for protection.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 24,
+    "icon": "🕌",
+    "ku": "لە کاتی چوونە ژوورەوە بۆ مزگەوت بە پێی ڕاست بچۆ ژوورەوە و بڵێ: (اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ).",
+    "ar": "ادخل المسجد برجلك اليمنى وقل: (اللهم افتح لي أبواب رحمتك).",
+    "en": "Enter the mosque with your right foot and say: 'Allahumma iftah li abwaba rahmatik'.",
+    "source_ku": "سنن ابن ماجه",
+    "source_ar": "سنن ابن ماجه",
+    "source_en": "Sunan Ibn Majah"
+  },
+  {
+    "id": 25,
+    "icon": "🥤",
+    "ku": "بە دانیشتنەوە ئاو بخۆرەوە و لە ۳ پشوودا (سێ هەناسەدا) ئاوەکە بنۆشە.",
+    "ar": "اشرب الماء جالساً وعلى ثلاثة أنفاس.",
+    "en": "Drink water while sitting down and in three separate breaths.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 26,
+    "icon": "💖",
+    "ku": "لە شەو و ڕۆژی جومعەدا زۆر دروود و سەلام لەسەر پێغەمبەر ﷺ بنێرە.",
+    "ar": "أكثروا من الصلاة عليّ ليلة الجمعة ويوم الجمعة.",
+    "en": "Send abundant salutations upon the Prophet ﷺ on the night and day of Friday.",
+    "source_ku": "سنن ابن ماجه",
+    "source_ar": "سنن ابن ماجه",
+    "source_en": "Sunan Ibn Majah"
+  },
+  {
+    "id": 27,
+    "icon": "🍽️",
+    "ku": "لە دەستپێکی خواردندا بڵێ: (بِسْمِ اللَّهِ)، ئەگەر لە بیرت چوو بڵێ: (بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ).",
+    "ar": "سم الله في أول الطعام، فإن نسيت فقل: (بسم الله أوله وآخره).",
+    "en": "Say 'Bismillah' at start of eating; if forgotten, say 'Bismillahi awwalahu wa akhirahu'.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 28,
+    "icon": "🌤️",
+    "ku": "نوێژی چاشت (الضحى) بکە؛ چونکە بە سەدەقەی هەموو جومگەکانی جەستەت هەژمار دەکرێت.",
+    "ar": "صلِّ صلاة الضحى؛ فإنها صدقة عن كل مَفْصِل من مفاصلك.",
+    "en": "Pray Duha prayer; it serves as charity for every joint in your body.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 29,
+    "icon": "⚖️",
+    "ku": "دوو زیکر هەن سووکن لەسەر زمان، قورسن لەسەر تەرازوو، خۆشەویستن لای خودا: (سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ).",
+    "ar": "كلمتان خفيفتان على اللسان ثقيلتان في الميزان حبيبتان إلى الرحمن: (سبحان الله وبحمده، سبحان الله العظيم).",
+    "en": "Two words light on tongue, heavy on scales, loved by Ar-Rahman: 'SubhanAllah wa bihamdihi, SubhanAllahil-Adheem'.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 30,
+    "icon": "🤝",
+    "ku": "تەوقە (دەستدان) لەگەڵ برای موسڵمانت بکە؛ گوناهەکانتان دەوەرێن وەکو گەڵای دار.",
+    "ar": "صافح أخاك المسلم عند اللقاء؛ تُحَطّ خطاياكما كما تتساقط أوراق الشجر.",
+    "en": "Shake hands when meeting your brother; your sins drop off like dry leaves off a tree.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 31,
+    "icon": "🌃",
+    "ku": "دوایین نوێژی شەوت لە دوای نوێژی عیشا بکە بە نوێژی وتر.",
+    "ar": "اجعلوا آخر صلاتكم بالليل وتراً.",
+    "en": "Make Witr your last prayer of the night.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 32,
+    "icon": "👋",
+    "ku": "پێش دەستپێکردنی قسەکردن سەلام بکە: (السَّلَامُ عَلَیْكُمْ).",
+    "ar": "السلام قبل الكلام.",
+    "en": "Initiate greeting with 'Assalamu Alaikum' before speaking.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 33,
+    "icon": "🚪",
+    "ku": "کاتێک لە ماڵ دەچیتە دەرەوە بڵێ: (بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ).",
+    "ar": "قل عند الخروج من البيت: (بسم الله توكلت على الله ولا حول ولا قوة إلا بالله).",
+    "en": "When leaving home, say: 'Bismillahi, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah'.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 34,
+    "icon": "👟",
+    "ku": "لە کاتی پێڵاو لەپێکردندا بە پێی ڕاست دەست پێ بکە، و لە کاتی داکەندندا بە پێی چەپ.",
+    "ar": "إذا انتعل أحدكم فليبدأ باليمين، وإذا نزع فليبدأ بالشمال.",
+    "en": "Put on your right shoe first, and take off your left shoe first.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 35,
+    "icon": "🤧",
+    "ku": "کاتێک پژمیت (پشکژمیت) بڵێ: (الْحَمْدُ لِلَّهِ).",
+    "ar": "إذا عطس أحدكم فليقل: (الحمد لله).",
+    "en": "Say 'Alhamdulillah' when you sneeze.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 36,
+    "icon": "💬",
+    "ku": "کاتێک کەسێک پژمی و گوتی (الحمد لله)، لە وەڵامدا پێی بڵێ: (یَرْحَمُكَ اللَّهُ).",
+    "ar": "إذا عطس فحمد الله فقولوا له: (يرحمك الله).",
+    "en": "Say 'Yarhamukallah' to someone who sneezes and says 'Alhamdulillah'.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 37,
+    "icon": "🛌",
+    "ku": "لەسەر لای ڕاست بخەوە و دەستی ڕاستت بخەرە ژێر ڕوومەتی ڕاستت.",
+    "ar": "اضطجع على شقك الأيمن وضع يدك اليمنى تحت خدك الأيمن.",
+    "en": "Sleep on your right side and place your right hand under your right cheek.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 38,
+    "icon": "🥛",
+    "ku": "بە پێوە (ڕاوەستاوەیی) ئاو مەخۆرەوە؛ چونکە ئاوخواردنەوە بە دانیشتنەوە سوننەتە.",
+    "ar": "لا يشربن أحد منكم قائماً؛ فالسنة الشرب جالساً.",
+    "en": "Avoid drinking while standing; it is Sunnah to drink while sitting.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  },
+  {
+    "id": 39,
+    "icon": "🏥",
+    "ku": "سەردانی نەخۆش بکە؛ چونکە مافێکی گەورەی موسڵمانانە لەسەر یەکتری.",
+    "ar": "عُد المريض؛ فإنه من حق المسلم على المسلم.",
+    "en": "Visit the sick; it is one of the rights of a Muslim over another.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 40,
+    "icon": "👕",
+    "ku": "لە کاتی لەبەرکردنی پۆشاک و جلوبەرگدا بە لای ڕاست دەست پێ بکە.",
+    "ar": "كان يعجبه التيمُّن في تَنَعُّلِهِ وتَرَبُّلِهِ وطُهُورِهِ وفي شَأْنِهِ كُلِّهِ.",
+    "en": "Start with the right side when putting on clothes or garments.",
+    "source_ku": "سنن الترمذي",
+    "source_ar": "سنن الترمذي",
+    "source_en": "Sunan At-Tirmidhi"
+  },
+  {
+    "id": 41,
+    "icon": "🪞",
+    "ku": "کاتێک سەیری ئاوێنە دەکەیت بڵێ: (اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي).",
+    "ar": "قل عند النظر في المرآة: (اللهم كما حسّنتَ خَلْقي فحسِّن خُلُقي).",
+    "en": "When looking in mirror, say: 'O Allah, as You made my creation beautiful, make my character beautiful'.",
+    "source_ku": "مسند أحمد",
+    "source_ar": "مسند أحمد",
+    "source_en": "Musnad Ahmad"
+  },
+  {
+    "id": 42,
+    "icon": "⛰️",
+    "ku": "کاتێک دەچیتە شوێنێکی بەرز بڵێ (اللَّهُ أَكْبَرُ)، و کاتێک دێیتە خوارەوە بڵێ (سُبْحَانَ اللَّهِ).",
+    "ar": "كنا إذا صعدنا كبرنا (الله أكبر)، وإذا نزلنا سبحنا (سبحان الله).",
+    "en": "Say 'Allahu Akbar' when ascending and 'SubhanAllah' when descending.",
+    "source_ku": "صحيح البخاري",
+    "source_ar": "صحيح البخاري",
+    "source_en": "Sahih Bukhari"
+  },
+  {
+    "id": 43,
+    "icon": "🚪",
+    "ku": "کاتێک دەچیتە سەرئاو (تەوالێت) بە پێی چەپ بچۆ ژوورەوە و بڵێ: (اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ).",
+    "ar": "ادخل الخلاء بالرجل اليسرى وقل: (اللهم إني أعوذ بك من الخُبْث والخبائث).",
+    "en": "Enter the bathroom with your left foot and seek refuge in Allah from male and female devils.",
+    "source_ku": "متفق عليه",
+    "source_ar": "متفق عليه",
+    "source_en": "Bukhari & Muslim"
+  },
+  {
+    "id": 44,
+    "icon": "🚪",
+    "ku": "کاتێک لە سەرئاو (تەوالێت) دێیتە دەرەوە بە پێی ڕاست وەرە دەرەوە و بڵێ: (غُفْرَانَكَ).",
+    "ar": "اخرج من الخلاء بالرجل اليمنى وقل: (غفرانك).",
+    "en": "Exit the bathroom with your right foot and say: 'Ghufranak'.",
+    "source_ku": "سنن أبي داود",
+    "source_ar": "سنن أبي داود",
+    "source_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": 45,
+    "icon": "🌿",
+    "ku": "لە کۆڕی زیکر و دەرسە ئایینییەکاندا بەشدار بە؛ فریشتەکان باڵەکانیان بۆ دادەنێن و ڕەحمەتی ئیلاهییان تێدا دادەبەزێت.",
+    "ar": "احرص على مجالس الذكر والتعلم؛ فإن المصلين والغافلين تحفهم الملائكة وتغشاهم الرحمة.",
+    "en": "Attend gatherings of knowledge and remembrance; angels surround them and mercy covers them.",
+    "source_ku": "صحيح مسلم",
+    "source_ar": "صحيح مسلم",
+    "source_en": "Sahih Muslim"
+  }
+]

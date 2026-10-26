@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fajr",
+    "name_ku": "نوێژی بەیانی (فەجر)",
+    "name_ar": "صلاة الفجر",
+    "name_en": "Fajr Prayer",
+    "rakaat": 2,
+    "type_ku": "٢ رکعەت"
+  },
+  {
+    "id": "dhuhr",
+    "name_ku": "نوێژی نیوەڕۆ (زووهر)",
+    "name_ar": "صلاة الظهر",
+    "name_en": "Dhuhr Prayer",
+    "rakaat": 4,
+    "type_ku": "٤ رکعەت"
+  },
+  {
+    "id": "asr",
+    "name_ku": "نوێژی عەسر",
+    "name_ar": "صلاة العصر",
+    "name_en": "Asr Prayer",
+    "rakaat": 4,
+    "type_ku": "٤ رکعەت"
+  },
+  {
+    "id": "maghrib",
+    "name_ku": "نوێژی مەغریب (ئێوارە)",
+    "name_ar": "صلاة المغرب",
+    "name_en": "Maghrib Prayer",
+    "rakaat": 3,
+    "type_ku": "٣ رکعەت"
+  },
+  {
+    "id": "isha",
+    "name_ku": "نوێژی عیشا (خەوتنان)",
+    "name_ar": "صلاة العشاء",
+    "name_en": "Isha Prayer",
+    "rakaat": 4,
+    "type_ku": "٤ رکعەت"
+  }
+]

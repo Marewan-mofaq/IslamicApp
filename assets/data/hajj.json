@@ -1,0 +1,102 @@
+[
+  {
+    "id": "umrah_1",
+    "type": "umrah",
+    "title_ku": "ئیحرام بەستن",
+    "title_ar": "الإحرام",
+    "title_en": "Ihram",
+    "desc_ku": "خۆشوشتن و لەبەرکردنی جلی ئیحرام و نیەت هێنان لە میقات.",
+    "desc_en": "Purification and putting on Ihram garments at the Miqat.",
+    "duas": [
+      {
+        "ar": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
+        "ku": "خودایە هاتم بۆ بەجێهێنانی عومرە.",
+        "en": "Here I am, O Allah, for Umrah."
+      }
+    ]
+  },
+  {
+    "id": "umrah_2",
+    "type": "umrah",
+    "title_ku": "تەوافکردن (٧ جار)",
+    "title_ar": "الطواف",
+    "title_en": "Tawaf (7 Rounds)",
+    "desc_ku": "خوولانەوە بە دەوری کەعبەی پیرۆز حەوت جار، لە بەردە ڕەشەکەوە دەست پێ دەکات.",
+    "desc_en": "Circulating the Kaaba seven times, starting from the Black Stone.",
+    "duas": [
+      {
+        "ar": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+        "ku": "پەروەردگارمان! لە دنیادا و لە ئاخیرەتیشدا چاکەمان پێ ببەخشە و لە ئاگری دۆزەخ بمانپارێزە.",
+        "en": "Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect us from the punishment of the Fire."
+      }
+    ]
+  },
+  {
+    "id": "umrah_3",
+    "type": "umrah",
+    "title_ku": "سەعی سەفا و مەڕوا",
+    "title_ar": "السعي",
+    "title_en": "Sa’i between Safa and Marwa",
+    "desc_ku": "ڕۆیشتن لە نێوان شاخی سەفا و مەڕوا بۆ حەوت جار.",
+    "desc_en": "Walking back and forth seven times between the hills of Safa and Marwa.",
+    "duas": [
+      {
+        "ar": "إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ",
+        "ku": "بەڕاستی سەفا و مەڕوا لە دروشمەکانی خودان.",
+        "en": "Indeed, Safa and Marwa are among the symbols of Allah."
+      }
+    ]
+  },
+  {
+    "id": "umrah_4",
+    "type": "umrah",
+    "title_ku": "قژ بڕین یان تاشین",
+    "title_ar": "الحلق أو التقصير",
+    "title_en": "Shaving or Trimming Hair",
+    "desc_ku": "تاشینی سەر یان کورتکردنەوەی قژ بۆ دەرچوون لە ئیحرام.",
+    "desc_en": "Shaving the head or trimming the hair to conclude the Ihram."
+  },
+  {
+    "id": "hajj_1",
+    "type": "hajj",
+    "title_ku": "ڕۆژی تەرویە (٨ی ذوالحجة)",
+    "title_ar": "يوم التروية",
+    "title_en": "Day of Tarwiyah (8th Dhu al-Hijjah)",
+    "desc_ku": "ئیحرام بەستن و چوون بۆ مینا و مانەوە لەوێ تا بەیانی ڕۆژی ٩.",
+    "desc_en": "Entering Ihram and heading to Mina to stay until the next morning."
+  },
+  {
+    "id": "hajj_2",
+    "type": "hajj",
+    "title_ku": "وەستان لە عەرەفە (٩ی ذوالحجة)",
+    "title_ar": "يوم عرفة",
+    "title_en": "Day of Arafah (9th Dhu al-Hijjah)",
+    "desc_ku": "گەورەترین ڕوکن، وەستان لە کێوی عەرەفە لە دوای نیوەڕۆ تا خۆرئاوابوون.",
+    "desc_en": "The most important ritual, standing at Arafah from noon until sunset.",
+    "duas": [
+      {
+        "ar": "لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "ku": "هیچ پەرستراوێک نییە جگە لە خودای تەنها و بێ هاوەڵ، پاشایەتی و سوپاس هەر بۆ ئەوە.",
+        "en": "There is no god but Allah, alone, without partner. His is the sovereignty and His is the praise, and He is over all things omnipotent."
+      }
+    ]
+  },
+  {
+    "id": "hajj_3",
+    "type": "hajj",
+    "title_ku": "موزدەلیفە (٩ی ذوالحجة)",
+    "title_ar": "مزدلفة",
+    "title_en": "Muzdalifah",
+    "desc_ku": "دوای ئاوا بوونی خۆر لە ڕۆژی عەرەفە، چوون بەرەو موزدەلیفە و نوێژی مەغریب و عیشا و کۆکردنەوەی بەرد.",
+    "desc_en": "Moving to Muzdalifah after sunset, praying combined Maghrib/Isha and collecting pebbles."
+  },
+  {
+    "id": "hajj_4",
+    "type": "hajj",
+    "title_ku": "جەمەرات و قوربانی (١٠ی ذوالحجة)",
+    "title_ar": "يوم النحر",
+    "title_en": "Day of Sacrifice (10th Dhu al-Hijjah)",
+    "desc_ku": "ڕەجمکردنی جەمەرەی عەقەبە، قوربانیکردن و تاشینی سەر.",
+    "desc_en": "Stoning Jamarat al-Aqaba, sacrificing an animal, and shaving the head."
+  }
+]

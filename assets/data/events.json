@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ramadan_2026",
+    "date": "2026-02-18",
+    "icon": "🌙",
+    "name_ku": "ڕەمەزان پیرۆز",
+    "name_ar": "رمضان الكريم",
+    "name_en": "Ramadan 2026"
+  },
+  {
+    "id": "eid_fitr_2026",
+    "date": "2026-03-20",
+    "icon": "🎉",
+    "name_ku": "جەژنی ڕەمەزان",
+    "name_ar": "عيد الفطر",
+    "name_en": "Eid Al-Fitr"
+  },
+  {
+    "id": "arafah_2026",
+    "date": "2026-05-26",
+    "icon": "🤲",
+    "name_ku": "ڕۆژی عەرەفە",
+    "name_ar": "يوم عرفة",
+    "name_en": "Day of Arafah"
+  },
+  {
+    "id": "eid_adha_2026",
+    "date": "2026-05-27",
+    "icon": "🕋",
+    "name_ku": "جەژنی قوربان",
+    "name_ar": "عيد الأضحى",
+    "name_en": "Eid Al-Adha"
+  },
+  {
+    "id": "ashura_2026",
+    "date": "2026-06-25",
+    "icon": "💧",
+    "name_ku": "ڕۆژی عاشورا",
+    "name_ar": "يوم عاشوراء",
+    "name_en": "Day of Ashura"
+  },
+  {
+    "id": "ramadan_2027",
+    "date": "2027-02-08",
+    "icon": "🌙",
+    "name_ku": "ڕەمەزان ٢٠٢٧",
+    "name_ar": "رمضان ٢٠٢٧",
+    "name_en": "Ramadan 2027"
+  }
+]

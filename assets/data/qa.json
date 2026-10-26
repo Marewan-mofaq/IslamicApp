@@ -1,0 +1,602 @@
+[
+  {
+    "id": "q1",
+    "category": "prayer",
+    "question_ku": "ئایا دروستە نوێژی سوننەت بە دانیشتنەوە بکرێت بێ هیچ هۆکارێک؟",
+    "answer_ku": "بەڵێ دروستە، بەڵام پاداشتەکەی نیوەی پاداشتی نوێژی وەستانە بەپێی فەرموودەی پێغەمبەر ﷺ.",
+    "question_ar": "هل يجوز صلاة النافلة جالساً بدون عذر؟",
+    "answer_ar": "نعم يجوز، ولكن أجرها نصف أجر صلاة القائم كما ورد في السنة.",
+    "question_en": "Is it permissible to pray voluntary prayers sitting down without an excuse?",
+    "answer_en": "Yes, it is permissible, but the reward is half that of praying standing up."
+  },
+  {
+    "id": "q2",
+    "category": "prayer",
+    "question_ku": "چۆن سجود سەهو (سوژدەی بیرچوون) دەبرێت؟",
+    "answer_ku": "دوو سوژدەیە پێش یان دوای سەلامدانەوە، وەک سوژدەی ئاساییە و دەڵێیت: سبحان ربي الأعلى.",
+    "question_ar": "كيفية سجود السهو؟",
+    "answer_ar": "سجدتان قبل السلام أو بعده، ويقال فيها مثل ما يقال في السجود العادي.",
+    "question_en": "How to perform Sujud As-Sahw (Prostration of Forgetfulness)?",
+    "answer_en": "It is two prostrations before or after the salam, saying the same dhikr as standard prostration."
+  },
+  {
+    "id": "q3",
+    "category": "prayer",
+    "question_ku": "ئایا دروستە لەکاتی نوێژدا چاو بکرێتەوە؟",
+    "answer_ku": "قەدەغەیە چاو کردنەوە بەرەو ئاسمان لەکاتی نوێژدا بەپێی فەرموودەی پێغەمبەر ﷺ کە فەرمووی: \"با خەڵکی وازبهێنن لە بەرزکردنەوەی چاوەکانیان بۆ ئاسمان لەکاتی نوێژ\".",
+    "question_ar": "هل يجوز فتح العينين في الصلاة؟",
+    "answer_ar": "نعم يجوز فتح العينين ولكن ينهى عن رفع البصر إلى السماء في الصلاة.",
+    "question_en": "Can you open your eyes during prayer?",
+    "answer_en": "Yes, you can open your eyes, but looking up at the sky during prayer is prohibited based on the hadith."
+  },
+  {
+    "id": "q4",
+    "category": "prayer",
+    "question_ku": "ئایا نوێژی ئیشراق و نوێژی دوحا جیاوازن؟",
+    "answer_ku": "بەڵێ جیاوازن، ئیشراق ١٥-٢٠ خولەک دوای خۆرهەڵاتن دەکرێت و دوحا لە نیوەی بەیانی تا ٢٠ خولەک پێش نیوەڕۆ.",
+    "question_ar": "هل صلاة الإشراق وصلاة الضحى مختلفتان؟",
+    "answer_ar": "نعم، الإشراق تكون بعد شروق الشمس بـ15-20 دقيقة، والضحى من وسط الضحى حتى قبيل الظهر.",
+    "question_en": "Are Ishraq and Duha prayers different?",
+    "answer_en": "Yes. Ishraq is prayed 15-20 minutes after sunrise, while Duha is from mid-morning until about 20 minutes before Dhuhr."
+  },
+  {
+    "id": "q5",
+    "category": "fasting",
+    "question_ku": "ئایا بەکارهێنانی قەترەی چاو ڕۆژوو دەشکێنێت؟",
+    "answer_ku": "نەخێر ڕۆژوو ناشکێنێت چونکە چاو دەرچەی خواردن و خواردنەوە نییە سەرەڕای بوونی تام لە قوڕگدا.",
+    "question_ar": "هل قطرة العين تفطر الصائم؟",
+    "answer_ar": "لا تفطر، لأن العين ليست منفذاً معتاداً للطعام والشراب حتى لو وجد طعمها في الحلق.",
+    "question_en": "Do eye drops break the fast?",
+    "answer_en": "No, they do not break the fast because the eye is not a typical entry point for food and drink."
+  },
+  {
+    "id": "q6",
+    "category": "fasting",
+    "question_ku": "ئایا کاتێک کەسێک بە بیرچوونەوە لەکاتی ڕۆژوودا خواردی، ڕۆژووەکەی دەشکێنێت؟",
+    "answer_ku": "نەخێر، ئەگەر بیرچیەوە و بیرنەهاتەوە، خودا خواردنەکەی خواردنی و ئەو دەبێ ڕۆژووەکەی تەواو بکات.",
+    "question_ar": "هل من أكل ناسياً في رمضان بطل صومه؟",
+    "answer_ar": "لا، فمن أكل أو شرب ناسياً فليتم صومه فإنما أطعمه الله وسقاه.",
+    "question_en": "If someone eats by mistake while fasting, is the fast broken?",
+    "answer_en": "No. If one eats or drinks out of forgetfulness, they should continue fasting. Allah has fed them."
+  },
+  {
+    "id": "q7",
+    "category": "fasting",
+    "question_ku": "ئایا ڕۆژووی ٦ ڕۆژی شەوعال (لەسەر شەعبان) فەرزە؟",
+    "answer_ku": "فەرز نییە، بەڵام زۆر مستەحەبە بەپێی حەدیسی پێغەمبەر ﷺ: \"هەر کەسێک ڕەمەزان ڕۆژوو بگرێت و شەش ڕۆژی شەوعالیش لەدوا بخات، وەک ئەوە وایە هەموو ساڵ ڕۆژووی گرتبێت\".",
+    "question_ar": "هل صيام ست من شوال واجب؟",
+    "answer_ar": "ليس واجباً لكنه مستحب جداً، لحديث: \"من صام رمضان ثم أتبعه ستاً من شوال كان كصيام الدهر\".",
+    "question_en": "Is fasting 6 days of Shawwal obligatory?",
+    "answer_en": "No, but highly recommended. The Prophet ﷺ said: \"Whoever fasts Ramadan and follows it with six days of Shawwal, it is as if he fasted the whole year.\""
+  },
+  {
+    "id": "q8",
+    "category": "purification",
+    "question_ku": "ئایا خوێنبەربوونی کەم (وەک برینی پەنجە) دەستنوێژ دەشکێنێت؟",
+    "answer_ku": "بە زۆربەی ڕای زانایان خوێنی کەم یان برینی سادە دەستنوێژ ناشکێنێت ئەگەر زۆر نەبێت و بەردەوام نەبێت.",
+    "question_ar": "هل خروج الدم القليل ينقض الوضوء؟",
+    "answer_ar": "الدم القليل كجرح الإصبع لا ينقض الوضوء عند جمهور العلماء.",
+    "question_en": "Does a small amount of bleeding break wudu?",
+    "answer_en": "A minor bleed, like a cut finger, does not break your wudu according to the majority of scholars."
+  },
+  {
+    "id": "q9",
+    "category": "purification",
+    "question_ku": "ئایا دەسەڵات لەسەر مۆزە (جورابەکان) ڕێگەپێدراوە؟",
+    "answer_ku": "بەڵێ ڕێگەپێدراوە بۆ مولقیم (مقیم) ڕۆژ و شەوێک (٢٤ کاتژمێر) و بۆ مسافر سێ ڕۆژ و شەو (٧٢ کاتژمێر).",
+    "question_ar": "هل يجوز المسح على الجوارب؟",
+    "answer_ar": "نعم يجوز للمقيم يوم وليلة وللمسافر ثلاثة أيام بلياليها.",
+    "question_en": "Is wiping over socks (khuffs) allowed?",
+    "answer_en": "Yes. For a resident, it is allowed for one day and night (24 hours). For a traveler, it is three days and nights (72 hours)."
+  },
+  {
+    "id": "q10",
+    "category": "zakat",
+    "question_ku": "کەی زەکات فەرز دەبێت لەسەر ماڵ؟",
+    "answer_ku": "کاتێک ماڵەکە دەگاتە ڕێژەی دیاریکراو (نیساب - کێشی 85 گرام ئاڵتون) وە ساڵێکی بەسەردا تێدەپەڕێت بێ ئەوەی کەمتر ببێتەوە.",
+    "question_ar": "متى تجب الزكاة في المال؟",
+    "answer_ar": "إذا بلغ المال النصاب (ما يعادل 85 جراماً من الذهب) وحال عليه الحول (مرت سنة قمرية).",
+    "question_en": "When does Zakat become obligatory on wealth?",
+    "answer_en": "When the wealth reaches the Nisab (equivalent to 85g of gold) and a full Islamic year has passed over it."
+  },
+  {
+    "id": "q11",
+    "category": "zakat",
+    "question_ku": "ئایا دروستە زەکات بە دراو بدرێت لەجیاتی خواردن؟",
+    "answer_ku": "سەبارەت بە زەکاتی ماڵ بەڵێ بە دراو دەدرێت (٢.٥٪). بەڵام سەبارەت بە زەکاتی فیطر (لە کۆتایی ڕەمەزان) زانایان جیاوازن: هەندێک بە خواردن و هەندێک بە دراو.",
+    "question_ar": "هل يجوز إخراج الزكاة نقداً بدلاً من الطعام؟",
+    "answer_ar": "زكاة المال تخرج نقداً (2.5%). أما زكاة الفطر فقد اختلف العلماء بين إخراجها طعاماً أو نقداً.",
+    "question_en": "Can Zakat be given in money instead of food?",
+    "answer_en": "Zakat al-Mal is given as money (2.5%). For Zakat al-Fitr, scholars differ — some allow money, others require food."
+  },
+  {
+    "id": "q12",
+    "category": "family",
+    "question_ku": "گرنگترین ئەرکی باوک چییە بەرامبەر منداڵ؟",
+    "answer_ku": "پێدانی ناوی جوان، فێرکردنی قورئان و پەروەردەیەکی دروستی ئیسلامی زۆر لە دابینکردنی بژێوی گرنگترە.",
+    "question_ar": "ما أهم واجبات الأب تجاه أبنائه؟",
+    "answer_ar": "حُسن التسمية، وتعليم القرآن والتربية الإسلامية الصالحة.",
+    "question_en": "What are the main duties of a father toward his children?",
+    "answer_en": "Giving them good names, teaching them Quran, and ensuring righteous Islamic upbringing."
+  },
+  {
+    "id": "q13",
+    "category": "family",
+    "question_ku": "ئایا دایک لە ئیسلامدا پلەی بەرزتری هەیە لە باوک؟",
+    "answer_ku": "بەڵێ، لە حەدیسدا پێغەمبەر ﷺ سێ جار فەرمووی: \"دایکت!\" و دواتر فەرمووی: \"باوکت!\". ئەمە نیشانەی بەرزی پلەی دایکە لە ئیسلامدا.",
+    "question_ar": "هل للأم منزلة أعلى من الأب في الإسلام؟",
+    "answer_ar": "نعم، قال النبي ﷺ ثلاث مرات: \"أمك!\" ثم قال: \"أبوك!\"، وهذا يدل على عظم منزلة الأم.",
+    "question_en": "Does the mother have a higher status than the father in Islam?",
+    "answer_en": "Yes. The Prophet ﷺ said \"Your mother!\" three times before saying \"Your father!\" — indicating her higher priority."
+  },
+  {
+    "id": "q14",
+    "category": "quran",
+    "question_ku": "ئایا دروستە قورئان بخوێنرێت بەبێ دەستنوێژ؟",
+    "answer_ku": "بەڵێ، دروستە بە دیلی (بەبێ لەمسکردنی مسحەف) خوێندنی قورئان بکرێت بەبێ دەستنوێژ، بەڵام ئەگەر دەستت لە مسحەفەکەیە نابێت بەبێ دەستنوێژ بێت.",
+    "question_ar": "هل يجوز قراءة القرآن بدون وضوء؟",
+    "answer_ar": "يجوز القراءة عن ظهر قلب، لكن لا يجوز مس المصحف بدون وضوء على قول الجمهور.",
+    "question_en": "Can you read Quran without wudu?",
+    "answer_en": "You can recite from memory without wudu, but touching the physical mushaf requires wudu according to the majority of scholars."
+  },
+  {
+    "id": "q15",
+    "category": "quran",
+    "question_ku": "کام سورە باشترینە بۆ خوێندنەوەی پێش خەوتن؟",
+    "answer_ku": "سورەتی البقرة (ئایەتی کورسی) و سورەتی الملک. پێغەمبەر ﷺ فەرمووی: سورەتی الملک پاریزەرە لە سزای گۆڕ.",
+    "question_ar": "ما هي أفضل سورة لقراءتها قبل النوم؟",
+    "answer_ar": "آية الكرسي وسورة الملك. قال النبي ﷺ إن سورة الملك تمنع عذاب القبر.",
+    "question_en": "Which surahs are best to read before sleeping?",
+    "answer_en": "Ayat al-Kursi and Surah Al-Mulk. The Prophet ﷺ said Surah Al-Mulk protects from the punishment of the grave."
+  },
+  {
+    "id": "q16",
+    "category": "general",
+    "question_ku": "ئایا دروستە ئیسلام موسیقا گوێ بگرێت؟",
+    "answer_ku": "زانایان جیاوازن لەسەر ئەم بابەتە. زۆربەیان موسیقای ئامێری (ئینسترومێنت) قەدەغە دەزانن، بەڵام نەشیدە و ئاوازی سادە (بەبێ ئامێر) ڕێگەپێدراوە بەپێی زۆربەی ڕای زانایان.",
+    "question_ar": "هل يجوز سماع الموسيقى في الإسلام؟",
+    "answer_ar": "اختلف العلماء. الجمهور يحرم الآلات الموسيقية، لكن الأناشيد بدون آلات جائزة عند كثيرين.",
+    "question_en": "Is listening to music allowed in Islam?",
+    "answer_en": "Scholars differ on this. The majority prohibit musical instruments, but nasheeds (without instruments) are generally permitted."
+  },
+  {
+    "id": "q17",
+    "category": "general",
+    "question_ku": "کردەوەی باشترین لە ١٠ ڕۆژی یەکەمی زولحیجە چییە؟",
+    "answer_ku": "ڕۆژووگرتن (بەتایبەت ڕۆژی عەرەفە)، زیادکردنی تەکبیر و تەسبیح و تەهلیل، خوێندنەوەی قورئان، و سەدەقەدان.",
+    "question_ar": "ما أفضل الأعمال في العشر الأوائل من ذي الحجة؟",
+    "answer_ar": "الصيام (خاصة يوم عرفة)، والإكثار من التكبير والتسبيح والتهليل، وقراءة القرآن والصدقة.",
+    "question_en": "What are the best deeds in the first 10 days of Dhul Hijjah?",
+    "answer_en": "Fasting (especially on the Day of Arafah), frequent Takbeer, Tasbih, Tahleel, Quran recitation, and charity."
+  },
+  {
+    "id": "q18",
+    "category": "general",
+    "question_ku": "ئایا کەسێک دەتوانێت تۆبە بکات هەرچەندە گوناهەکەی گەورە بێت؟",
+    "answer_ku": "بەڵێ! خودای گەورە فەرمووی: \"ئەی بەندەکانم کە لە سەر خۆتان زیادەڕۆیتان کردووە! هیوا لە ڕەحمەتی خودا مەبڕنەوە، چونکە خودا هەموو تاوانەکان لێ دەبووڕێتەوە.\" (الزمر ٥٣)",
+    "question_ar": "هل يستطيع المذنب التوبة مهما كان ذنبه؟",
+    "answer_ar": "نعم! قال تعالى: \"يا عبادي الذين أسرفوا على أنفسهم لا تقنطوا من رحمة الله إن الله يغفر الذنوب جميعاً\". (الزمر:53)",
+    "question_en": "Can a sinner repent no matter how great the sin?",
+    "answer_en": "Yes! Allah says: \"O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins.\" (Quran 39:53)"
+  },
+  {
+    "id": "q19",
+    "category": "prayer",
+    "question_ku": "ئایا ڕاکردن بۆ نوێژی جەماعەت دروستە؟",
+    "answer_ku": "نەخێر، پێویستە بە هێمنی و بە شکۆوە بڕۆیت، ئەوەی فریای کەوتی بیکە و ئەوەی چوو لەدەستت تەواوی بکە.",
+    "question_ar": "هل يجوز الجري للحاق بصلاة الجماعة؟",
+    "answer_ar": "لا، بل يجب المشي بسكينة ووقار، فما أدركتم فصلوا وما فاتكم فأتموا.",
+    "question_en": "Is it allowed to run to catch the congregational prayer?",
+    "answer_en": "No, you should walk calmly and with dignity. Whatever part of the prayer you catch, pray it, and whatever you miss, complete it."
+  },
+  {
+    "id": "q20",
+    "category": "prayer",
+    "question_ku": "ئایا خوێندنی سورەتێک دوای فاتیحە لە هەموو ڕکاتەکاندا فەرزە؟",
+    "answer_ku": "نەخێر، تەنها لە دوو ڕکاتی یەکەمدا سوننەتە، لە ڕکاتەکانی سێیەم و چوارەمدا تەنها فاتیحە دەخوێنرێت.",
+    "question_ar": "هل قراءة سورة بعد الفاتحة واجبة في كل الركعات؟",
+    "answer_ar": "لا، هي سنة في الركعتين الأولى والثانية فقط، أما الثالثة والرابعة فيكتفى بالفاتحة.",
+    "question_en": "Is reading a surah after Al-Fatiha obligatory in all rak`ahs?",
+    "answer_en": "No, it is a Sunnah in the first two rak`ahs only. In the third and fourth, only Al-Fatiha is recited."
+  },
+  {
+    "id": "q21",
+    "category": "fasting",
+    "question_ku": "ئایا ڕشانەوەی بێ ویست ڕۆژوو دەشکێنێت؟",
+    "answer_ku": "نەخێر، ئەگەر کەسەکە ناچار بوو بە ڕشانەوە ڕۆژووەکەی دروستە، بەڵام ئەگەر بە ویستی خۆی کردی دەشکێت.",
+    "question_ar": "هل القيء غير العمد يفطر؟",
+    "answer_ar": "لا يفطر، أما من استقاء عمداً فليقضِ.",
+    "question_en": "Does unintentional vomiting break the fast?",
+    "answer_en": "No. If a person vomits unintentionally, the fast is valid. If done intentionally, the fast is broken."
+  },
+  {
+    "id": "q22",
+    "category": "zakat",
+    "question_ku": "ئایا دروستە زەکات بدرێت بە دایک و باوک یان منداڵ؟",
+    "answer_ku": "نەخێر، زەکات نادرێت بەو کەسانەی کە بژێوییان لەسەر تۆیە (وەک دایک، باوک، هاوسەر و منداڵ).",
+    "question_ar": "هل يجوز إعطاء الزكاة للوالدين أو الأبناء؟",
+    "answer_ar": "لا يجوز، لأن نفقتهم واجبة عليك، ولا تصرف الزكاة لمن تجب نفقتهم.",
+    "question_en": "Can Zakat be given to parents or children?",
+    "answer_en": "No, Zakat cannot be given to those for whom you are financially responsible, such as parents, spouses, and children."
+  },
+  {
+    "id": "q23",
+    "category": "purification",
+    "question_ku": "ئایا خەوی قوڵ دەستنوێژ دەشکێنێت؟",
+    "answer_ku": "بەڵێ، خەوێکی قوڵ کە مرۆڤ هەست بە دەوروبەری نەکات دەستنوێژ دەشکێنێت.",
+    "question_ar": "هل النوم العميق ينقض الوضوء؟",
+    "answer_ar": "نعم، النوم المستغرق الذي يزول معه الشعور ينقض الوضوء.",
+    "question_en": "Does deep sleep break wudu?",
+    "answer_en": "Yes, deep sleep where one loses consciousness of their surroundings breaks wudu."
+  },
+  {
+    "id": "q24",
+    "category": "family",
+    "question_ku": "حوکمی عەقیقە چییە بۆ منداڵی تازە لەدایکبوو؟",
+    "answer_ku": "سوننەتێکی موئەکەدەیە، بۆ کوڕ دوو سەر مەڕ و بۆ کچ یەک سەر مەڕ سەردەبڕدرێت.",
+    "question_ar": "ما حكم العقيقة للمولود؟",
+    "answer_ar": "سنة مؤكدة، شاتان عن الغلام وشاة عن الجارية.",
+    "question_en": "What is the ruling on Aqiqah for a newborn?",
+    "answer_en": "It is a strongly recommended Sunnah: two sheep for a boy and one sheep for a girl."
+  },
+  {
+    "id": "q25",
+    "category": "quran",
+    "question_ku": "کام سورە بە \"بوکی قورئان\" ناسراوە؟",
+    "answer_ku": "سورەتی (الرحمن) بە بوکی قورئان ناسراوە.",
+    "question_ar": "ما هي السورة الملقبة بعروس القرآن؟",
+    "answer_ar": "سورة الرحمن.",
+    "question_en": "Which Surah is known as the \"Bride of the Quran\"?",
+    "answer_en": "Surah Ar-Rahman is known as the Bride of the Quran."
+  },
+  {
+    "id": "q26",
+    "category": "general",
+    "question_ku": "ئایا دروستە سوێند بخورێت بە غەیری خودا؟",
+    "answer_ku": "نەخێر، سوێند خوارد تەنها بە خودا دروستە. پێغەمبەر ﷺ دەفەرموێت: \"هەر کەسێک سوێند دەخوات با بە خودا بیخوات یان بێدەنگ بێت\".",
+    "question_ar": "هل يجوز الحلف بغير الله؟",
+    "answer_ar": "لا يجوز، لقوله ﷺ: \"من كان حالفاً فليحلف بالله أو ليصمت\".",
+    "question_en": "Is it permissible to swear by other than Allah?",
+    "answer_en": "No, swearing is only allowed by Allah. The Prophet ﷺ said: \"Whoever swears, let him swear by Allah or remain silent.\""
+  },
+  {
+    "id": "q27",
+    "category": "prayer",
+    "question_ku": "ئایا پۆشینی جلی تەسکی ئافرەت لە نوێژدا دروستە؟",
+    "answer_ku": "پێویستە جلی نوێژ فراوان بێت و وەسفی جەستە نەکات، ئەگەر زۆر تەسک بێت کە شێوەی جەستە دەربخات دروست نییە.",
+    "question_ar": "هل تجوز الصلاة بملابس ضيقة للمرأة؟",
+    "answer_ar": "يجب أن يكون لباس الصلاة ساتراً سابغاً لا يصف الجسم، والملابس الضيقة التي تصف العورة منهي عنها.",
+    "question_en": "Is it permissible for a woman to pray in tight clothing?",
+    "answer_en": "The prayer clothing must be loose and not depict the shape of the body. Extremely tight clothing is not permissible."
+  },
+  {
+    "id": "q28",
+    "category": "fasting",
+    "question_ku": "ئایا بەکارهێنانی سیواک یان هەویری ددان لە کاتی ڕۆژوودا دروستە؟",
+    "answer_ku": "بەڵێ دروستە، بەڵام پێویستە ئاگادار بیت هیچ شتێک نەچێتە ناو قوڕگتەوە.",
+    "question_ar": "هل يجوز استخدام السواك أو المعجون للصائم؟",
+    "answer_ar": "نعم يجوز، مع الحذر من دخول شيء إلى الجوف.",
+    "question_en": "Can one use miswak or toothpaste while fasting?",
+    "answer_en": "Yes, it is allowed, but one must be careful not to swallow anything."
+  },
+  {
+    "id": "q29",
+    "category": "zakat",
+    "question_ku": "ئایا زەکات لەسەر ماڵی منداڵی بێباوک (هەتیم) فەرزە؟",
+    "answer_ku": "بەڵێ، ئەگەر ماڵەکەی گەیشتە ڕێژەی دیاریکراو، سەرپەرشتیارەکەی زەکاتەکەی بۆ دەردەکات.",
+    "question_ar": "هل تجب الزكاة في مال اليتيم؟",
+    "answer_ar": "نعم، تجب في ماله إذا بلغ النصاب ويخرجها عنه وليه.",
+    "question_en": "Is Zakat due on the orphan`s wealth?",
+    "answer_en": "Yes, if their wealth reaches the Nisab, their guardian must pay Zakat on their behalf."
+  },
+  {
+    "id": "q30",
+    "category": "family",
+    "question_ku": "مافی دراوسێ چییە لە ئیسلامدا؟",
+    "answer_ku": "ڕێزگرتن لێی، ئازار نەدانی، یارمەتیدانی لە کاتی پێویستدا، و پاراستنی ئەمانەت و نهێنییەکانی.",
+    "question_ar": "ما حقوق الجار في الإسلام؟",
+    "answer_ar": "كف الأذى عنه، وإكرامه، وتفقده، ومساعدته عند الحاجة.",
+    "question_en": "What are the rights of a neighbor in Islam?",
+    "answer_en": "To not harm them, to be generous to them, to help them when needed, and to safeguard their trust."
+  },
+  {
+    "id": "q31",
+    "category": "quran",
+    "question_ku": "سورەتی (ئیخلاس) چەندەی قورئان پاداشتەکەیەتی؟",
+    "answer_ku": "پێغەمبەر ﷺ فەرموویەتی: سورەتی ئیخلاس یەکسانە بە سێیەکی (١/٣) قورئان لە ڕووی پاداشت و ماناوە.",
+    "question_ar": "كم تعدل سورة الإخلاص من القرآن؟",
+    "answer_ar": "تعدل ثلث القرآن كما ورد في السنة.",
+    "question_en": "How much of the Quran does Surah Al-Ikhlas equal?",
+    "answer_en": "The Prophet ﷺ said Surah Al-Ikhlas is equivalent to one-third of the Quran."
+  },
+  {
+    "id": "q32",
+    "category": "general",
+    "question_ku": "ئایا خواردنی گۆشتی وڵاتانی ناموسڵمان (ئەهلی کتاب) دروستە؟",
+    "answer_ku": "خودای گەورە خواردنی ئەهلی کتابی (جوو و مەسیحی) بۆ حەڵاڵ کردووین ئەگەر بە ناوی خوداوە سەر بڕدرابێت، مەگەر بزانرێت بە شێوەیەکی نادروست مردار کراوەتەوە.",
+    "question_ar": "ما حكم أكل ذبائح أهل الكتاب؟",
+    "answer_ar": "أحل الله طعام أهل الكتاب، فذبائحهم حلال للمسلمين ما لم يذبحوها على غير اسم الله أو بطريقة محرمة.",
+    "question_en": "Is it permissible to eat meat slaughtered by People of the Book?",
+    "answer_en": "Allah has made the food of the People of the Book permissible, provided it is slaughtered properly and not in a prohibited way."
+  },
+  {
+    "id": "q33",
+    "category": "prayer",
+    "question_ku": "ئایا دروستە لە نوێژدا سورەتەکان بە پێچەوانەی ڕیزبەندی قورئان بخوێنرێت؟",
+    "answer_ku": "دروستە بەڵام باشتر وایە ڕیزبەندییەکە بپارێزرێت، بۆ نموونە لە ڕکاتی یەکەم سورەتێکی پێشتر و لە دووەم سورەتێکی دوای ئەو بخوێنرێت.",
+    "question_ar": "هل يجوز قراءة السور بغير ترتيب المصحف في الصلاة؟",
+    "answer_ar": "يجوز ولكنه خلاف الأفضل، والأولى الالتزام بترتيب المصحف.",
+    "question_en": "Is it permissible to recite Surahs out of order in prayer?",
+    "answer_en": "It is permissible, but it is better to follow the order of the Quran (e.g., reciting an earlier Surah in the first rak`ah)."
+  },
+  {
+    "id": "q34",
+    "category": "fasting",
+    "question_ku": "ئایا بەکارهێنانی عەتر یان بۆن ڕۆژوو دەشکێنێت؟",
+    "answer_ku": "نەخێر، بۆن و هەڵمژینی عەتر ڕۆژوو ناشکێنێت.",
+    "question_ar": "هل التطيب بالروائح والعطور يفطر الصائم؟",
+    "answer_ar": "لا، الروائح والطيب لا تفطر الصائم.",
+    "question_en": "Do perfumes or scents break the fast?",
+    "answer_en": "No, using perfumes or smelling scents does not break the fast."
+  },
+  {
+    "id": "q35",
+    "category": "family",
+    "question_ku": "ئایا کچ دەتوانێت بەبێ ڕەزامەندی باوکی شوو بکات؟",
+    "answer_ku": "لە ئیسلامدا بوونی (وەلی - سەرپەرشتیار) مەرجە بۆ گرێبەستی هاوسەرگیری، بەڵام باوکیش بۆی نییە کچەکەی ناچار بکات بە کەسێک نەیخوازێت.",
+    "question_ar": "هل يجوز للمرأة أن تزوج نفسها بدون ولي؟",
+    "answer_ar": "لا نكاح إلا بولي، فلا بد من موافقة الولي مع رضا المرأة.",
+    "question_en": "Can a woman marry without the consent of her guardian?",
+    "answer_en": "In Islam, a guardian (wali) is required for the marriage contract, but the guardian also cannot force her to marry someone she refuses."
+  },
+  {
+    "id": "q36",
+    "category": "quran",
+    "question_ku": "بۆچی سورەتی (تەوبە) بە \"بیسمیللا\" دەست پێ ناکات؟",
+    "answer_ku": "چونکە ئەم سورەتە باس لە سزا و بەرائەت لە هاوبەشدانەران دەکات، و \"بیسمیللا\" نیشانەی ڕەحمەتە، هەروەها چونکە هەندێک لە زانایان بە تەواکەری سورەتی پێشوو (ئەنفال) سەیری دەکەن.",
+    "question_ar": "لماذا لا تبدأ سورة التوبة بالبسملة؟",
+    "answer_ar": "لأنها بدأت بالبراءة من المشركين والوعيد، والبسملة رحمة، وقيل لأنها متممة لسورة الأنفال.",
+    "question_en": "Why does Surah At-Tawbah not start with Bismillah?",
+    "answer_en": "Because it begins with a declaration of disassociation from idolaters and warning, and Bismillah is a symbol of mercy. Some also consider it a continuation of Surah Al-Anfal."
+  },
+  {
+    "id": "q37",
+    "category": "general",
+    "question_ku": "حوکمی وێنەگرتن (فۆتۆگرافی) چییە لە ئیسلامدا؟",
+    "answer_ku": "زۆربەی زانایان وێنەی فۆتۆگرافی بە ڕێگەپێدراو دەزانن ئەگەر بۆ مەبەستی خراپ و فیتنە نەبێت، چونکە ئەمە وێنەکێشان نییە بەڵکو گرتنی \"سێبەر و ڕووناکیە\".",
+    "question_ar": "ما حكم التصوير الفوتوغرافي؟",
+    "answer_ar": "جمهور العلماء المعاصرين على جوازه ما لم يكن لغرض محرم، لأنه حبس للظل وليس مضاهاة لخلق الله.",
+    "question_en": "What is the ruling on photography in Islam?",
+    "answer_en": "The majority of modern scholars allow photography as long as the content is not prohibited, as it captures \"light and shadows\" rather than creating art from scratch."
+  },
+  {
+    "id": "q38",
+    "category": "general",
+    "question_ku": "ئایا کارکردن لە بانکەکاندا کە \"ڕیبا\"یان تێدایە حەڵاڵە؟",
+    "answer_ku": "ئەو کارانەی کە پەیوەندی ڕاستەوخۆیان بە نووسین یان گەواهیدانی ڕیباوە هەیە حەرامن، بەڵام هەندێک لە زانایان جیاکاری دەکەن لە نێوان کارە تەکنیکی و لاوەکییەکان.",
+    "question_ar": "ما حكم العمل في البنوك الربوية؟",
+    "answer_ar": "يحرم العمل في الأعمال التي تباشر الربا كتابةً أو شهادةً لحديث النبي ﷺ في لعن آكل الربا وموكله وكاتبه وشاهديه.",
+    "question_en": "Is working in riba-based (interest) banks allowed?",
+    "answer_en": "Jobs that directly involve writing or witnessing interest transactions are prohibited according to the hadith that curses those involved in riba."
+  },
+  {
+    "id": "q39",
+    "category": "family",
+    "question_ku": "ئایا دروستە پیاو زیاتر لە چوار ژنی هەبێت؟",
+    "answer_ku": "نەخێر، لە ئیسلامدا ئەوپەڕی چوار ژن ڕێگەپێدراوە بە مەرجێک بتوانێت دادپەروەری لە نێوانیاندا جێبەجێ بکات.",
+    "question_ar": "هل يجوز للرجل الزواج بأكثر من أربع نساء؟",
+    "answer_ar": "لا يجوز، الحد الأقصى في الإسلام هو أربع زوجات مع اشتراط العدل.",
+    "question_en": "Is it permissible for a man to have more than four wives?",
+    "answer_en": "No, the maximum limit in Islam is four wives, provided he can maintain justice between them."
+  },
+  {
+    "id": "q40",
+    "category": "general",
+    "question_ku": "بایەخی \"تەقوا\" چییە لە ئیسلامدا؟",
+    "answer_ku": "تەقوا بنەمای هەموو چاکەیەکە، وەک (عەلی کوڕی ئەبوتالیب) دەفەرموێت: تەقوا بریتییە لە ترس لە خودا، کارکردن بە قورئان، ڕازی بوون بە کەم، و ئامادەکاری بۆ ڕۆژی دوایی.",
+    "question_ar": "ما أهمية التقوى في الإسلام؟",
+    "answer_ar": "هي أساس الفلاح، وهي الخوف من الجليل، والعمل بالتنزيل، والقناعة بالقليل، والاستعداد ليوم الرحيل.",
+    "question_en": "What is the significance of Taqwa in Islam?",
+    "answer_en": "Taqwa is the root of all goodness. Ali ibn Abi Talib defined it as: Fearing Allah, acting upon the Quran, contentment with a little, and preparing for the Day of Departure."
+  },
+  {
+    "id": "q41",
+    "category": "general",
+    "question_ku": "حوکمی بەکارهێنانی سۆشیاڵ میدیا چییە لە ئیسلامدا؟",
+    "answer_ku": "وەک هەر ئامرازێکی تر، بەکارهێنانی بۆ کاری باش و بڵاوکردنەوەی زانیاری بەسود حەڵاڵە، بەڵام بۆ غەیبەت، بڵاوکردنەوەی درۆ و بینینی شتی حەرام قەدەغەیە.",
+    "question_ar": "ما حكم استخدام وسائل التواصل الاجتماعي؟",
+    "answer_ar": "هي وسيلة، تستخدم في الخير ونشر العلم فهي مباحة، أما في الغيبة والنميمة ونشر الفتن فهي محرمة.",
+    "question_en": "What is the ruling on using social media in Islam?",
+    "answer_en": "It is a tool; using it for good and spreading knowledge is permissible. Using it for gossip, spreading lies, or viewing prohibited content is forbidden."
+  },
+  {
+    "id": "q42",
+    "category": "zakat",
+    "question_ku": "ئایا بازرگانیکردن بە دراوە دیجیتاڵییەکان (وەک بیتکۆین) حەڵاڵە؟",
+    "answer_ku": "زانایانی سەردەم جیاوازن. هەندێکیان بە حەرامی دەزانن بەهۆی \"غەرەر\" (نادیاری) زۆر، بەڵام هەندێکی تر بە مەرجی بوونی ڕێسای ڕوون و دوورکەوتنەوە لە قومار بە حەڵاڵی دەزانن.",
+    "question_ar": "ما حكم التداول بالعملات الرقمية (مثل البيتكوين)؟",
+    "answer_ar": "اختلف العلماء المعاصرون، فمنهم من حرّمها للغرر والجهالة، ومنهم من أباحها بضوابط ومنع القمار فيها.",
+    "question_en": "Is trading in digital currencies (like Bitcoin) halal?",
+    "answer_en": "Modern scholars differ. Some prohibit it due to high uncertainty (gharar), while others allow it with conditions and avoidance of gambling."
+  },
+  {
+    "id": "q43",
+    "category": "general",
+    "question_ku": "ئایا ئارامگرتن لەسەر فشارە دەروونییەکان پاداشتی هەیە؟",
+    "answer_ku": "بەڵێ، پێغەمبەر ﷺ دەفەرموێت: \"هیچ ناڕەحەتی و خەم و پەژارەیەک بە موسڵمان ناگات، تەنانەت دڕکێکیش بچێت بە پێیدا، ئیلا خودا گوناهەکانی پێ دەسڕێتەوە\".",
+    "question_ar": "هل الصبر على الضغوط النفسية له أجر؟",
+    "answer_ar": "نعم، قال ﷺ: \"ما يصيب المسلم من نصب ولا وصب ولا هم ولا حزن حتى الشوكة يشاكها إلا كفر الله بها من خطاياه\".",
+    "question_en": "Is there a reward for persevering through mental stress?",
+    "answer_en": "Yes. The Prophet ﷺ said: \"No fatigue, disease, sorrow, or grief befalls a Muslim, even the prick of a thorn, except that Allah expiates some of his sins for it.\""
+  },
+  {
+    "id": "q44",
+    "category": "general",
+    "question_ku": "حوکمی بەخشینی ئەندامانی جەستە چییە دوای مردن؟",
+    "answer_ku": "زۆربەی ناوەندە فیقهییەکان بە ڕێگەپێدراوی دەزانن بۆ ڕزگارکردنی ژیانی کەسانی تر، بەو مەرجەی وەسیەتی کەسەکە بێت و کڕین و فرۆشتنی پێوە نەکرێت.",
+    "question_ar": "ما حكم التبرع بالأعضاء بعد الموفاة؟",
+    "answer_ar": "أجازه مجمع البحوث الإسلامية بشروط، منها كونه وصية، ولإنقاذ حياة، وعدم البيع والشراء فيه.",
+    "question_en": "What is the ruling on organ donation after death?",
+    "answer_en": "Most Islamic councils allow it to save lives, provided it is based on a will and no commercial trading is involved."
+  },
+  {
+    "id": "q45",
+    "category": "purification",
+    "question_ku": "ئایا تاتۆ (وەشم) لە ئیسلامدا حەرامە؟",
+    "answer_ku": "بەڵێ، تاتۆی هەمیشەیی حەرامە چونکە گۆڕینی دروستکراوی خودایە، بەڵام (حەنا) و تاتۆی کاتی کە دەسڕێتەوە ئاساییە.",
+    "question_ar": "هل الوشم حرام في الإسلام؟",
+    "answer_ar": "نعم الوشم الدائم محرم لقوله ﷺ بلعن الواشمة والمستوشمة، أما الحناء والوشم المؤقت فجائز.",
+    "question_en": "Is tattooing prohibited in Islam?",
+    "answer_en": "Yes, permanent tattoos are prohibited as they alter Allah's creation. However, henna and temporary stickers are permissible."
+  },
+  {
+    "id": "q46",
+    "category": "family",
+    "question_ku": "حوکمی لەخۆگرتنی منداڵی بێسەرپەرشت (کەفالەت) چییە؟",
+    "answer_ku": "کارێکی زۆر گەورە و پڕ پاداشتە، بەڵام نابێت ناوی منداڵەکە بخرێتە سەر پاشناوی کەفیلەکە (ئینتساب)، بەڵکو دەبێت ناوی باوکی خۆی بپارێزرێت.",
+    "question_ar": "ما حكم كفالة اليتيم؟",
+    "answer_ar": "كفالة اليتيم من أعظم القربات، لكن يحرم التبني (بمعنى ضمه للنسب)، بل يحفظ للطفل نسبه الأصلي.",
+    "question_en": "What is the ruling on fostering/sponsoring orphans?",
+    "answer_en": "Sponsoring an orphan is highly rewarded, but adoption (changing the child's surname to yours) is prohibited; their biological lineage must be preserved."
+  },
+  {
+    "id": "q47",
+    "category": "prayer",
+    "question_ku": "ئایا دروستە نوێژ لەسەر فەرشێک بکرێت کە وێنەی کەعبەی لەسەر بێت؟",
+    "answer_ku": "دروستە، بەڵام باشتر وایە فەرشی سادە بەکاربهێنرێت بۆ ئەوەی خەیاڵت نەڕوات و بێ ڕێزی نەبێت بەرامبەر وێنە پیرۆزەکان.",
+    "question_ar": "هل تجوز الصلاة على سجادة فيها صورة الكعبة؟",
+    "answer_ar": "تجوز الصلاة، لكن الأفضل السجادة السادة للخشوع وعدم إهانة الرموز المقدسة بوطئها بالأقدام.",
+    "question_en": "Is it permissible to pray on a rug with a picture of the Kaaba?",
+    "answer_en": "It is permissible, but simple rugs are better to maintain focus and avoid any unintended disrespect to sacred symbols."
+  },
+  {
+    "id": "q48",
+    "category": "general",
+    "question_ku": "ئایا ئیسلام ڕێگەی داوە بە بەکارهێنانی ژیری دەستکرد (AI)؟",
+    "answer_ku": "بەڵێ، ژیری دەستکرد ئامرازێکی نوێی زانستە. بەکارهێنانی بۆ خزمەتی مرۆڤایەتی حەڵاڵە، بەڵام بۆ دروستکردنی وێنەی نەشیاو یان فێڵکردن حەرامە.",
+    "question_ar": "ما موقف الإسلام من الذكاء الاصطناعي؟",
+    "answer_ar": "هو أداة علمية، حكمها حكم الغرض منها؛ في النفع جائز وفي التزوير ونشر المنكر محرم.",
+    "question_en": "What is Islam's stance on Artificial Intelligence (AI)?",
+    "answer_en": "AI is a scientific tool. Its ruling depends on its use; it is permissible for beneficial purposes but forbidden for deception or unethical content."
+  },
+  {
+    "id": "q49",
+    "category": "family",
+    "question_ku": "ئایا پیرۆزبایی جەژنە نائیسلامییەکان (وەک سەری ساڵ) دروستە؟",
+    "answer_ku": "زانایان ڕای جیاوازیان هەیە. هەندێک بە نەگونجاوی دەزانن، بەڵام هەندێکی تر بۆ بەرژەوەندی پەیوەندی کۆمەڵایەتی و پێکەوەژیان بە وشەی گشتی (وەک: ساڵێکی خۆش) بە دروستی دەزانن.",
+    "question_ar": "ما حكم التهنئة بالأعياد غير الإسلامية؟",
+    "answer_ar": "اختلف العلماء؛ فمنهم من منعها خصوصية دينية، ومنهم من أجازها كنوع من البر والتعايش وحسن الخلق.",
+    "question_en": "Is it allowed to congratulate others on non-Islamic holidays?",
+    "answer_en": "Scholars differ. Some discourage it as a religious matter, while others allow general kind words for social harmony and kindness."
+  },
+  {
+    "id": "q50",
+    "category": "purification",
+    "question_ku": "ئایا بۆیەی نینۆک ڕێگرە لە دەستنوێژ؟",
+    "answer_ku": "بەڵێ، چونکە چینێک دروست دەکات کە ڕێگری دەکات ئاو بگاتە نینۆکەکە. پێویستە پێش دەستنوێژ لێ بکرێتەوە، مەگەر ئەو جۆرانەی کە ئاو تێپەڕ دەکەن (Breathable).",
+    "question_ar": "هل طلاء الأظافر يمنع صحة الوضوء؟",
+    "answer_ar": "نعم، لأنه يشكل طبقة عازلة تمنع وصول الماء، إلا إذا كان من النوع الذي يسمح بمرور الماء.",
+    "question_en": "Does nail polish invalidate wudu?",
+    "answer_en": "Yes, because it creates a barrier that prevents water from reaching the nail. It must be removed unless it is a \"breathable\" type."
+  },
+  {
+    "id": "q51",
+    "category": "general",
+    "question_ku": "حوکمی پۆشینی ئاڵتون و حەریر بۆ پیاوان چییە؟",
+    "answer_ku": "ئاڵتون و حەریری سروشتی بۆ پیاوان حەرامە، پێغەمبەر ﷺ فەرمووی: \"ئەم دووانە بۆ مێینەی ئومەتەکەم حەڵاڵن و بۆ نێرینەیان حەرامن\".",
+    "question_ar": "ما حكم لبس الذهب والحرير للرجال؟",
+    "answer_ar": "يحرم على الرجال لبس الذهب والحرير الطبيعي لقوله ﷺ: \"أُحل الذهب والحرير لإناث أمتي وحُرم على ذكورها\".",
+    "question_en": "What is the ruling on men wearing gold and silk?",
+    "answer_en": "Gold and natural silk are forbidden for men. The Prophet ﷺ said they are permissible for women of his Ummah but prohibited for men."
+  },
+  {
+    "id": "q52",
+    "category": "zakat",
+    "question_ku": "ئایا قەرز سەرفکردن بۆ حەج دروستە؟",
+    "answer_ku": "حەج تەنها لەسەر ئەو کەسانە فەرزە کە توانای داراییان هەیە. پێویست ناکات کەسەکە خۆی قەرزدار بکات بۆ حەج، بەڵام ئەگەر قەرزی کرد و کردی نوێژەکەی دروستە.",
+    "question_ar": "هل يجوز الاقتراض لأداء فريضة الحج؟",
+    "answer_ar": "الحج واجب على المستطيع، ولا يجب على المسلم الاقتراض ليحج، لكن لو حج بالدين صح حجه مع الكراهة.",
+    "question_en": "Is it permissible to take a loan for Hajj?",
+    "answer_en": "Hajj is only obligatory for those who are financially able. One is not required to take a loan to perform it, though it is valid if done."
+  },
+  {
+    "id": "q53",
+    "category": "family",
+    "question_ku": "ئایا کارکردنی ئافرەت لە دەرەوەی ماڵ حەڵاڵە؟",
+    "answer_ku": "بەڵێ حەڵاڵە بەو مەرجەی کارەکە شیاو بێت و حیجابی تێدا بپارێزرێت و نەبێتە هۆی فەرامۆشکردنی ئەرکە سەرەکییەکانی خێزان.",
+    "question_ar": "ما حكم عمل المرأة خارج البيت؟",
+    "answer_ar": "مباح وجائز شرعاً إذا كان العمل في حدود الضوابط الشرعية ومع التزام الحجاب وعدم التقصير في حق الزوج والأولاد.",
+    "question_en": "Is it permissible for a woman to work outside the home?",
+    "answer_en": "Yes, it is permissible as long as the work is honorable, she maintains her hijab, and it doesn't lead to neglecting core family responsibilities."
+  },
+  {
+    "id": "q54",
+    "category": "general",
+    "question_ku": "حوکمی کڕین و فرۆشتنی پشکی کۆمپانیاکان چییە؟",
+    "answer_ku": "دروستە ئەگەر کۆمپانیاکە کارەکەی حەڵاڵ بێت و مامەڵەی ڕیبا (قازانجی بانک) نەکات یان ڕێژەیەکی زۆر کەم بێت کە پاک بکرێتەوە.",
+    "question_ar": "ما حكم المتاجرة بأسهم الشركات؟",
+    "answer_ar": "تجوز إذا كان نشاط الشركة مباحاً ولا تتعامل بالربا، أما الشركات المحرمة النشاط فلا يجوز شراء أسهمها.",
+    "question_en": "What is the ruling on buying and selling company stocks?",
+    "answer_en": "It is permissible if the company's activity is halal and it does not deal primarily in interest-based transactions."
+  },
+  {
+    "id": "q55",
+    "category": "quran",
+    "question_ku": "ئایا دروستە قورئان بخرێتە سەر زەوی؟",
+    "answer_ku": "پێویستە قورئان بەرز ڕابگیرێت و ڕێزی لێ بگیرێت. دانانی لەسەر زەوی بەبێ مەبەست بێ ڕێزی نییە بەڵام باشتر وایە لە شوێنێکی بەرز دابنرێت.",
+    "question_ar": "ما حكم وضع المصحف على الأرض؟",
+    "answer_ار": "يجب تعظيم المصحف وتنزيهه، والأولى وضعه في مكان مرتفع عن الأرض توقيراً لكلام الله.",
+    "question_en": "Is it allowed to place the Quran on the floor?",
+    "answer_en": "The Quran should be honored and held high. While placing it on a clean floor unintentionally isn't a sin, it is highly recommended to keep it on an elevated place."
+  },
+  {
+    "id": "q56",
+    "category": "purification",
+    "question_ku": "ئایا پشیلە پیسە و دەستنوێژ دەشکێنێت؟",
+    "answer_ku": "نەخێر، پشیلە بە پیس (نەجیس) دانانرێت و دەست لێدانی یان هاتنی بۆ ناو ماڵ دەستنوێژ ناشکێنێت.",
+    "question_ar": "هل القطة نجسة وهل تنقض الوضوء؟",
+    "answer_ar": "لا، القطة ليست نجسة وهي من الطوافين عليكم، ولا ينقض لمسها الوضوء.",
+    "question_en": "Are cats impure and do they break wudu?",
+    "answer_en": "No, cats are not considered impure (najis), and touching them or having them in the house does not break wudu."
+  },
+  {
+    "id": "q57",
+    "category": "general",
+    "question_ku": "حوکمی بەکارهێنانی \"سەدەقەی جاریە\" بۆ دروستکردنی بیر یان چاندنی دار چییە؟",
+    "answer_ku": "یەکێکە لە باشترین جۆرەکانی سەدەقە، چونکە پاداشتەکەی بەردەوام دەبێت تەنانەت دوای مردنی کەسەکەش.",
+    "question_ar": "ما فضل الصدقة الجارية كبناء بئر أو غرس شجر؟",
+    "answer_ar": "هي من أفضل الأعمال التي يجري ثوابها للإنسان بعد موته لقوله ﷺ: \"أو صدقة جارية\".",
+    "question_en": "What is the merit of \"Sadaqah Jariyah\" like building a well or planting trees?",
+    "answer_en": "It is one of the best forms of charity because its reward continues to benefit the person even after their death."
+  },
+  {
+    "id": "q58",
+    "category": "family",
+    "question_ku": "ئایا دروستە پیاو ژنەکەی ناچار بکات بە بڕینی پەیوەندی لەگەڵ دایک و باوکی؟",
+    "answer_ku": "نەخێر، پیاو بۆی نییە ڕێگری بکات لە ژنەکەی بۆ سەردانی دایک و باوکی، چونکە ئەمە \"قەتعی ڕەحم\"ە و لە ئیسلامدا قەدەغەیە.",
+    "question_ar": "هل يجوز للزوج منع زوجته من زيارة والديها؟",
+    "answer_ar": "لا ينبغي للزوج ذلك، لأن فيه قطعاً للرحم المأمور بصلتها، بل عليه إعانتها على بر والديها.",
+    "question_en": "Can a husband prevent his wife from visiting her parents?",
+    "answer_en": "A husband should not do this as it involves severing ties of kinship, which is forbidden in Islam. He should encourage her to be dutiful to them."
+  },
+  {
+    "id": "q59",
+    "category": "general",
+    "question_ku": "حوکمی گاڵتەکردن و \"نکتە\" چییە لە ئیسلامدا؟",
+    "answer_ku": "دروستە بەو مەرجەی درۆی تێدا نەبێت، سوکایەتی بە کەس و ئایین نەکرێت و زیادەڕۆیی تێدا نەکرێت کە ببێتە هۆی مردنی دڵ.",
+    "question_ar": "ما حكم المزاح والمزاح في الإسلام؟",
+    "answer_ar": "المزاح مباح إذا كان بصدق، ولم يتضمن سخرية من الدين أو الناس، ولم يصبح عادة تشغل عن ذكر الله.",
+    "question_en": "What is the ruling on joking and humor in Islam?",
+    "answer_en": "It is permissible provided it contains no lies, does not mock anyone or the religion, and is not excessive to the point of neglecting serious matters."
+  },
+  {
+    "id": "q60",
+    "category": "prayer",
+    "question_ku": "ئایا نۆێژی قەزا دەبێت یەک لەدوای یەک بکرێت؟",
+    "answer_ku": "بەڵێ، پێویستە نوێژە قەزاکان بەو ڕیزبەندییەی کە فەوتاون ئەنجام بدرێن (بۆ نموونە پێش نیوەڕۆ بەیانی بکرێت).",
+    "question_ar": "هل يجب الترتيب في قضاء الصلوات الفائتة؟",
+    "answer_ar": "نعم، يجب الترتيب عند قضاء الفوائت القليلة، فيصلي الصبح ثم الظهر وهكذا.",
+    "question_en": "Must missed prayers (qada) be performed in order?",
+    "answer_en": "Yes, it is required to perform missed prayers in the sequence they were missed (e.g., praying Fajr then Dhuhr)."
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "makkah",
+    "name_ku": "ڕادیۆی مەککە (ڕاستەوخۆ)",
+    "name_ar": "اذاعة مكة المكرمة",
+    "name_en": "Makkah Live Radio",
+    "url": "https://stream.radiojar.com/hry9y9y9y9y9y",
+    "reciter": "کۆمەڵێک قورئانخوێن",
+    "icon": "🕋"
+  },
+  {
+    "id": "alafasy",
+    "name_ku": "ڕادیۆی میشاری عەفاسی",
+    "name_ar": "اذاعة مشاري العفاسي",
+    "name_en": "Mishary Alafasy Radio",
+    "url": "https://stream.radiojar.com/8s5u8tp4auuvd",
+    "reciter": "میشاری عەفاسی",
+    "icon": "🎤"
+  },
+  {
+    "id": "sudais",
+    "name_ku": "ڕادیۆی عەبدولڕەحمان سودەیس",
+    "name_ar": "اذاعة عبدالرحمن السديس",
+    "name_en": "Abdurrahman Sudais Radio",
+    "url": "https://stream.radiojar.com/4wq8p6z7hnuuv",
+    "reciter": "عەبدولڕەحمان سودەیس",
+    "icon": "📖"
+  },
+  {
+    "id": "muaiqly",
+    "name_ku": "ڕادیۆی ماهر ئەلموعەیقلی",
+    "name_ar": "اذاعة ماهر المعيقلي",
+    "name_en": "Maher Al-Muaiqly Radio",
+    "url": "https://qurango.net/radio/maher",
+    "reciter": "ماهر ئەلموعەیقلی",
+    "icon": "✨"
+  },
+  {
+    "id": "ghamdi",
+    "name_ku": "ڕادیۆی سەعد ئەلغامیدی",
+    "name_ar": "اذاعة سعد الغامدي",
+    "name_en": "Saad Al-Ghamdi Radio",
+    "url": "https://qurango.net/radio/s_ghamidi",
+    "reciter": "سەعد ئەلغامیدی",
+    "icon": "🌟"
+  },
+  {
+    "id": "dosari",
+    "name_ku": "ڕادیۆی یاسر ئەلدۆسەری",
+    "name_ar": "اذاعة ياسر الدوسري",
+    "name_en": "Yasser Al-Dosari Radio",
+    "url": "https://qurango.net/radio/yasser",
+    "reciter": "یاسر ئەلدۆسەری",
+    "icon": "💫"
+  },
+  {
+    "id": "abbad",
+    "name_ku": "ڕادیۆی فارس عەباد",
+    "name_ar": "اذاعة فارس عباد",
+    "name_en": "Fares Abbad Radio",
+    "url": "https://qurango.net/radio/fares_abbad",
+    "reciter": "فارس عەباد",
+    "icon": "📘"
+  },
+  {
+    "id": "qatami",
+    "name_ku": "ڕادیۆی ناسر ئەلقەتامی",
+    "name_ar": "اذاعة ناصر القطامي",
+    "name_en": "Nasser Al-Qatami Radio",
+    "url": "https://qurango.net/radio/nasser_alqatami",
+    "reciter": "ناسر ئەلقەتامی",
+    "icon": "🌿"
+  },
+  {
+    "id": "shatri",
+    "name_ku": "ڕادیۆی ئەبووبەکر ئەلشاتری",
+    "name_ar": "اذاعة أبو بكر الشاطري",
+    "name_en": "Abu Bakr Al-Shatri Radio",
+    "url": "https://qurango.net/radio/shatri",
+    "reciter": "ئەبووبەکر ئەلشاتری",
+    "icon": "💎"
+  },
+  {
+    "id": "ajmi",
+    "name_ku": "ڕادیۆی ئەحمەد ئەلعەجەمی",
+    "name_ar": "اذاعة أحمد العجمي",
+    "name_en": "Ahmed Al-Ajmi Radio",
+    "url": "https://qurango.net/radio/ahmed_alajmi",
+    "reciter": "ئەحمەد ئەلعەجەمی",
+    "icon": "📀"
+  },
+  {
+    "id": "husary",
+    "name_ku": "ڕادیۆی محمود خەلیل ئەلحوسەری",
+    "name_ar": "اذاعة محمود خليل الحصري",
+    "name_en": "Khalil Al-Husary Radio",
+    "url": "https://qurango.net/radio/husary",
+    "reciter": "محمود خەلیل ئەلحوسەری",
+    "icon": "🕰️"
+  },
+  {
+    "id": "minshawi",
+    "name_ku": "ڕادیۆی محمد سدیق ئەلمینشاوی",
+    "name_ar": "اذاعة محمد صديق المنشاوي",
+    "name_en": "Mohamed Siddiq Al-Minshawi Radio",
+    "url": "https://qurango.net/radio/minshawi",
+    "reciter": "محمد سدیق ئەلمینشاوی",
+    "icon": "🖤"
+  },
+  {
+    "id": "abdulbasit",
+    "name_ku": "ڕادیۆی عەبدولباست عەبدولسەمەد",
+    "name_ar": "اذاعة عبد الباسط عبد الصمد",
+    "name_en": "Abdul Basit Abdus Samad Radio",
+    "url": "https://qurango.net/radio/abdulbasit",
+    "reciter": "عەبدولباست عەبدولسەمەد",
+    "icon": "👑"
+  },
+  {
+    "id": "idrees",
+    "name_ku": "ڕادیۆی ئیدریس ئەبکەر",
+    "name_ar": "اذاعة إدريس أبكر",
+    "name_en": "Idrees Abkar Radio",
+    "url": "https://qurango.net/radio/idrees_abkar",
+    "reciter": "ئیدریس ئەبکەر",
+    "icon": "💧"
+  },
+  {
+    "id": "hazza",
+    "name_ku": "ڕادیۆی هەزاع ئەلبەلووشی",
+    "name_ar": "اذاعة هزاع البلوشي",
+    "name_en": "Hazza Al-Balushi Radio",
+    "url": "https://qurango.net/radio/hazza_al_balushi",
+    "reciter": "هەزاع ئەلبەلووشی",
+    "icon": "☁️"
+  },
+  {
+    "id": "mix",
+    "name_ku": "ڕادیۆی تێکەڵەی قورئانخوێنان",
+    "name_ar": "قناة القرآن الكريم ميكس",
+    "name_en": "Global Quran Stream (Mix)",
+    "url": "https://qurango.net/radio/mix",
+    "reciter": "کۆمەڵێک قورئانخوێن",
+    "icon": "🌍"
+  }
+]

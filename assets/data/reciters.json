@@ -1,0 +1,372 @@
+[
+  {
+    "id": "alafasy",
+    "flag": "🇰🇼",
+    "name_ku": "مشاری ڕاشد العفاسی",
+    "name_ar": "مشاري العفاسي",
+    "name_en": "Mishary Alafasy",
+    "server_mp3": "https://server8.mp3quran.net/afs/",
+    "id_network": "everyayah_Alafasy_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "sudais",
+    "flag": "🇸🇦",
+    "name_ku": "عبدالڕەحمان السدیس",
+    "name_ar": "عبدالرحمن السديس",
+    "name_en": "Abdul Rahman Al-Sudais",
+    "server_mp3": "https://server11.mp3quran.net/sds/",
+    "id_network": "everyayah_Abdurrahmaan_As-Sudais_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "shuraim",
+    "flag": "🇸🇦",
+    "name_ku": "سعود الشریم",
+    "name_ar": "سعود الشريم",
+    "name_en": "Saud Al-Shuraim",
+    "server_mp3": "https://server10.mp3quran.net/shur/",
+    "id_network": "everyayah_Saood_ash-Shuraym_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "maher",
+    "flag": "🇸🇦",
+    "name_ku": "ماهر المعیقلی",
+    "name_ar": "ماهر المعيقلي",
+    "name_en": "Maher Al-Muaiqly",
+    "server_mp3": "https://server12.mp3quran.net/maher/",
+    "id_network": "everyayah_MaherAlMuaiqly128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "dosari",
+    "flag": "🇸🇦",
+    "name_ku": "یاسر الدوسری",
+    "name_ar": "ياسر الدوسري",
+    "name_en": "Yasser Al-Dosari",
+    "server_mp3": "https://server11.mp3quran.net/yasser/",
+    "id_network": "everyayah_Yasser_Ad-Dussary_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "ajmi",
+    "flag": "🇸🇦",
+    "name_ku": "ئەحمەد العجمی",
+    "name_ar": "أحمد العجمي",
+    "name_en": "Ahmed Al-Ajmi",
+    "server_mp3": "https://server10.mp3quran.net/ajm/",
+    "id_network": "everyayah_Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "ghamdi",
+    "flag": "🇸🇦",
+    "name_ku": "سەعد الغامدی",
+    "name_ar": "سعد الغامدي",
+    "name_en": "Saad Al-Ghamdi",
+    "server_mp3": "https://server7.mp3quran.net/s_gmd/",
+    "id_network": "everyayah_Ghamadi_40kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "qatami",
+    "flag": "🇸🇦",
+    "name_ku": "ناسر القطامی",
+    "name_ar": "ناصر القطامي",
+    "name_en": "Nasser Al-Qatami",
+    "server_mp3": "https://server6.mp3quran.net/qtm/",
+    "id_network": "everyayah_Nasser_Alqatami_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "basit",
+    "flag": "🇪🇬",
+    "name_ku": "عبدالباسط عبدالصمد",
+    "name_ar": "عبدالباسط عبدالصمد",
+    "name_en": "Abdul Basit",
+    "server_mp3": "https://server7.mp3quran.net/basit/",
+    "id_network": "everyayah_Abdul_Basit_Murattal_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "minshawi",
+    "flag": "🇪🇬",
+    "name_ku": "محەممەد سدیق المنشاوی",
+    "name_ar": "محمد صديق المنشاوي",
+    "name_en": "Al-Minshawi",
+    "server_mp3": "https://server10.mp3quran.net/minsh/",
+    "id_network": "everyayah_Minshawy_Murattal_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "husary",
+    "flag": "🇪🇬",
+    "name_ku": "مەحمود خەلیل الحصري",
+    "name_ar": "محمود خليل الحصري",
+    "name_en": "Mahmoud Khalil Al-Husary",
+    "server_mp3": "https://server13.mp3quran.net/hsr/",
+    "id_network": "everyayah_Husary_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "shatri",
+    "flag": "🇸🇦",
+    "name_ku": "ئەبو بەکر الشاطري",
+    "name_ar": "أبو بكر الشاطري",
+    "name_en": "Abu Bakr Al-Shatri",
+    "server_mp3": "https://server11.mp3quran.net/shatri/",
+    "id_network": "everyayah_Abu_Bakr_Ash-Shaatree_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "abbad",
+    "flag": "🇾🇪",
+    "name_ku": "فارس عباد",
+    "name_ar": "فارس عباد",
+    "name_en": "Fares Abbad",
+    "server_mp3": "https://server8.mp3quran.net/abba/",
+    "id_network": "everyayah_Fares_Abbad_64kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "hudhaify",
+    "flag": "🇸🇦",
+    "name_ku": "عەلی الحذیفي",
+    "name_ar": "علي الحذيفي",
+    "name_en": "Ali Al-Huthaify",
+    "server_mp3": "https://server9.mp3quran.net/hthfi/",
+    "id_network": "everyayah_Hudhaify_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "rifai",
+    "flag": "🇸🇦",
+    "name_ku": "هانی الڕیفاعی",
+    "name_ar": "هاني الرفاعي",
+    "name_en": "Hani Ar-Rifai",
+    "server_mp3": "https://server8.mp3quran.net/riffai/",
+    "id_network": "everyayah_Hani_Rifai_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "jaber",
+    "flag": "🇸🇦",
+    "name_ku": "عەلی جابر",
+    "name_ar": "علي جابر",
+    "name_en": "Ali Jaber",
+    "server_mp3": "https://server11.mp3quran.net/a_jbr/",
+    "id_network": "everyayah_Ali_Jaber_64kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "juhany",
+    "flag": "🇸🇦",
+    "name_ku": "عەبدوڵڵا ئەلجوهەنی",
+    "name_ar": "عبدالله عواد الجهني",
+    "name_en": "Abdullah Al-Juhany",
+    "server_mp3": "https://server13.mp3quran.net/jhn/",
+    "id_network": "everyayah_Abdullaah_3awwaad_Al-Juhaynee_120kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "basfar",
+    "flag": "🇸🇦",
+    "name_ku": "عەبدوڵڵا بەسفەر",
+    "name_ar": "عبدالله بصفر",
+    "name_en": "Abdullah Basfar",
+    "server_mp3": "https://server6.mp3quran.net/bsfr/",
+    "id_network": "everyayah_Abdullah_Basfar_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "qahtani",
+    "flag": "🇸🇦",
+    "name_ku": "خالید ئەلقەحتانی",
+    "name_ar": "خالد القحطاني",
+    "name_en": "Khalid Al-Qahtani",
+    "server_mp3": "https://server10.mp3quran.net/qht/",
+    "id_network": "everyayah_Khaalid_Abdullaah_al-Qahtaanee_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "akhdar",
+    "flag": "🇸🇦",
+    "name_ku": "ئیبراهیم ئەلئەخزەر",
+    "name_ar": "إبراهيم الأخضر",
+    "name_en": "Ibrahim Al-Akhdar",
+    "server_mp3": "https://server6.mp3quran.net/akhdr/",
+    "id_network": "everyayah_Ibrahim_Akhdar_32kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "neana",
+    "flag": "🇪🇬",
+    "name_ku": "ئەحمەد نەعینەع",
+    "name_ar": "أحمد نعينع",
+    "name_en": "Ahmed Neana",
+    "server_mp3": "https://server11.mp3quran.net/nyna/",
+    "id_network": "everyayah_Ahmed_Neana_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "sufi",
+    "flag": "🇸🇴",
+    "name_ku": "عەبدولڕەشید سۆفی",
+    "name_ar": "عبدالرشيد صوفي",
+    "name_en": "Abdur Rashid Sufi",
+    "server_mp3": "https://server16.mp3quran.net/sofi/",
+    "id_network": "everyayah_Abdurrahid_Sufi_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "ayyoub",
+    "flag": "🇸🇦",
+    "name_ku": "محەممەد ئەیووب",
+    "name_ar": "محمد أيوب",
+    "name_en": "Muhammad Ayyub",
+    "server_mp3": "https://server8.mp3quran.net/ayoob/",
+    "id_network": "everyayah_Muhammad_Ayyoub_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "tablaway",
+    "flag": "🇪🇬",
+    "name_ku": "محەممەد مەحمود ئەلتەبلاوی",
+    "name_ar": "محمد محمود الطبلاوي",
+    "name_en": "Mohammad Al-Tablaway",
+    "server_mp3": "https://server12.mp3quran.net/tblwi/",
+    "id_network": "everyayah_Mohammad_al_Tablaway_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "bukhatir",
+    "flag": "🇦🇪",
+    "name_ku": "سەلاح بوخاتیر",
+    "name_ar": "صلاح بو خاطر",
+    "name_en": "Salah Bukhatir",
+    "server_mp3": "https://server8.mp3quran.net/bu_khtr/",
+    "id_network": "everyayah_Salaah_AbdulRahman_Bukhatir_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "budair",
+    "flag": "🇸🇦",
+    "name_ku": "سەلاح ئەلبودێر",
+    "name_ar": "صلاح البدير",
+    "name_en": "Salah Al-Budair",
+    "server_mp3": "https://server6.mp3quran.net/bdr/",
+    "id_network": "everyayah_Salah_Al_Budair_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "matroud",
+    "flag": "🇸🇦",
+    "name_ku": "عەبدوڵڵا مەترود",
+    "name_ar": "عبدالله مطرود",
+    "name_en": "Abdullah Matroud",
+    "server_mp3": "https://server8.mp3quran.net/mtrwd/",
+    "id_network": "everyayah_Abdullah_Matroud_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "jibreel",
+    "flag": "🇪🇬",
+    "name_ku": "محەممەد جبریل",
+    "name_ar": "محمد جبريل",
+    "name_en": "Muhammad Jibreel",
+    "server_mp3": "https://server8.mp3quran.net/jbrl/",
+    "id_network": "everyayah_Muhammad_Jibreel_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "ismail",
+    "flag": "🇪🇬",
+    "name_ku": "مستەفا ئیسماعیل",
+    "name_ar": "مصطفى إسماعيل",
+    "name_en": "Mustafa Ismail",
+    "server_mp3": "https://server8.mp3quran.net/mustafa/",
+    "id_network": "everyayah_Mustafa_Ismail_48kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "sowaid",
+    "flag": "🇸🇾",
+    "name_ku": "ئەیمەن سوەید",
+    "name_ar": "أيمن سويد",
+    "name_en": "Ayman Sowaid",
+    "server_mp3": "https://server16.mp3quran.net/swaid/",
+    "id_network": "everyayah_Ayman_Sowaid_64kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "yassin",
+    "flag": "🇸🇦",
+    "name_ku": "سەهل یاسین",
+    "name_ar": "سهل ياسين",
+    "name_en": "Sahl Yasin",
+    "server_mp3": "https://server6.mp3quran.net/shl/",
+    "id_network": "everyayah_Sahl_Yassin_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "alaqimy",
+    "flag": "🇪🇬",
+    "name_ku": "ئەکرەم ئەلعەلاقیمی",
+    "name_ar": "أكرم العلاقمي",
+    "name_en": "Akram Al-Alaqimy",
+    "server_mp3": "https://server9.mp3quran.net/akrm/",
+    "id_network": "everyayah_Akram_AlAlaqimy_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "suesy",
+    "flag": "🇪🇬",
+    "name_ku": "عەلی حەجاج ئەلسوێسی",
+    "name_ar": "علي حجاج السويسي",
+    "name_en": "Ali Hajjaj Al-Suesy",
+    "server_mp3": "https://server9.mp3quran.net/hajjaj/",
+    "id_network": "everyayah_Ali_Hajjaj_AlSuesy_128kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "qasim",
+    "flag": "🇸🇦",
+    "name_ku": "مۆحسین ئەلقاسم",
+    "name_ar": "محسن القاسم",
+    "name_en": "Muhsin Al-Qasim",
+    "server_mp3": "https://server8.mp3quran.net/qasm/",
+    "id_network": "everyayah_Muhsin_Al_Qasim_192kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "tunaiji",
+    "flag": "🇦🇪",
+    "name_ku": "خەلیفە ئەلتونەیجی",
+    "name_ar": "خليفة الطنيجي",
+    "name_en": "Khalifa Al-Tunaiji",
+    "server_mp3": "https://server12.mp3quran.net/tnjg/",
+    "id_network": "everyayah_khalefa_al_tunaiji_64kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "banna",
+    "flag": "🇪🇬",
+    "name_ku": "مەحمود عەلی ئەلبەننا",
+    "name_ar": "محمود علي البنا",
+    "name_en": "Mahmoud Ali Al-Banna",
+    "server_mp3": "https://server8.mp3quran.net/bna/",
+    "id_network": "everyayah_mahmoud_ali_al_banna_32kbps",
+    "hasVerseAudio": true
+  },
+  {
+    "id": "alili",
+    "flag": "🇭🇷",
+    "name_ku": "عەزیز عەلیلی",
+    "name_ar": "عزيز عليلي",
+    "name_en": "Aziz Alili",
+    "server_mp3": "https://server9.mp3quran.net/alili/",
+    "id_network": "everyayah_aziz_alili_128kbps",
+    "hasVerseAudio": true
+  }
+]

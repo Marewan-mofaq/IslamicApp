@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bukhari",
+    "name_ku": "بوخاری",
+    "name_ar": "البخاري",
+    "name_en": "Sahih Bukhari"
+  },
+  {
+    "id": "muslim",
+    "name_ku": "موسلیم",
+    "name_ar": "مسلم",
+    "name_en": "Sahih Muslim"
+  },
+  {
+    "id": "tirmidhi",
+    "name_ku": "تیرمیزی",
+    "name_ar": "الترمذي",
+    "name_en": "Jami Tirmidhi"
+  },
+  {
+    "id": "abudawud",
+    "name_ku": "ئەبوو داود",
+    "name_ar": "أبو داود",
+    "name_en": "Sunan Abu Dawud"
+  },
+  {
+    "id": "ibnmajah",
+    "name_ku": "ئیبن ماجە",
+    "name_ar": "ابن ماجه",
+    "name_en": "Sunan Ibn Majah"
+  }
+]

@@ -1,0 +1,893 @@
+[
+  {
+    "id": 1,
+    "arabic": "الرَّحْمَنُ",
+    "ku": "بەخشندە",
+    "en": "The Beneficent",
+    "benefit_ku": "تایبەت بە ڕەحمەتی فراوان لە دنیا",
+    "benefit_en": "He who gives blessings and prosperity to all beings without showing disparity.",
+    "benefit_ar": "ذو الرحمة الشاملة لجميع الخلائق في الدنيا"
+  },
+  {
+    "id": 2,
+    "arabic": "الرَّحِيمُ",
+    "ku": "میهرەبان",
+    "en": "The Merciful",
+    "benefit_ku": "تایبەت بە بەزەیی بۆ باوەڕداران لە ئاخیرەت",
+    "benefit_en": "He who gives blessings and prosperity, particularly to believers.",
+    "benefit_ar": "ذو الرحمة الخاصة بالمؤمنين في الآخرة"
+  },
+  {
+    "id": 3,
+    "arabic": "الْمَلِكُ",
+    "ku": "پاشا و خاوەن دەسەڵات",
+    "en": "The King",
+    "benefit_ku": "پاراستن لە خراپەی دەسەڵاتداران",
+    "benefit_en": "The Absolute Ruler.",
+    "benefit_ar": "المتصرف في ملكه كيف يشاء، المالك لكل شيء"
+  },
+  {
+    "id": 4,
+    "arabic": "الْقُدُّوسُ",
+    "ku": "پاک و بێگەرد",
+    "en": "The Most Sacred",
+    "benefit_ku": "پاکبوونەوەی دڵ لە گیروگرفت",
+    "benefit_en": "The One who is pure from any imperfection.",
+    "benefit_ar": "المنزه عن كل عيب ونقص، الطاهر المطلق"
+  },
+  {
+    "id": 5,
+    "arabic": "السَّلَامُ",
+    "ku": "ئاشتی و سەلامەتی",
+    "en": "The Source of Peace",
+    "benefit_ku": "شیفای نەخۆش و ئارامی دڵ",
+    "benefit_en": "The Source of Peace and Perfection.",
+    "benefit_ar": "ناشر السلام بين خلقه، السالم من كل عيب"
+  },
+  {
+    "id": 6,
+    "arabic": "الْمُؤْمِنُ",
+    "ku": "ئیمان بەخش و پارێزەر",
+    "en": "The Infuser of Faith",
+    "benefit_ku": "پاراستن لە شەیتان و ترس",
+    "benefit_en": "The Inspirer of Faith and Giver of Purity.",
+    "benefit_ar": "المصدق لرسله بالمعجزات، واهب الأمن والأمان"
+  },
+  {
+    "id": 7,
+    "arabic": "الْمُهَيْمِنُ",
+    "ku": "چاودێر و باڵادەست",
+    "en": "The Preserver of Safety",
+    "benefit_ku": "پاراستنی شتە ونبووەکان و چاودێری باش",
+    "benefit_en": "The Guardian, the Preserver, the Overseeing Protector.",
+    "benefit_ar": "الرقيب الحافظ لكل شيء، القائم على خلقه"
+  },
+  {
+    "id": 8,
+    "arabic": "الْعَزِيزُ",
+    "ku": "زاڵ و بێهاوتا",
+    "en": "The All Mighty",
+    "benefit_ku": "پێدانی عیزەت و ڕێز لە کۆمەڵگە",
+    "benefit_en": "The Strong, the Defeater who is not defeated.",
+    "benefit_ar": "الغالب القوي الذي لا يُغلب ولا يُنال"
+  },
+  {
+    "id": 9,
+    "arabic": "الْجَبَّارُ",
+    "ku": "ناچارکەر و شکستپێدەر",
+    "en": "The Compeller",
+    "benefit_ku": "زاڵبوون بەسەر دوژمن و بەهێزیدا",
+    "benefit_en": "The Compeller, the Restorer.",
+    "benefit_ar": "الذي يجبر كسر القلوب ويصلح أحوال العباد"
+  },
+  {
+    "id": 10,
+    "arabic": "الْمُتَكَبِّرُ",
+    "ku": "خاوەن گەورەیی",
+    "en": "The Supreme",
+    "benefit_ku": "بەدەستهێنانی شکۆمەندی و گەورەیی",
+    "benefit_en": "The Supreme, the Majestic.",
+    "benefit_ar": "المتعالي عن صفات الخلق، صاحب الكبرياء والعظمة"
+  },
+  {
+    "id": 11,
+    "arabic": "الْخَالِقُ",
+    "ku": "دروستکار",
+    "en": "The Creator",
+    "benefit_ku": "بۆ دروستکردنی کاری نوێ و منداڵبوون",
+    "benefit_en": "The Creator, the Maker.",
+    "benefit_ar": "المبدع والموجد للأشياء من العدم"
+  },
+  {
+    "id": 12,
+    "arabic": "الْبَارِئُ",
+    "ku": "بەدیهێنەر",
+    "en": "The Evolver",
+    "benefit_ku": "پاراستن لە نەخۆشی",
+    "benefit_en": "The Maker of Order.",
+    "benefit_ar": "المنشئ للخلق بتقدير محكم وصورة بديعة"
+  },
+  {
+    "id": 13,
+    "arabic": "الْمُصَوِّرُ",
+    "ku": "شێوەکار",
+    "en": "The Fashioner",
+    "benefit_ku": "بۆ دیاریکردنی شێوە و ڕێکخستنی کارەکان",
+    "benefit_en": "The Shaper of Beauty.",
+    "benefit_ar": "المبدع في تصوير خلقه وإعطائهم صورهم"
+  },
+  {
+    "id": 14,
+    "arabic": "الْغَفَّارُ",
+    "ku": "زۆر لێخۆشبوو",
+    "en": "The Constant Forgiver",
+    "benefit_ku": "سڕینەوەی گوناهەکان",
+    "benefit_en": "The Forgiver and Hider of Faults.",
+    "benefit_ar": "كثير المغفرة والستر لذنوب عباده"
+  },
+  {
+    "id": 15,
+    "arabic": "الْقَهَّارُ",
+    "ku": "زاڵ و سەرکەوتوو",
+    "en": "The All Compelling Subduer",
+    "benefit_ku": "ئازادبوون لە هەوا و ئارەزووی خراپ",
+    "benefit_en": "The Subduer who has the perfect Power and is not unable over anything.",
+    "benefit_ar": "الغالب لخلقه بقدرته وسلطانه القاهر"
+  },
+  {
+    "id": 16,
+    "arabic": "الْوَهَّابُ",
+    "ku": "زۆر بەخشندە",
+    "en": "The Bestower",
+    "benefit_ku": "بەدەستهێنانی ڕزق و هەژاری نەهێشتن",
+    "benefit_en": "The Giver of All.",
+    "benefit_ar": "كثير الجود والعطاء بلا مقابل ولا حدود"
+  },
+  {
+    "id": 17,
+    "arabic": "الرَّزَّاقُ",
+    "ku": "ڕزق دەر",
+    "en": "The Provider",
+    "benefit_ku": "زۆربوونی ڕزق و بەرەکەت",
+    "benefit_en": "The Provider, the Providence.",
+    "benefit_ar": "المتكفل بأرزاق العباد وخزائنه لا تنفد"
+  },
+  {
+    "id": 18,
+    "arabic": "الْفَتَّاحُ",
+    "ku": "دەرگاکەرەوە",
+    "en": "The Opener",
+    "benefit_ku": "کردنەوەی گرێکان و سەرکەوتن",
+    "benefit_en": "The Opener, the Judge.",
+    "benefit_ar": "الذي يفتح أبواب الخير والرحمة والنصر"
+  },
+  {
+    "id": 19,
+    "arabic": "الْعَلِيمُ",
+    "ku": "زانا بە هەموو شتێک",
+    "en": "The All Knowing",
+    "benefit_ku": "زۆربوونی زیهنییەت و زانست",
+    "benefit_en": "The All-Knowing, the Omniscient.",
+    "benefit_ar": "المحيط بكل شيء علماً ظاهراً وباطناً"
+  },
+  {
+    "id": 20,
+    "arabic": "الْقَابِضُ",
+    "ku": "گیرکەر (کەمکەرەوەی ڕزق)",
+    "en": "The Withholder",
+    "benefit_ku": "پاراستن لە برسیەتی و دەرد",
+    "benefit_en": "The Restrainer, the Straightener.",
+    "benefit_ar": "الذي يقبض الأرزاق والنفوس بحكمته وعدله"
+  },
+  {
+    "id": 21,
+    "arabic": "الْبَاسِطُ",
+    "ku": "فراوانکەر (زۆرکەری ڕزق)",
+    "en": "The Expander",
+    "benefit_ku": "خۆشحاڵی و فراوانی ڕزق",
+    "benefit_en": "The Expander, the Munificent.",
+    "benefit_ar": "الذي يوسع الرزق ويبسط الخير والرحمة"
+  },
+  {
+    "id": 22,
+    "arabic": "الْخَافِضُ",
+    "ku": "نزمکەرەوەی بێباوەڕان",
+    "en": "The Abaser",
+    "benefit_ku": "پاراستن لە شەڕی زۆرداران",
+    "benefit_en": "The Abaser.",
+    "benefit_ar": "الذي يخفض المتكبرين والظالمين بعدله"
+  },
+  {
+    "id": 23,
+    "arabic": "الرَّافِعُ",
+    "ku": "بەرزکەرەوەی باوەڕداران",
+    "en": "The Exalter",
+    "benefit_ku": "بەرزبوونەوەی پایە لە کۆمەڵگە",
+    "benefit_en": "The Exalter.",
+    "benefit_ar": "الذي يرفع أولياءه والمؤمنين بالكرامة"
+  },
+  {
+    "id": 24,
+    "arabic": "الْمُعِزُّ",
+    "ku": "عیزەتبەخش",
+    "en": "The Giver of Honors",
+    "benefit_ku": "ڕێزلێگیراوبوون",
+    "benefit_en": "The Giver of Honor.",
+    "benefit_ar": "الذي يعز من يشاء بطاعته والإيمان به"
+  },
+  {
+    "id": 25,
+    "arabic": "الْمُذِلُّ",
+    "ku": "ڕیسواکەر",
+    "en": "The Dishonorer",
+    "benefit_ku": "پاراستن لە حەسادەت",
+    "benefit_en": "The Giver of Dishonor.",
+    "benefit_ar": "الذي يذل من يشاء بكفره ومعصيته"
+  },
+  {
+    "id": 26,
+    "arabic": "السَّمِيعُ",
+    "ku": "بیسەر",
+    "en": "The All Hearing",
+    "benefit_ku": "گیراکردنی دوعاکان",
+    "benefit_en": "The All-Hearing.",
+    "benefit_ar": "الذي يسمع كل نجوى وسر وجهر"
+  },
+  {
+    "id": 27,
+    "arabic": "الْبَصِيرُ",
+    "ku": "بینەر",
+    "en": "The All Seeing",
+    "benefit_ku": "ڕوونبوونەوەی دوودڵی و شک",
+    "benefit_en": "The All-Seeing.",
+    "benefit_ar": "الذي يرى كل خفي ودقيق في الكون"
+  },
+  {
+    "id": 28,
+    "arabic": "الْحَكَمُ",
+    "ku": "دادوەر",
+    "en": "The Judge",
+    "benefit_ku": "پاراستن لە نادادپەروەری",
+    "benefit_en": "The Judge, the Arbitrator.",
+    "benefit_ar": "العدل الذي لا يجور في قضائه وحكمه"
+  },
+  {
+    "id": 29,
+    "arabic": "الْعَدْلُ",
+    "ku": "دادپەروەر",
+    "en": "The Utterly Just",
+    "benefit_ku": "حوکم و بڕیاری دروست",
+    "benefit_en": "The Utterly Just.",
+    "benefit_ar": "المنزه عن الظلم والجور، الحق المطلق"
+  },
+  {
+    "id": 30,
+    "arabic": "اللَّطِيفُ",
+    "ku": "وردبین و نەرمونیان",
+    "en": "The Subtly Kind",
+    "benefit_ku": "ڕزگاربوون لە دڵتەنگی و ناڕەحەتی",
+    "benefit_en": "The Subtly Kind, the Gentle.",
+    "benefit_ar": "البر بعباده، العالم بدقائق الأمور وخفاياها"
+  },
+  {
+    "id": 31,
+    "arabic": "الْخَبِيرُ",
+    "ku": "ئاگادار",
+    "en": "The All Aware",
+    "benefit_ku": "ئاگاداربوون لە نهێنییەکان",
+    "benefit_en": "The All-Aware.",
+    "benefit_ar": "العليم بحقائق الأمور ومآلاتها"
+  },
+  {
+    "id": 32,
+    "arabic": "الْحَلِيمُ",
+    "ku": "لێخۆشبوو و پشوودرێژ",
+    "en": "The Forbearing",
+    "benefit_ku": "ئارامگرتن لەکاتی توڕەییدا",
+    "benefit_en": "The Forbearing, the Indulgent.",
+    "benefit_ar": "الذي لا يعاجل بالعقوبة مع قدرته عليها"
+  },
+  {
+    "id": 33,
+    "arabic": "الْعَظِيمُ",
+    "ku": "گەورە و بێسنوور",
+    "en": "The Magnificent",
+    "benefit_ku": "دەستکەوتنی ڕێز لەناو خەڵک",
+    "benefit_en": "The Magnificent.",
+    "benefit_ar": "صاحب المجد والعظمة التي لا تحيط بها العقول"
+  },
+  {
+    "id": 34,
+    "arabic": "الْغَفُورُ",
+    "ku": "بەخشندە و لێبوردە",
+    "en": "The Forgiver and Hider of Faults",
+    "benefit_ku": "وەرگرتنی تەوبە و سڕینەوەی گوناهـ",
+    "benefit_en": "The All-Forgiving.",
+    "benefit_ar": "الساتر للذنوب والمتجاوز عن الخطايا"
+  },
+  {
+    "id": 35,
+    "arabic": "الشَّكُورُ",
+    "ku": "سوپاسگوزار",
+    "en": "The Rewarder of Thankfulness",
+    "benefit_ku": "زیادبوونی نیعمەت",
+    "benefit_en": "The Rewarder of Thankfulness.",
+    "benefit_ar": "الذي يثيب على القليل بالجزيل من الثواب"
+  },
+  {
+    "id": 36,
+    "arabic": "الْعَلِيُّ",
+    "ku": "بەرز و بڵند",
+    "en": "The Highest",
+    "benefit_ku": "سەرکەوتن بەسەر سەختییەکاندا",
+    "benefit_en": "The Highest.",
+    "benefit_ar": "المتعالي عن كل نقص، الرفيع في شأنه وقدره"
+  },
+  {
+    "id": 37,
+    "arabic": "الْكَبِيرُ",
+    "ku": "گەورە",
+    "en": "The Greatest",
+    "benefit_ku": "بەدەستهێنانی هەیبەت",
+    "benefit_en": "The Greatest.",
+    "benefit_ar": "صاحب العظمة والكبرياء المطلق"
+  },
+  {
+    "id": 38,
+    "arabic": "الْحَفِيظُ",
+    "ku": "پارێزەر",
+    "en": "The Preserver",
+    "benefit_ku": "پاراستن لە بەڵا و ڕووداو",
+    "benefit_en": "The Preserver.",
+    "benefit_ar": "الذي يحفظ خلقه وأعمالهم من الضياع"
+  },
+  {
+    "id": 39,
+    "arabic": "الْمُقِيتُ",
+    "ku": "بژێوی دەر",
+    "en": "The Nourisher",
+    "benefit_ku": "پەیداکردنی خۆراک و پێداویستی",
+    "benefit_en": "The Nourisher.",
+    "benefit_ar": "المقتدر وخالق الأقوات والمتكفل بها"
+  },
+  {
+    "id": 40,
+    "arabic": "الْحَسِيبُ",
+    "ku": "لێپێچینەوەکار",
+    "en": "The Accounter",
+    "benefit_ku": "دوورخستنەوەی چاوی پیس و کێشە",
+    "benefit_en": "The Bringer of Judgment.",
+    "benefit_ar": "الكافي لعباده والمحاسب لهم على أعمالهم"
+  },
+  {
+    "id": 41,
+    "arabic": "الْجَلِيلُ",
+    "ku": "خاوەن شکۆ",
+    "en": "The Mighty",
+    "benefit_ku": "بەرزبوونەوەی پلە",
+    "benefit_en": "The Mighty, the Sublime.",
+    "benefit_ar": "الموصوف بصفات الجلال والعظمة والكمال"
+  },
+  {
+    "id": 42,
+    "arabic": "الْكَرِيمُ",
+    "ku": "بەخشندە و دڵاوا",
+    "en": "The Generous",
+    "benefit_ku": "دەوڵەمەندبوون و ڕێز",
+    "benefit_en": "The Bountiful, the Generous.",
+    "benefit_ar": "الجواد كثير العطاء والنفع بلا انقطاع"
+  },
+  {
+    "id": 43,
+    "arabic": "الرَّقِيبُ",
+    "ku": "چاودێر",
+    "en": "The Watchful One",
+    "benefit_ku": "پاراستنی خێزان و منداڵ",
+    "benefit_en": "The Watchful One.",
+    "benefit_ar": "المطلع على حركات القلوب والضمائر"
+  },
+  {
+    "id": 44,
+    "arabic": "الْمُجِيبُ",
+    "ku": "وەڵامدەرەوە",
+    "en": "The Responder to Prayer",
+    "benefit_ku": "قبوڵبوونی دوعاکان",
+    "benefit_en": "The Responder to Prayer.",
+    "benefit_ar": "المستجيب لدعاء الداعين وسؤال السائلين"
+  },
+  {
+    "id": 45,
+    "arabic": "الْوَاسِعُ",
+    "ku": "فراوانکار",
+    "en": "The All-Comprehending",
+    "benefit_ku": "سەرکەوتن و فراوانی",
+    "benefit_en": "The All-Comprehending.",
+    "benefit_ar": "واسع الفضل والرحمة والمغفرة والعلم"
+  },
+  {
+    "id": 46,
+    "arabic": "الْحَكِيمُ",
+    "ku": "دانا",
+    "en": "The Perfectly Wise",
+    "benefit_ku": "ئاسانکاری و زانست",
+    "benefit_en": "The Perfectly Wise.",
+    "benefit_ar": "الذي يضع كل شيء في موضعه اللائق بحكمة"
+  },
+  {
+    "id": 47,
+    "arabic": "الْوَدُودُ",
+    "ku": "خۆشەویست",
+    "en": "The Loving One",
+    "benefit_ku": "مەحەبەت لەنێوان دوو کەس",
+    "benefit_en": "The Loving One.",
+    "benefit_ar": "المحب لأوليائه، والمحبوب في قلوبهم"
+  },
+  {
+    "id": 48,
+    "arabic": "الْمَجِيدُ",
+    "ku": "مەزن و خاوەن ڕێز",
+    "en": "The Majestic One",
+    "benefit_ku": "شکۆداری لە کۆمەڵگە",
+    "benefit_en": "The Majestic One.",
+    "benefit_ar": "عظيم المجد والشرف، واسع الكرم والفضل"
+  },
+  {
+    "id": 49,
+    "arabic": "الْبَاعِثُ",
+    "ku": "زیندووکەرەوە",
+    "en": "The Resurrecter",
+    "benefit_ku": "زیندووبوونەوەی هیوا لە دڵدا",
+    "benefit_en": "The Resurrecter.",
+    "benefit_ar": "باعث الرسل وناشر الموتى يوم القيامة"
+  },
+  {
+    "id": 50,
+    "arabic": "الشَّهِيدُ",
+    "ku": "شایەتحاڵ",
+    "en": "The Witness",
+    "benefit_ku": "دۆزینەوەی هەقیقەت",
+    "benefit_en": "The Witness.",
+    "benefit_ar": "الحاضر الذي لا يغيب عنه شيء أبداً"
+  },
+  {
+    "id": 51,
+    "arabic": "الْحَقُّ",
+    "ku": "حەق و ڕاست",
+    "en": "The Truth",
+    "benefit_ku": "گەڕانەوەی مافی خوراو",
+    "benefit_en": "The Truth, the Real.",
+    "benefit_ar": "الموجود حقاً، الثابت الذي لا يتغير"
+  },
+  {
+    "id": 52,
+    "arabic": "الْوَكِيلُ",
+    "ku": "پشتبەستوو پێی",
+    "en": "The Trustee",
+    "benefit_ku": "پاراستن لە هەر مەترسییەک",
+    "benefit_en": "The Trustee, the Dependable.",
+    "benefit_ar": "المتكفل بأمور خلقه والمفوَّض إليه الأمر"
+  },
+  {
+    "id": 53,
+    "arabic": "الْقَوِيُّ",
+    "ku": "بەهێز",
+    "en": "The Possessor of All Strength",
+    "benefit_ku": "لابردنی لاوازی",
+    "benefit_en": "The Possessor of All Strength.",
+    "benefit_ar": "تام القدرة والقوة، لا يعجزه شيء"
+  },
+  {
+    "id": 54,
+    "arabic": "الْمَتِينُ",
+    "ku": "پتەو",
+    "en": "The Forceful One",
+    "benefit_ku": "تەمبێکردنی نەفس",
+    "benefit_en": "The Forceful One.",
+    "benefit_ar": "الشديد القوي الذي لا يلحقه وهن أو تعب"
+  },
+  {
+    "id": 55,
+    "arabic": "الْوَلِيُّ",
+    "ku": "پشتیوان و دۆست",
+    "en": "The Governor",
+    "benefit_ku": "دۆستایەتی و ڕزگاربوون",
+    "benefit_en": "The Friend, Patron.",
+    "benefit_ar": "الناصر والمعين والمحب لأوليائه الصالحين"
+  },
+  {
+    "id": 56,
+    "arabic": "الْحَمِيدُ",
+    "ku": "سوپاسکراو",
+    "en": "The Praised One",
+    "benefit_ku": "کرانەوەی دەرگاکانی خێر",
+    "benefit_en": "The Praised One.",
+    "benefit_ar": "المستحق لكل حمد وثناء في الأولى والآخرة"
+  },
+  {
+    "id": 57,
+    "arabic": "الْمُحْصِي",
+    "ku": "ژمێرەر",
+    "en": "The Appraiser",
+    "benefit_ku": "پاراستنی شتەکان",
+    "benefit_en": "The All-Enumerating.",
+    "benefit_ar": "العالم بعدد كل شيء وحسابه الدقيق"
+  },
+  {
+    "id": 58,
+    "arabic": "الْمُبْدِئُ",
+    "ku": "دەستپێکەر",
+    "en": "The Originator",
+    "benefit_ku": "بۆ سەرکەوتن لە کۆرپەلە",
+    "benefit_en": "The Originator.",
+    "benefit_ar": "الذي أنشأ الخلق من العدم ابتداءً"
+  },
+  {
+    "id": 59,
+    "arabic": "الْمُعِيدُ",
+    "ku": "گەڕێنەرەوە",
+    "en": "The Restorer",
+    "benefit_ku": "گەڕانەوەی شتی ونبوو",
+    "benefit_en": "The Restorer.",
+    "benefit_ar": "الذي يعيد الخلق بعد الموت يوم البعث"
+  },
+  {
+    "id": 60,
+    "arabic": "الْمُحْيِي",
+    "ku": "زیندووکەرەوە",
+    "en": "The Giver of Life",
+    "benefit_ku": "شیفای نەخۆش",
+    "benefit_en": "The Giver of Life.",
+    "benefit_ar": "واهب الحياة لجميع الكائنات والموتى"
+  },
+  {
+    "id": 61,
+    "arabic": "الْمُمِيتُ",
+    "ku": "مرێنەر",
+    "en": "The Taker of Life",
+    "benefit_ku": "شکستپێهێنانی هەوای نەفس",
+    "benefit_en": "The Creator of Death.",
+    "benefit_ar": "الذي يقبض الأرواح ويميت الأحياء بقدرته"
+  },
+  {
+    "id": 62,
+    "arabic": "الْحَيُّ",
+    "ku": "زیندووە هەمیشەیی",
+    "en": "The Ever Living One",
+    "benefit_ku": "بەدەستهێنانی تەمەن درێژی و تەندروستی",
+    "benefit_en": "The Ever-Living.",
+    "benefit_ar": "الدائم الباقي الذي لا يموت ولا يفنى"
+  },
+  {
+    "id": 63,
+    "arabic": "الْقَيُّومُ",
+    "ku": "ڕاگر و پایەدار",
+    "en": "The Self-Existing One",
+    "benefit_ku": "سەرکەوتن و ئارامی ناوخۆیی",
+    "benefit_en": "The Self-Subsisting.",
+    "benefit_ar": "القائم بنفسه والمقيم لكل ما في الوجود"
+  },
+  {
+    "id": 64,
+    "arabic": "الْوَاجِدُ",
+    "ku": "دۆزەرەوە",
+    "en": "The Finder",
+    "benefit_ku": "دۆزینەوەی شتی گرنگ",
+    "benefit_en": "The Finder.",
+    "benefit_ar": "الغني الذي لا يعوزه شيء، ذو الغنى المطلق"
+  },
+  {
+    "id": 65,
+    "arabic": "الْمَاجِدُ",
+    "ku": "خاوەن شکۆمەندی",
+    "en": "The Glorious",
+    "benefit_ku": "نوێبوونەوەی ڕێز و شکۆ",
+    "benefit_en": "The Glorious.",
+    "benefit_ar": "صاحب الشرف والمجد والفضل الواسع"
+  },
+  {
+    "id": 66,
+    "arabic": "الْوَاحِدُ",
+    "ku": "تاک",
+    "en": "The Only One",
+    "benefit_ku": "لابردنی ترس",
+    "benefit_en": "The Unique.",
+    "benefit_ar": "الفرد المتفرد بلا شريك ولا مثيل"
+  },
+  {
+    "id": 67,
+    "arabic": "الْأَحَد",
+    "ku": "تەنها و بێهاوتا",
+    "en": "The One",
+    "benefit_ku": "یەکتاپەرستی ڕاستەقینە",
+    "benefit_en": "The One.",
+    "benefit_ar": "الواحد في ذاته وصفاته، لا إله غيره"
+  },
+  {
+    "id": 68,
+    "arabic": "الصَّمَدُ",
+    "ku": "بێ نیاز",
+    "en": "The Supreme Provider",
+    "benefit_ku": "پاراستن لە هەژاری",
+    "benefit_en": "The Eternal, Satisfier of Needs.",
+    "benefit_ar": "المقصود في الحوائج، المستغني عن كل شيء"
+  },
+  {
+    "id": 69,
+    "arabic": "الْقَادِرُ",
+    "ku": "توانادار",
+    "en": "The Able",
+    "benefit_ku": "سووککردنی کارە قورسەکان",
+    "benefit_en": "The Able, the Capable.",
+    "benefit_ar": "المقتدر الذي إن أراد شيئاً قال له كن فيكون"
+  },
+  {
+    "id": 70,
+    "arabic": "الْمُقْتَدِرُ",
+    "ku": "دەسەڵاتدار بەسەر هەموودا",
+    "en": "The Powerful",
+    "benefit_ku": "سەرکەوتن بەسەر تاقیکردنەوەکاندا",
+    "benefit_en": "The Omnipotent.",
+    "benefit_ar": "صاحب القدرة العظيمة التي لا يعجزها أمر"
+  },
+  {
+    "id": 71,
+    "arabic": "الْمُقَدِّمُ",
+    "ku": "پێشخەر",
+    "en": "The Expediter",
+    "benefit_ku": "خێراکردنی کاری خێر",
+    "benefit_en": "The Expediter.",
+    "benefit_ar": "الذي يقدم الأشياء ومنازل العباد بحكمته"
+  },
+  {
+    "id": 72,
+    "arabic": "الْمُؤَخِّرُ",
+    "ku": "دواخەر",
+    "en": "The Delayer",
+    "benefit_ku": "دوورخستنەوەی شەڕ",
+    "benefit_en": "The Delayer.",
+    "benefit_ar": "الذي يؤخر الأشياء بحكمته وعدله"
+  },
+  {
+    "id": 73,
+    "arabic": "الْأَوَّلُ",
+    "ku": "یەکەم بێ سەرەتا",
+    "en": "The First",
+    "benefit_ku": "لابردنی بیرکردنەوەی خراپ",
+    "benefit_en": "The First.",
+    "benefit_ar": "الذي ليس قبله شيء، الأزلي بلا بداية"
+  },
+  {
+    "id": 74,
+    "arabic": "الْآخِرُ",
+    "ku": "کۆتا بێ کۆتایی",
+    "en": "The Last",
+    "benefit_ku": "ژیانێکی باش و کۆتایی خێر",
+    "benefit_en": "The Last.",
+    "benefit_ar": "الذي ليس بعده شيء، الأبدي بلا نهاية"
+  },
+  {
+    "id": 75,
+    "arabic": "الظَّاهِرُ",
+    "ku": "دیار بە نیشانەکان",
+    "en": "The Manifest One",
+    "benefit_ku": "ڕوونبوونەوەی نهێنییەکان",
+    "benefit_en": "The Manifest.",
+    "benefit_ar": "البين بآياته الدالة على ربوبيته وقدرته"
+  },
+  {
+    "id": 76,
+    "arabic": "الْبَاطِنُ",
+    "ku": "شاراوە",
+    "en": "The Hidden One",
+    "benefit_ku": "بەدەستهێنانی دڵنیایی",
+    "benefit_en": "The Hidden.",
+    "benefit_ar": "المحتجب عن الأبصار والعليم بأسرار القلوب"
+  },
+  {
+    "id": 77,
+    "arabic": "الْوَالِي",
+    "ku": "بەڕێوەبەر",
+    "en": "The Protecting Friend",
+    "benefit_ku": "پاراستنی خانووبەرە",
+    "benefit_en": "The Patron.",
+    "benefit_ar": "المالك للأشياء والمتصرف في شؤون خلقه"
+  },
+  {
+    "id": 78,
+    "arabic": "الْمُتَعَالِي",
+    "ku": "لە هەمووان بەرزتر",
+    "en": "The Supreme One",
+    "benefit_ku": "دوورکەوتنەوە لە ناهەقی",
+    "benefit_en": "The Sublimely Exalted.",
+    "benefit_ar": "المرتفع عن صفات المخلوقين ونقائصهم"
+  },
+  {
+    "id": 79,
+    "arabic": "الْبَرُّ",
+    "ku": "چاکەکار",
+    "en": "The Doer of Good",
+    "benefit_ku": "چاودێریکردنی منداڵ",
+    "benefit_en": "The Good, the Beneficent.",
+    "benefit_ar": "كثير الإحسان واللطف بعباده، واسع العطاء"
+  },
+  {
+    "id": 80,
+    "arabic": "التَّوَّابُ",
+    "ku": "تەوبە وەرگر",
+    "en": "The Guide to Repentance",
+    "benefit_ku": "وەرگرتنی تەوبە و سڕینەوەی گوناهـ",
+    "benefit_en": "The Acceptor of Repentance.",
+    "benefit_ar": "القابل لتوبة التائبين والميسر لأسبابها"
+  },
+  {
+    "id": 81,
+    "arabic": "الْمُنْتَقِمُ",
+    "ku": "تۆڵەسێن",
+    "en": "The Avenger",
+    "benefit_ku": "تۆڵە سەندنەوە لە زاڵمان",
+    "benefit_en": "The Avenger.",
+    "benefit_ar": "المعاقب للظالمين والعصاة بعدله وإنصافه"
+  },
+  {
+    "id": 82,
+    "arabic": "الْعَفُوُّ",
+    "ku": "لێبوردە",
+    "en": "The Forgiver",
+    "benefit_ku": "بەدەستهێنانی ئارامی ویژدان",
+    "benefit_en": "The Pardoner.",
+    "benefit_ar": "الماحي للذنوب والمتجاوز عن السيئات"
+  },
+  {
+    "id": 83,
+    "arabic": "الرَّؤُوفُ",
+    "ku": "زۆر بەزەییدار",
+    "en": "The Clement",
+    "benefit_ku": "پەیداکردنی خۆشەویستی لای خەڵکی",
+    "benefit_en": "The Compassionate, the Clement.",
+    "benefit_ar": "الشديد الرحمة والرأفة بعباده وخلقه"
+  },
+  {
+    "id": 84,
+    "arabic": "مَالِكُ الْمُلْكِ",
+    "ku": "خاوەنی خاوەندارێتییەکان",
+    "en": "The Owner of All",
+    "benefit_ku": "بوونی موڵک و سامان",
+    "benefit_en": "The Owner of All Sovereignty.",
+    "benefit_ar": "المتصرف في ملكه كيف يشاء وإلى الأبد"
+  },
+  {
+    "id": 85,
+    "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+    "ku": "خاوەنی شکۆ و ڕێز",
+    "en": "The Lord of Majesty and Bounty",
+    "benefit_ku": "سەرفرازی و قبوڵبوونی دوعاکان",
+    "benefit_en": "Lord of Majesty and Generosity.",
+    "benefit_ar": "المستحق للتعظيم والإجلال والكرم"
+  },
+  {
+    "id": 86,
+    "arabic": "الْمُقْسِطُ",
+    "ku": "دادپەروەر",
+    "en": "The Equitable One",
+    "benefit_ku": "دوورکەوتنەوە لە نادادپەروەری",
+    "benefit_en": "The Equitable.",
+    "benefit_ar": "العادل المنصف الذي ينتصف للمظلوم"
+  },
+  {
+    "id": 87,
+    "arabic": "الْجَامِعُ",
+    "ku": "کۆکەرەوە",
+    "en": "The Gatherer",
+    "benefit_ku": "گەڕانەوەی کەسە جیاکراوەکان",
+    "benefit_en": "The Gatherer.",
+    "benefit_ar": "جامع الخلائق ليوم الحساب لا ريب فيه"
+  },
+  {
+    "id": 88,
+    "arabic": "الْغَنِيُّ",
+    "ku": "دەوڵەمەند و بێنیاز",
+    "en": "The Rich One",
+    "benefit_ku": "بەدەستهێنانی سامانی ڕەوا",
+    "benefit_en": "The Self-Sufficient.",
+    "benefit_ar": "المستغني عن جميع خلقه، وكلهم فقراء إليه"
+  },
+  {
+    "id": 89,
+    "arabic": "الْمُغْنِي",
+    "ku": "دەوڵەمەندکەر",
+    "en": "The Enricher",
+    "benefit_ku": "چارەسەری هەژاری",
+    "benefit_en": "The Enricher.",
+    "benefit_ar": "واهب الغنى والكفاية لمن يشاء من عباده"
+  },
+  {
+    "id": 90,
+    "arabic": "الْمَانِعُ",
+    "ku": "ڕێگر لە خراپە",
+    "en": "The Preventer of Harm",
+    "benefit_ku": "پاراستن لە هەر زیانێک",
+    "benefit_en": "The Preventer.",
+    "benefit_ar": "الذي يمنع بحكمته ما يشاء عمن يشاء"
+  },
+  {
+    "id": 91,
+    "arabic": "الضَّارُّ",
+    "ku": "زیان پێگەیەنەر بە زاڵمان",
+    "en": "The Creator of The Harmful",
+    "benefit_ku": "ئاگاداربوون و ڕێزگرتن",
+    "benefit_en": "The Distresser.",
+    "benefit_ar": "الذي بيده الضر والنفع، لا مقدر سواه"
+  },
+  {
+    "id": 92,
+    "arabic": "النَّافِعُ",
+    "ku": "سوودبەخش",
+    "en": "The Creator of Good",
+    "benefit_ku": "زۆربوونی سوود و بەرەکەت",
+    "benefit_en": "The Propitious.",
+    "benefit_ar": "الذي بيده الخير والنفع كله لخلقه"
+  },
+  {
+    "id": 93,
+    "arabic": "النُّورُ",
+    "ku": "ڕووناکی",
+    "en": "The Light",
+    "benefit_ku": "ڕوونبوونەوەی دڵ و بیر",
+    "benefit_en": "The Light.",
+    "benefit_ar": "مفيض الهداية والنور في السماوات والأرض"
+  },
+  {
+    "id": 94,
+    "arabic": "الْهَادِي",
+    "ku": "ڕێنوێنیکەر",
+    "en": "The Guide",
+    "benefit_ku": "ڕێنوێنی بۆ سەر ڕێگای ڕاست",
+    "benefit_en": "The Guide.",
+    "benefit_ar": "المرشد للحق والدال على طريق الهداية"
+  },
+  {
+    "id": 95,
+    "arabic": "الْبَدِيعُ",
+    "ku": "داهێنەری بێ وێنە",
+    "en": "The Originator",
+    "benefit_ku": "سەرکەوتن لە پرۆژەی نوێ",
+    "benefit_en": "The Incomparable.",
+    "benefit_ar": "خالق الأشياء على غير مثال سابق بإتقان"
+  },
+  {
+    "id": 96,
+    "arabic": "الْبَاقِي",
+    "ku": "هەمیشەیی نەبڕاوە",
+    "en": "The Everlasting One",
+    "benefit_ku": "پاراستن لە لەناوچوون",
+    "benefit_en": "The Everlasting.",
+    "benefit_ar": "الدائم الوجود الذي لا يلحقه فناء"
+  },
+  {
+    "id": 97,
+    "arabic": "الْوَارِثُ",
+    "ku": "میراتگر",
+    "en": "The Inheritor of All",
+    "benefit_ku": "تەمەن درێژی و پاراستن",
+    "benefit_en": "The Supreme Inheritor.",
+    "benefit_ar": "الباقي بعد فناء خلقه، وله ما في السماوات والأرض"
+  },
+  {
+    "id": 98,
+    "arabic": "الرَّشِيدُ",
+    "ku": "سەرڕاست و دروست",
+    "en": "The Righteous Teacher",
+    "benefit_ku": "هەڵبژاردنی بڕیاری ڕاست",
+    "benefit_en": "The Guide to the Right Path.",
+    "benefit_ar": "الحكيم الذي تدبيره صائب وحكمه سديد"
+  },
+  {
+    "id": 99,
+    "arabic": "الصَّبُورُ",
+    "ku": "زۆر ئارامگر",
+    "en": "The Patient One",
+    "benefit_ku": "بۆ ئارامگرتن لە کێشەکاندا",
+    "benefit_en": "The Patient.",
+    "benefit_ar": "الذي لا يعاجل العصاة بالعقوبة بحلمه"
+  }
+]
