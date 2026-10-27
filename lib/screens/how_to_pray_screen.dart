@@ -3,6 +3,40 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/settings_provider.dart';
 import '../services/data_service.dart';
 
+const Map<int, List<String>> _fallbackSubstepsEn = {
+  1: [
+    "Make the sincere intention in the heart for Wudu to please Allah",
+    "Say Bismillah (In the name of Allah) at the beginning",
+    "Wash both hands up to the wrists three times",
+    "Rinse the mouth thoroughly with water three times",
+    "Inhale water into nostrils and blow it out three times",
+    "Wash the entire face from hairline to chin three times",
+    "Wash right arm including the elbow three times",
+    "Wash left arm including the elbow three times",
+    "Wipe wet hands over the head once",
+    "Wipe the inside and outside of both ears once",
+    "Wash right foot up to the ankle three times",
+    "Wash left foot up to the ankle three times"
+  ],
+};
+
+const Map<int, List<String>> _fallbackSubstepsAr = {
+  1: [
+    "النية بالقلب للوضوء تقرباً إلى الله تعالى",
+    "التسمية بقول: بسم الله في البداية",
+    "غسل الكفين إلى الرسغين ثلاث مرات",
+    "المضمضة بالماء ثلاث مرات",
+    "الاستنشاق والاستنثار ثلاث مرات",
+    "غسل الوجه كاملاً من منابت الشعر إلى الذقن ثلاث مرات",
+    "غسل اليد اليمنى مع المرفق ثلاث مرات",
+    "غسل اليد اليسرى مع المرفق ثلاث مرات",
+    "مسح الرأس مرة واحدة باليدين المبللتين",
+    "مسح الأذنين ظاهراً وباطناً مرة واحدة",
+    "غسل الرجل اليمنى مع الكعبين ثلاث مرات",
+    "غسل الرجل اليسرى مع الكعبين ثلاث مرات"
+  ],
+};
+
 class HowToPrayScreen extends ConsumerStatefulWidget {
   const HowToPrayScreen({super.key});
 
@@ -236,10 +270,11 @@ class _HowToPrayScreenState extends ConsumerState<HowToPrayScreen> {
                                 ? (step['desc_ar'] ?? step['desc_ku'] ?? step['desc_en'])
                                 : (step['desc_ku'] ?? step['desc_ar'] ?? step['desc_en']))?.toString() ?? '';
 
+                        final stepId = (step['id'] is int) ? (step['id'] as int) : (int.tryParse(step['id']?.toString() ?? '1') ?? 1);
                         final substeps = (settings.language == 'en'
-                            ? (step['substeps_en'] ?? step['substeps_ar'] ?? step['substeps_ku'])
+                            ? (step['substeps_en'] ?? _fallbackSubstepsEn[stepId] ?? step['substeps_ku'])
                             : settings.language == 'ar'
-                                ? (step['substeps_ar'] ?? step['substeps_ku'] ?? step['substeps_en'])
+                                ? (step['substeps_ar'] ?? _fallbackSubstepsAr[stepId] ?? step['substeps_ku'])
                                 : (step['substeps_ku'] ?? step['substeps_ar'] ?? step['substeps_en']));
 
                         return Container(

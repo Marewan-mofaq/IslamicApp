@@ -894,6 +894,22 @@ void main() {
       expect(city.lng, inInclusiveRange(-180.0, 180.0));
     }
   });
+
+  test('DataService loads pray steps with English and Arabic substeps', () async {
+    final steps = await DataService.loadPraySteps();
+    expect(steps.isNotEmpty, isTrue);
+    final wudu = steps.firstWhere((s) => s['id'] == 1);
+    expect(wudu['title_en'], 'Wudu (Ablution)');
+    expect(wudu['substeps_en'], isNotNull);
+    final substepsEn = wudu['substeps_en'] as List;
+    expect(substepsEn.length, 12);
+    expect(substepsEn.first, contains('Make the sincere intention'));
+    
+    expect(wudu['substeps_ar'], isNotNull);
+    final substepsAr = wudu['substeps_ar'] as List;
+    expect(substepsAr.length, 12);
+    expect(substepsAr.first, contains('النية بالقلب'));
+  });
 }
 
 
