@@ -155,7 +155,7 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
                       const SizedBox(width: 10),
                       Text(
                         title,
-                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: isRTL ? 'Rabar' : null),
                       ),
                     ],
                   ),
@@ -181,7 +181,11 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
                   final verse = verses[idx];
                   final surahNum = verse['surah'] as int;
                   final verseNum = verse['verse'] as int;
-                  final verseTitle = verse['title'] as String? ?? '';
+                  final verseTitle = (lang == 'en')
+                      ? (verse['title_en'] as String? ?? 'Surah $surahNum : $verseNum')
+                      : (lang == 'ar')
+                          ? (verse['title_ar'] as String? ?? 'سورة $surahNum : $verseNum')
+                          : (verse['title'] as String? ?? 'سورەتی $surahNum : $verseNum');
 
                   return Container(
                     margin: const EdgeInsets.only(bottom: 12),
@@ -205,12 +209,20 @@ class _TopicsScreenState extends ConsumerState<TopicsScreen> {
                         );
                       },
                       title: Text(
-                        verseTitle.isNotEmpty ? verseTitle : 'Surah $surahNum : $verseNum',
-                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                        verseTitle,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: isRTL ? 'Rabar' : null,
+                        ),
                       ),
                       subtitle: Text(
                         '${lang == 'ku' ? "سورەتی" : lang == "ar" ? "سورة" : "Surah"} $surahNum : $verseNum',
-                        style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.4)),
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white.withOpacity(0.4),
+                          fontFamily: isRTL ? 'Rabar' : null,
+                        ),
                       ),
                       trailing: Icon(Icons.chevron_right, color: Theme.of(context).colorScheme.primary),
                     ),

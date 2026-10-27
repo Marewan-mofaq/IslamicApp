@@ -123,7 +123,7 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
                             const SizedBox(height: 8),
                             Text(
                               name,
-                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
+                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, fontFamily: isRTL ? 'Rabar' : null),
                             ),
                           ],
                         ),
@@ -190,7 +190,7 @@ class _SituationsScreenState extends ConsumerState<SituationsScreen> {
                       const SizedBox(width: 10),
                       Text(
                         title,
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: color, fontFamily: 'Rabar'),
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: color, fontFamily: isRTL ? 'Rabar' : null),
                       ),
                     ],
                   ),

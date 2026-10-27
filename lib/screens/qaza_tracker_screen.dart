@@ -16,7 +16,9 @@ class QazaTrackerScreen extends ConsumerWidget {
     final title = settings.language == 'ku' ? 'تەواوکردنی قەزا' : settings.language == 'ar' ? 'قضاء الصلوات' : 'Qaza Tracker';
     final infoText = settings.language == 'ku'
         ? 'ئەم بەشە یارمەتیدەرت دەبێت بۆ تۆمارکردن و جێبەجێکردنی نوێژە قەزاکانت.'
-        : 'Keep track of your missed daily prayers and work towards completing them.';
+        : settings.language == 'ar'
+            ? 'يساعدك هذا القسم على تسجيل صلواتك الفائتة وقضائها.'
+            : 'Keep track of your missed daily prayers and work towards completing them.';
 
     final prayers = [
       { 'id': 'fajr', 'ku': 'بەیانی', 'ar': 'الفجر', 'en': 'Fajr', 'icon': Icons.wb_twilight_rounded },
@@ -129,7 +131,7 @@ Icon(Icons.edit, color: Theme.of(context).colorScheme.primary),
                                       : settings.language == 'ar'
                                           ? '$count متبقي'
                                           : '$count left',
-                                  style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar'),
+                                  style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: isRTL ? 'Rabar' : null),
                                 ),
                               ],
                             ),
@@ -164,89 +166,93 @@ Icon(Icons.edit, color: Theme.of(context).colorScheme.primary),
   }
 
   void _showCalculatorDialog(BuildContext context, WidgetRef ref, String language) {
+    final isRTL = language == 'ku' || language == 'ar';
     final yearsController = TextEditingController();
     final monthsController = TextEditingController();
 
     showDialog(
       context: context,
       builder: (context) {
-        return AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-          title: Text(
-            language == 'ku'
-                ? 'حیسابکەری کاتەکان'
-                : language == 'ar'
-                    ? 'حاسبة الصلوات الفائتة'
-                    : 'Missed Duration Calculator',
-            style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Rabar'),
-          ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              TextField(
-                controller: yearsController,
-                decoration: InputDecoration(
-                  labelText: language == 'ku'
-                      ? 'چەند ساڵ قەزا بووە'
-                      : language == 'ar'
-                          ? 'عدد السنوات الفائتة'
-                          : 'Years missed',
+        return Directionality(
+          textDirection: isRTL ? TextDirection.rtl : TextDirection.ltr,
+          child: AlertDialog(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+            title: Text(
+              language == 'ku'
+                  ? 'حیسابکەری کاتەکان'
+                  : language == 'ar'
+                      ? 'حاسبة الصلوات الفائتة'
+                      : 'Missed Duration Calculator',
+              style: TextStyle(fontWeight: FontWeight.bold, fontFamily: isRTL ? 'Rabar' : null),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                TextField(
+                  controller: yearsController,
+                  decoration: InputDecoration(
+                    labelText: language == 'ku'
+                        ? 'چەند ساڵ قەزا بووە'
+                        : language == 'ar'
+                            ? 'عدد السنوات الفائتة'
+                            : 'Years missed',
+                  ),
+                  keyboardType: TextInputType.number,
+                  textAlign: TextAlign.center,
                 ),
-                keyboardType: TextInputType.number,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 12),
-              TextField(
-                controller: monthsController,
-                decoration: InputDecoration(
-                  labelText: language == 'ku'
-                      ? 'چەند مانگ قەزا بووە'
-                      : language == 'ar'
-                          ? 'عدد الأشهر الفائتة'
-                          : 'Months missed',
+                SizedBox(height: 12),
+                TextField(
+                  controller: monthsController,
+                  decoration: InputDecoration(
+                    labelText: language == 'ku'
+                        ? 'چەند مانگ قەزا بووە'
+                        : language == 'ar'
+                            ? 'عدد الأشهر الفائتة'
+                            : 'Months missed',
+                  ),
+                  keyboardType: TextInputType.number,
+                  textAlign: TextAlign.center,
                 ),
-                keyboardType: TextInputType.number,
-                textAlign: TextAlign.center,
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(
+                  language == 'ku' ? 'پاشگەزبوونەوە' : language == 'ar' ? 'إلغاء' : 'Cancel',
+                  style: TextStyle(color: Colors.white54, fontFamily: isRTL ? 'Rabar' : null),
+                ),
               ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.primary,
+                  foregroundColor: Colors.white,
+                ),
+                onPressed: () {
+                  final years = int.tryParse(yearsController.text) ?? 0;
+                  final months = int.tryParse(monthsController.text) ?? 0;
+                  final totalDays = (years * 365) + (months * 30);
+                  
+                  if (totalDays > 0) {
+                    ref.read(qazaProvider.notifier).setQazaData(QazaState(
+                      fajr: totalDays,
+                      dhuhr: totalDays,
+                      asr: totalDays,
+                      maghrib: totalDays,
+                      isha: totalDays,
+                      witr: totalDays,
+                    ));
+                  }
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  language == 'ku' ? 'هەژمارکردن' : language == 'ar' ? 'احسب' : 'Calculate',
+                  style: TextStyle(fontFamily: isRTL ? 'Rabar' : null, fontWeight: FontWeight.bold),
+                ),
+              )
             ],
           ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(
-                language == 'ku' ? 'پاشگەزبوونەوە' : language == 'ar' ? 'إلغاء' : 'Cancel',
-                style: TextStyle(color: Colors.white54, fontFamily: 'Rabar'),
-              ),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).colorScheme.primary,
-                foregroundColor: Colors.white,
-              ),
-              onPressed: () {
-                final years = int.tryParse(yearsController.text) ?? 0;
-                final months = int.tryParse(monthsController.text) ?? 0;
-                final totalDays = (years * 365) + (months * 30);
-                
-                if (totalDays > 0) {
-                  ref.read(qazaProvider.notifier).setQazaData(QazaState(
-                    fajr: totalDays,
-                    dhuhr: totalDays,
-                    asr: totalDays,
-                    maghrib: totalDays,
-                    isha: totalDays,
-                    witr: totalDays,
-                  ));
-                }
-                Navigator.pop(context);
-              },
-              child: Text(
-                language == 'ku' ? 'هەژمارکردن' : language == 'ar' ? 'احسب' : 'Calculate',
-                style: TextStyle(fontFamily: 'Rabar', fontWeight: FontWeight.bold),
-              ),
-            )
-          ],
         );
       },
     ).whenComplete(() {

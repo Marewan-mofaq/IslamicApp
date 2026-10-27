@@ -6,6 +6,7 @@
     "title_ar": "الإحرام",
     "title_en": "Ihram",
     "desc_ku": "خۆشوشتن و لەبەرکردنی جلی ئیحرام و نیەت هێنان لە میقات.",
+    "desc_ar": "الاغتسال ولبس ثياب الإحرام ونية الدخول في النسك من الميقات.",
     "desc_en": "Purification and putting on Ihram garments at the Miqat.",
     "duas": [
       {
@@ -22,6 +23,7 @@
     "title_ar": "الطواف",
     "title_en": "Tawaf (7 Rounds)",
     "desc_ku": "خوولانەوە بە دەوری کەعبەی پیرۆز حەوت جار، لە بەردە ڕەشەکەوە دەست پێ دەکات.",
+    "desc_ar": "الطواف حول الكعبة المشرفة سبعة أشواط بدءاً من الحجر الأسود.",
     "desc_en": "Circulating the Kaaba seven times, starting from the Black Stone.",
     "duas": [
       {
@@ -38,6 +40,7 @@
     "title_ar": "السعي",
     "title_en": "Sa’i between Safa and Marwa",
     "desc_ku": "ڕۆیشتن لە نێوان شاخی سەفا و مەڕوا بۆ حەوت جار.",
+    "desc_ar": "السعي بين الصفا والمروة سبعة أشواط.",
     "desc_en": "Walking back and forth seven times between the hills of Safa and Marwa.",
     "duas": [
       {
@@ -54,6 +57,7 @@
     "title_ar": "الحلق أو التقصير",
     "title_en": "Shaving or Trimming Hair",
     "desc_ku": "تاشینی سەر یان کورتکردنەوەی قژ بۆ دەرچوون لە ئیحرام.",
+    "desc_ar": "حلق شعر الرأس أو تقصيره للتحلل من الإحرام.",
     "desc_en": "Shaving the head or trimming the hair to conclude the Ihram."
   },
   {
@@ -63,6 +67,7 @@
     "title_ar": "يوم التروية",
     "title_en": "Day of Tarwiyah (8th Dhu al-Hijjah)",
     "desc_ku": "ئیحرام بەستن و چوون بۆ مینا و مانەوە لەوێ تا بەیانی ڕۆژی ٩.",
+    "desc_ar": "الإحرام والتوجه إلى منى والمبيت فيها حتى صباح اليوم التاسع.",
     "desc_en": "Entering Ihram and heading to Mina to stay until the next morning."
   },
   {
@@ -72,6 +77,7 @@
     "title_ar": "يوم عرفة",
     "title_en": "Day of Arafah (9th Dhu al-Hijjah)",
     "desc_ku": "گەورەترین ڕوکن، وەستان لە کێوی عەرەفە لە دوای نیوەڕۆ تا خۆرئاوابوون.",
+    "desc_ar": "الركن الأعظم للحج، الوقوف بجبل عرفات من بعد الزوال حتى غروب الشمس.",
     "desc_en": "The most important ritual, standing at Arafah from noon until sunset.",
     "duas": [
       {
@@ -88,6 +94,7 @@
     "title_ar": "مزدلفة",
     "title_en": "Muzdalifah",
     "desc_ku": "دوای ئاوا بوونی خۆر لە ڕۆژی عەرەفە، چوون بەرەو موزدەلیفە و نوێژی مەغریب و عیشا و کۆکردنەوەی بەرد.",
+    "desc_ar": "التوجه إلى مزدلفة بعد غروب شمس يوم عرفة وصلاة المغرب والعشاء وجمع الحصى.",
     "desc_en": "Moving to Muzdalifah after sunset, praying combined Maghrib/Isha and collecting pebbles."
   },
   {
@@ -97,6 +104,7 @@
     "title_ar": "يوم النحر",
     "title_en": "Day of Sacrifice (10th Dhu al-Hijjah)",
     "desc_ku": "ڕەجمکردنی جەمەرەی عەقەبە، قوربانیکردن و تاشینی سەر.",
+    "desc_ar": "رمي جمرة العقبة ونحر الهدي وحلق الرأس أو التقصير.",
     "desc_en": "Stoning Jamarat al-Aqaba, sacrificing an animal, and shaving the head."
   }
 ]

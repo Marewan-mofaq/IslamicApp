@@ -18,12 +18,12 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
   bool _showCompletion = false;
 
   final List<Map<String, dynamic>> _presets = [
-    { 'text': 'سُبْحَانَ اللَّهِ', 'ku': 'سوبحان الله', 'target': 33 },
-    { 'text': 'الْحَمْدُ لِلَّهِ', 'ku': 'الحمد لله', 'target': 33 },
-    { 'text': 'اللَّهُ أَكْبَرُ', 'ku': 'الله اكبر', 'target': 34 },
-    { 'text': 'لَا إِلَهَ إِلَّا اللَّهُ', 'ku': 'لا اله الا الله', 'target': 100 },
-    { 'text': 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّد', 'ku': 'صلاة على النبي', 'target': 100 },
-    { 'text': 'أَسْتَغْفِرُ اللَّهَ', 'ku': 'استغفار', 'target': 100 },
+    { 'text': 'سُبْحَانَ اللَّهِ', 'ku': 'سوبحان الله', 'ar': 'سبحان الله', 'en': 'SubhanAllah', 'target': 33 },
+    { 'text': 'الْحَمْدُ لِلَّهِ', 'ku': 'الحمد لله', 'ar': 'الحمد لله', 'en': 'Alhamdulillah', 'target': 33 },
+    { 'text': 'اللَّهُ أَكْبَرُ', 'ku': 'الله اكبر', 'ar': 'الله أكبر', 'en': 'Allahu Akbar', 'target': 34 },
+    { 'text': 'لَا إِلَهَ إِلَّا اللَّهُ', 'ku': 'لا اله الا الله', 'ar': 'لا إله إلا الله', 'en': 'La ilaha illallah', 'target': 100 },
+    { 'text': 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّد', 'ku': 'صلاة على النبي', 'ar': 'الصلاة على النبي', 'en': 'Salawat upon the Prophet', 'target': 100 },
+    { 'text': 'أَسْتَغْفِرُ اللَّهَ', 'ku': 'استغفار', 'ar': 'أستغفر الله', 'en': 'Astaghfirullah', 'target': 100 },
   ];
 
   @override
@@ -446,40 +446,53 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
   }
 
   void _showPresetsSheet(BuildContext context) {
+    final lang = ref.read(settingsProvider).language;
+    final isRTL = lang == 'ku' || lang == 'ar';
+    final sheetTitle = lang == 'ku'
+        ? 'ویردە دیاریکراوەکان'
+        : lang == 'ar'
+            ? 'الأذكار المحددة'
+            : 'Dhikr Presets';
+
     showModalBottomSheet(
       context: context,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
       builder: (context) {
-        return Container(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                'Dhikr Presets',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 16),
-              Flexible(
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: _presets.length,
-                  itemBuilder: (context, idx) {
-                    final preset = _presets[idx];
-                    return ListTile(
-                      title: Text(preset['text'] as String, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                      trailing: Text('×${preset['target']}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar')),
-                      onTap: () {
-                        ref.read(tasbihProvider.notifier).setText(preset['text'] as String);
-                        ref.read(tasbihProvider.notifier).setTarget(preset['target'] as int);
-                        ref.read(tasbihProvider.notifier).reset();
-                        Navigator.pop(context);
-                      },
-                    );
-                  },
+        return Directionality(
+          textDirection: isRTL ? TextDirection.rtl : TextDirection.ltr,
+          child: Container(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  sheetTitle,
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: isRTL ? 'Rabar' : null),
                 ),
-              )
-            ],
+                const SizedBox(height: 16),
+                Flexible(
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: _presets.length,
+                    itemBuilder: (context, idx) {
+                      final preset = _presets[idx];
+                      final subtitle = lang == 'en' ? (preset['en'] ?? '') : lang == 'ar' ? (preset['ar'] ?? '') : (preset['ku'] ?? '');
+                      return ListTile(
+                        title: Text(preset['text'] as String, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                        subtitle: subtitle.isNotEmpty ? Text(subtitle, style: TextStyle(color: Colors.white60, fontSize: 13, fontFamily: isRTL ? 'Rabar' : null)) : null,
+                        trailing: Text('×${preset['target']}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: isRTL ? 'Rabar' : null)),
+                        onTap: () {
+                          ref.read(tasbihProvider.notifier).setText(preset['text'] as String);
+                          ref.read(tasbihProvider.notifier).setTarget(preset['target'] as int);
+                          ref.read(tasbihProvider.notifier).reset();
+                          Navigator.pop(context);
+                        },
+                      );
+                    },
+                  ),
+                )
+              ],
+            ),
           ),
         );
       },

@@ -800,10 +800,13 @@ class _HajjScreenState extends ConsumerState<HajjScreen> {
         final step = steps[idx];
         final num = idx + 1;
         final title = lang == 'en' ? (step['title_en'] ?? '') : lang == 'ar' ? (step['title_ar'] ?? '') : (step['title_ku'] ?? '');
-        final desc = lang == 'en' ? (step['desc_en'] ?? '') : (step['desc_ku'] ?? '');
+        final desc = lang == 'en' ? (step['desc_en'] ?? '') : lang == 'ar' ? (step['desc_ar'] ?? step['desc_en'] ?? '') : (step['desc_ku'] ?? '');
         final duas = step['duas'] as List?;
         final firstDua = duas != null && duas.isNotEmpty ? duas.first : null;
         final dhikrAr = firstDua != null ? (firstDua['ar'] ?? '') : '';
+
+        final isEn = lang == 'en';
+        final font = isEn ? null : 'Rabar';
 
         return Container(
           margin: const EdgeInsets.only(bottom: 14),
@@ -825,12 +828,12 @@ class _HajjScreenState extends ConsumerState<HajjScreen> {
                   ),
                   SizedBox(width: 10),
                   Expanded(
-                    child: Text(title, style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, fontFamily: 'Rabar')),
+                    child: Text(title, style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, fontFamily: font)),
                   ),
                 ],
               ),
               SizedBox(height: 10),
-              Text(desc, style: TextStyle(color: Colors.white.withOpacity(0.75), fontSize: 13, height: 1.6, fontFamily: 'Rabar')),
+              Text(desc, style: TextStyle(color: Colors.white.withOpacity(0.75), fontSize: 13, height: 1.6, fontFamily: font)),
               if (dhikrAr.toString().isNotEmpty) ...[
                 SizedBox(height: 10),
                 Container(

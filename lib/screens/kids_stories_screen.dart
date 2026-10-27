@@ -52,7 +52,7 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: Colors.white,
-                  fontFamily: 'Rabar',
+                  fontFamily: isRTL ? 'Rabar' : null,
                 ),
               ),
               background: Container(
@@ -71,7 +71,7 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
                       style: TextStyle(
                         fontSize: 13,
                         color: Colors.white.withOpacity(0.9),
-                        fontFamily: 'Rabar',
+                        fontFamily: isRTL ? 'Rabar' : null,
                         fontWeight: FontWeight.w500,
                       ),
                       textAlign: TextAlign.center,
@@ -101,7 +101,7 @@ class _KidsStoriesScreenState extends ConsumerState<KidsStoriesScreen> {
                           : 'No stories found.';
                   return Padding(
                     padding: EdgeInsets.only(top: 60.0),
-                    child: Center(child: Text(emptyMsg, style: TextStyle(color: Colors.white, fontFamily: 'Rabar'))),
+                    child: Center(child: Text(emptyMsg, style: TextStyle(color: Colors.white, fontFamily: isRTL ? 'Rabar' : null))),
                   );
                 }
 
@@ -288,7 +288,7 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                     color: Colors.white,
-                    fontFamily: 'Rabar',
+                    fontFamily: isRTL ? 'Rabar' : null,
                   ),
                   textAlign: TextAlign.center,
                   maxLines: 1,
@@ -344,7 +344,7 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                       fontSize: 17,
                       height: 1.8,
                       color: Colors.white.withOpacity(0.9),
-                      fontFamily: 'Rabar',
+                      fontFamily: isRTL ? 'Rabar' : null,
                     ),
                     textAlign: isRTL ? TextAlign.right : TextAlign.left,
                   ),
@@ -375,7 +375,7 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                               color: themeColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
-                              fontFamily: 'Rabar',
+                              fontFamily: isRTL ? 'Rabar' : null,
                             ),
                           ),
                         ],
@@ -387,7 +387,7 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                           color: Colors.white.withOpacity(0.7),
                           fontSize: 13,
                           height: 1.5,
-                          fontFamily: 'Rabar',
+                          fontFamily: isRTL ? 'Rabar' : null,
                         ),
                         textAlign: isRTL ? TextAlign.right : TextAlign.left,
                       ),
@@ -413,7 +413,7 @@ class KidsStoryViewerScreen extends ConsumerWidget {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'Rabar',
+                      fontFamily: isRTL ? 'Rabar' : null,
                     ),
                   ),
                 ),

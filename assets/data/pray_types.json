@@ -5,7 +5,9 @@
     "name_ar": "صلاة الفجر",
     "name_en": "Fajr Prayer",
     "rakaat": 2,
-    "type_ku": "٢ رکعەت"
+    "type_ku": "٢ رکعەت",
+    "type_ar": "٢ ركعات",
+    "type_en": "2 Rak'at"
   },
   {
     "id": "dhuhr",
@@ -13,7 +15,9 @@
     "name_ar": "صلاة الظهر",
     "name_en": "Dhuhr Prayer",
     "rakaat": 4,
-    "type_ku": "٤ رکعەت"
+    "type_ku": "٤ رکعەت",
+    "type_ar": "٤ ركعات",
+    "type_en": "4 Rak'at"
   },
   {
     "id": "asr",
@@ -21,7 +25,9 @@
     "name_ar": "صلاة العصر",
     "name_en": "Asr Prayer",
     "rakaat": 4,
-    "type_ku": "٤ رکعەت"
+    "type_ku": "٤ رکعەت",
+    "type_ar": "٤ ركعات",
+    "type_en": "4 Rak'at"
   },
   {
     "id": "maghrib",
@@ -29,7 +35,9 @@
     "name_ar": "صلاة المغرب",
     "name_en": "Maghrib Prayer",
     "rakaat": 3,
-    "type_ku": "٣ رکعەت"
+    "type_ku": "٣ رکعەت",
+    "type_ar": "٣ ركعات",
+    "type_en": "3 Rak'at"
   },
   {
     "id": "isha",
@@ -37,6 +45,8 @@
     "name_ar": "صلاة العشاء",
     "name_en": "Isha Prayer",
     "rakaat": 4,
-    "type_ku": "٤ رکعەت"
+    "type_ku": "٤ رکعەت",
+    "type_ar": "٤ ركعات",
+    "type_en": "4 Rak'at"
   }
 ]

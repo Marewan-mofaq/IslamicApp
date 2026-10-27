@@ -141,7 +141,7 @@ class BookmarksScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Rabar')),
+        title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: isRTL ? 'Rabar' : null)),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -149,7 +149,7 @@ class BookmarksScreen extends ConsumerWidget {
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor: Theme.of(context).colorScheme.primary,
         icon: Icon(Icons.add, color: Colors.black),
-        label: Text(fabLabel, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontFamily: 'Rabar')),
+        label: Text(fabLabel, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontFamily: isRTL ? 'Rabar' : null)),
         onPressed: () => _showAddPersonalDuaModal(context, ref, settings.language),
       ),
       body: Directionality(
@@ -163,7 +163,7 @@ class BookmarksScreen extends ConsumerWidget {
                     SizedBox(height: 16),
                     Text(
                       emptyText,
-                      style: TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.5), fontFamily: 'Rabar'),
+                      style: TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.5), fontFamily: isRTL ? 'Rabar' : null),
                     ),
                   ],
                 ),
@@ -218,13 +218,13 @@ class BookmarksScreen extends ConsumerWidget {
                       ),
                       title: Text(
                         item.title,
-                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Rabar'),
+                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: isRTL ? 'Rabar' : null),
                       ),
                       subtitle: Padding(
                         padding: const EdgeInsets.only(top: 4.0),
                         child: Text(
                           item.subtitle,
-                          style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.6), fontFamily: 'Rabar'),
+                          style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.6), fontFamily: isRTL ? 'Rabar' : null),
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                         ),

@@ -339,13 +339,17 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                     final h = filtered[index];
                     final idInBook = h['idInBook']?.toString() ?? '${index + 1}';
                     final arabic = h['arabic']?.toString() ?? '';
-                    final kurdish = h['kurdish']?['text']?.toString() ?? '';
-                    final narrator = h['kurdish']?['narrator'] ?? h['narrator_ar'] ?? '';
+                    final translation = (lang == 'en')
+                        ? (h['english']?['text']?.toString() ?? h['translationEn']?.toString() ?? '')
+                        : (lang == 'ar' ? '' : (h['kurdish']?['text']?.toString() ?? h['translationKu']?.toString() ?? ''));
+                    final narrator = (lang == 'en')
+                        ? (h['english']?['narrator']?.toString() ?? h['narrator_en']?.toString() ?? h['narrator_ar']?.toString() ?? '')
+                        : (lang == 'ar' ? (h['narrator_ar']?.toString() ?? '') : (h['kurdish']?['narrator']?.toString() ?? h['narrator_ku']?.toString() ?? h['narrator_ar']?.toString() ?? ''));
 
                     return _buildHadithCard(
                       id: idInBook,
                       arabic: arabic,
-                      kurdish: kurdish,
+                      translation: translation,
                       narrator: narrator.toString(),
                       isRTL: isRTL,
                     );
@@ -359,7 +363,7 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
   Widget _buildHadithCard({
     required String id,
     required String arabic,
-    required String kurdish,
+    required String translation,
     required String narrator,
     required bool isRTL,
   }) {
@@ -441,7 +445,7 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                       tooltip: lang == 'ku' ? 'کۆپی' : lang == 'ar' ? 'نسخ' : 'Copy',
                       onPressed: () {
                         final tag = lang == 'ku' ? '[فەرموودەی #$id]' : lang == 'ar' ? '[الحديث #$id]' : '[Hadith #$id]';
-                        final fullText = lang == 'ar' ? '$arabic\n\n$tag' : '$arabic\n\n$kurdish\n\n$tag';
+                        final fullText = lang == 'ar' ? '$arabic\n\n$tag' : '$arabic\n\n$translation\n\n$tag';
                         Clipboard.setData(ClipboardData(text: fullText));
                         final msg = lang == 'ku' ? 'فەرموودەکە کۆپی کرا' : lang == 'ar' ? 'تم نسخ الحديث' : 'Hadith copied';
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -459,7 +463,7 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                       tooltip: lang == 'ku' ? 'بەشداری پێکردن' : lang == 'ar' ? 'مشاركة' : 'Share',
                       onPressed: () {
                         final tag = lang == 'ku' ? '[فەرموودەی #$id]' : lang == 'ar' ? '[الحديث #$id]' : '[Hadith #$id]';
-                        final fullText = lang == 'ar' ? '$arabic\n\n$tag' : '$arabic\n\n$kurdish\n\n$tag';
+                        final fullText = lang == 'ar' ? '$arabic\n\n$tag' : '$arabic\n\n$translation\n\n$tag';
                         Share.share(fullText);
                       },
                     ),
@@ -473,7 +477,7 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
             if (narrator.isNotEmpty) ...[
               Text(
                 lang == 'ku' ? 'گێڕانەوەی: $narrator' : lang == 'ar' ? 'رواه: $narrator' : 'Narrated by: $narrator',
-                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: 'Rabar'),
+                style: TextStyle(color: Theme.of(context).colorScheme.primary, fontFamily: isRTL ? 'Rabar' : null),
                 textAlign: isRTL ? TextAlign.right : TextAlign.left,
               ),
               SizedBox(height: 8),
@@ -493,16 +497,16 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                 textDirection: TextDirection.rtl,
               ),
 
-            // Kurdish translation
-            if (kurdish.isNotEmpty && lang != 'ar') ...[
+            // Translation (Kurdish / English)
+            if (translation.isNotEmpty && lang != 'ar') ...[
               const Divider(color: Colors.white10, height: 24),
               Text(
-                kurdish,
+                translation,
                 style: TextStyle(
                   color: Colors.white.withOpacity(0.8),
                   fontSize: 14,
                   height: 1.6,
-                  fontFamily: 'Rabar',
+                  fontFamily: isRTL ? 'Rabar' : null,
                 ),
                 textAlign: isRTL ? TextAlign.right : TextAlign.left,
               ),
@@ -650,8 +654,13 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
                 ),
               ),
               title: Text(
-                ch['arabic'] ?? ch['english'] ?? '',
-                style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold, fontFamily: 'Traditional Arabic'),
+                lang == 'en' ? (ch['english'] ?? ch['arabic'] ?? '') : (ch['arabic'] ?? ch['english'] ?? ''),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: (lang == 'en') ? null : 'Traditional Arabic',
+                ),
               ),
               trailing: Icon(Icons.chevron_right, color: Theme.of(context).colorScheme.primary),
             ),
@@ -692,13 +701,17 @@ class _HadithExplorerState extends ConsumerState<HadithExplorer> {
         final h = _bookHadiths[index];
         final idInBook = h['idInBook']?.toString() ?? '${index + 1}';
         final arabic = h['arabic']?.toString() ?? '';
-        final kurdish = h['kurdish']?['text']?.toString() ?? '';
-        final narrator = h['kurdish']?['narrator'] ?? h['narrator_ar'] ?? '';
+        final translation = (lang == 'en')
+            ? (h['english']?['text']?.toString() ?? h['translationEn']?.toString() ?? '')
+            : (lang == 'ar' ? '' : (h['kurdish']?['text']?.toString() ?? h['translationKu']?.toString() ?? ''));
+        final narrator = (lang == 'en')
+            ? (h['english']?['narrator']?.toString() ?? h['narrator_en']?.toString() ?? h['narrator_ar']?.toString() ?? '')
+            : (lang == 'ar' ? (h['narrator_ar']?.toString() ?? '') : (h['kurdish']?['narrator']?.toString() ?? h['narrator_ku']?.toString() ?? h['narrator_ar']?.toString() ?? ''));
 
         return _buildHadithCard(
           id: idInBook,
           arabic: arabic,
-          kurdish: kurdish,
+          translation: translation,
           narrator: narrator.toString(),
           isRTL: isRTL,
         );
