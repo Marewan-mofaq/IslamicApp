@@ -486,16 +486,13 @@ class _AdhkarDetailsScreenState extends ConsumerState<AdhkarDetailsScreen> {
                                               if (isCompleted) ...[
                                                 const Icon(Icons.check_circle, size: 14, color: Color(0xFF10B981)),
                                                 const SizedBox(width: 4),
-                                              ] else ...[
-                                                Icon(Icons.tag, size: 14, color: Theme.of(context).colorScheme.primary),
-                                                const SizedBox(width: 2),
                                               ],
                                               Text(
                                                 settings.language == 'en'
-                                                    ? 'Dhikr #${index + 1}'
+                                                    ? 'Dhikr ${index + 1}'
                                                     : settings.language == 'ar'
-                                                        ? 'الذكر #${index + 1}'
-                                                        : 'زیکری #${index + 1}',
+                                                        ? 'الذكر ${index + 1}'
+                                                        : 'زیکری ${index + 1}',
                                                 style: TextStyle(
                                                   color: isCompleted ? const Color(0xFF10B981) : Theme.of(context).colorScheme.primary,
                                                   fontFamily: 'Rabar',
