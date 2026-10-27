@@ -249,9 +249,23 @@ class _AdhkarTabState extends ConsumerState<AdhkarTab> {
                                 width: 44,
                                 height: 44,
                                 decoration: BoxDecoration(
-                                  color: catColor.withOpacity(0.15),
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: catColor.withOpacity(0.4)),
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      catColor.withOpacity(0.28),
+                                      catColor.withOpacity(0.08),
+                                    ],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.circular(14),
+                                  border: Border.all(color: catColor.withOpacity(0.45), width: 1.2),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: catColor.withOpacity(0.2),
+                                      blurRadius: 8,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
                                 ),
                                 child: Center(
                                   child: Icon(_getAdhkarCategoryIcon(cat.id), color: catColor, size: 22),

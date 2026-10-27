@@ -86,8 +86,8 @@ class _MainNavigationState extends ConsumerState<MainNavigation> {
                   _buildNavItem(
                     index: 2,
                     label: tabDua,
-                    activeIcon: Icons.favorite_rounded,
-                    inactiveIcon: Icons.favorite_border_rounded,
+                    activeIcon: Icons.auto_stories_rounded,
+                    inactiveIcon: Icons.auto_stories_outlined,
                     primaryColor: theme.primaryColor,
                   ),
                   _buildNavItem(

@@ -300,17 +300,31 @@ class _UtilitiesScreenState extends ConsumerState<UtilitiesScreen> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Container(
-                                          width: 38,
-                                          height: 38,
+                                          width: 44,
+                                          height: 44,
                                           decoration: BoxDecoration(
-                                            color: color.withOpacity(0.12),
-                                            shape: BoxShape.circle,
-                                            border: Border.all(color: color.withOpacity(0.3)),
+                                            gradient: LinearGradient(
+                                              colors: [
+                                                color.withOpacity(0.28),
+                                                color.withOpacity(0.08),
+                                              ],
+                                              begin: Alignment.topLeft,
+                                              end: Alignment.bottomRight,
+                                            ),
+                                            borderRadius: BorderRadius.circular(14),
+                                            border: Border.all(color: color.withOpacity(0.45), width: 1.2),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: color.withOpacity(0.2),
+                                                blurRadius: 8,
+                                                offset: const Offset(0, 3),
+                                              ),
+                                            ],
                                           ),
                                           child: Center(
                                             child: Icon(
                                               item['icon'] as IconData? ?? Icons.grid_view_rounded,
-                                              size: 20,
+                                              size: 22,
                                               color: color,
                                             ),
                                           ),

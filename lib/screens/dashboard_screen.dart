@@ -778,9 +778,9 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
               'Fajr': Icons.wb_twilight_rounded,
               'Sunrise': Icons.wb_sunny_rounded,
               'Dhuhr': Icons.light_mode_rounded,
-              'Asr': Icons.cloud_queue_rounded,
-              'Maghrib': Icons.nightlight_round,
-              'Isha': Icons.bedtime_rounded,
+              'Asr': Icons.brightness_medium_rounded,
+              'Maghrib': Icons.nights_stay_rounded,
+              'Isha': Icons.nightlight_round,
             };
 
             final prayerLocalized = {
@@ -1235,10 +1235,42 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                             children: [
                               Row(
                                 children: [
-                                  Icon(
-                                    icon,
-                                    size: 20,
-                                    color: isNext ? Theme.of(context).colorScheme.primary : Colors.white70,
+                                  Container(
+                                    width: 38,
+                                    height: 38,
+                                    decoration: BoxDecoration(
+                                      gradient: isNext
+                                          ? LinearGradient(
+                                              colors: [
+                                                Theme.of(context).colorScheme.primary.withOpacity(0.35),
+                                                Theme.of(context).colorScheme.primary.withOpacity(0.15),
+                                              ],
+                                              begin: Alignment.topLeft,
+                                              end: Alignment.bottomRight,
+                                            )
+                                          : LinearGradient(
+                                              colors: [
+                                                Colors.white.withOpacity(0.08),
+                                                Colors.white.withOpacity(0.03),
+                                              ],
+                                              begin: Alignment.topLeft,
+                                              end: Alignment.bottomRight,
+                                            ),
+                                      borderRadius: BorderRadius.circular(12),
+                                      border: Border.all(
+                                        color: isNext
+                                            ? Theme.of(context).colorScheme.primary.withOpacity(0.5)
+                                            : Colors.white.withOpacity(0.08),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Icon(
+                                        icon,
+                                        size: 19,
+                                        color: isNext ? Theme.of(context).colorScheme.primary : Colors.white70,
+                                      ),
+                                    ),
                                   ),
                                   const SizedBox(width: 12),
                                   Text(
@@ -1392,9 +1424,9 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                             children: [
                               _buildHabitChip('fajr', settings.language == 'en' ? 'Fajr' : settings.language == 'ar' ? 'الفجر' : 'بەیانی', Icons.wb_twilight_rounded),
                               _buildHabitChip('dhuhr', settings.language == 'en' ? 'Dhuhr' : settings.language == 'ar' ? 'الظهر' : 'نیوەڕۆ', Icons.light_mode_rounded),
-                              _buildHabitChip('asr', settings.language == 'en' ? 'Asr' : settings.language == 'ar' ? 'العصر' : 'عەسڕ', Icons.cloud_queue_rounded),
-                              _buildHabitChip('maghrib', settings.language == 'en' ? 'Maghrib' : settings.language == 'ar' ? 'المغرب' : 'مەغریب', Icons.nightlight_round),
-                              _buildHabitChip('isha', settings.language == 'en' ? 'Isha' : settings.language == 'ar' ? 'العشاء' : 'عیشا', Icons.bedtime_rounded),
+                              _buildHabitChip('asr', settings.language == 'en' ? 'Asr' : settings.language == 'ar' ? 'العصر' : 'عەسڕ', Icons.brightness_medium_rounded),
+                              _buildHabitChip('maghrib', settings.language == 'en' ? 'Maghrib' : settings.language == 'ar' ? 'المغرب' : 'مەغریب', Icons.nights_stay_rounded),
+                              _buildHabitChip('isha', settings.language == 'en' ? 'Isha' : settings.language == 'ar' ? 'العشاء' : 'عیشا', Icons.nightlight_round),
                               _buildHabitChip('adhkar', settings.language == 'en' ? 'Adhkar' : settings.language == 'ar' ? 'الأذكار' : 'زیکرەکان', Icons.fingerprint_rounded),
                               _buildHabitChip('quran', settings.language == 'en' ? 'Quran' : settings.language == 'ar' ? 'القرآن' : 'قورئان', Icons.menu_book_rounded),
                             ],
@@ -2081,12 +2113,33 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> with WidgetsB
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          padding: const EdgeInsets.all(7),
+                          width: 44,
+                          height: 44,
                           decoration: BoxDecoration(
-                            color: itemColor.withOpacity(0.15),
-                            shape: BoxShape.circle,
+                            gradient: LinearGradient(
+                              colors: [
+                                itemColor.withOpacity(0.28),
+                                itemColor.withOpacity(0.08),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(14),
+                            border: Border.all(
+                              color: itemColor.withOpacity(0.45),
+                              width: 1.2,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: itemColor.withOpacity(0.2),
+                                blurRadius: 8,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
                           ),
-                          child: Icon(item['icon'] as IconData, color: itemColor, size: 20),
+                          child: Center(
+                            child: Icon(item['icon'] as IconData, color: itemColor, size: 22),
+                          ),
                         ),
                         const SizedBox(height: 6),
                         FittedBox(

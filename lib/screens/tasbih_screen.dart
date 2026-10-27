@@ -206,7 +206,7 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         _buildActionBtn(
-                          icon: Icons.refresh,
+                          icon: Icons.replay_rounded,
                           label: labelReset,
                           color: Colors.redAccent,
                           onTap: () {
@@ -215,14 +215,14 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
                         ),
                         SizedBox(width: 16),
                         _buildActionBtn(
-                          icon: Icons.list,
+                          icon: Icons.auto_stories_rounded,
                           label: labelPresets,
                           color: Theme.of(context).colorScheme.primary,
                           onTap: () => _showPresetsSheet(context),
                         ),
                         SizedBox(width: 16),
                         _buildActionBtn(
-                          icon: Icons.edit_outlined,
+                          icon: Icons.tune_rounded,
                           label: labelCustom,
                           color: Theme.of(context).colorScheme.primary,
                           onTap: () => _showCustomDhikrDialog(context, tasbih),
@@ -281,10 +281,27 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
                           width: 80,
                           height: 80,
                           decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.primary.withOpacity(0.12),
+                            gradient: LinearGradient(
+                              colors: [
+                                Theme.of(context).colorScheme.primary.withOpacity(0.35),
+                                Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
                             shape: BoxShape.circle,
+                            border: Border.all(color: Theme.of(context).colorScheme.primary.withOpacity(0.5), width: 1.5),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Theme.of(context).colorScheme.primary.withOpacity(0.3),
+                                blurRadius: 16,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
                           ),
-                          child: Icon(Icons.refresh, color: Theme.of(context).colorScheme.primary),
+                          child: Center(
+                            child: Icon(Icons.check_circle_rounded, color: Theme.of(context).colorScheme.primary, size: 42),
+                          ),
                         ),
                         SizedBox(height: 20),
                         Text(
@@ -349,19 +366,52 @@ class _TasbihScreenState extends ConsumerState<TasbihScreen> with SingleTickerPr
   }) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
+      borderRadius: BorderRadius.circular(18),
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.02),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.white.withOpacity(0.04)),
+          color: Theme.of(context).cardColor,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: color.withOpacity(0.25), width: 1.2),
+          boxShadow: [
+            BoxShadow(
+              color: color.withOpacity(0.12),
+              blurRadius: 8,
+              offset: const Offset(0, 3),
+            ),
+          ],
         ),
         child: Column(
           children: [
-            Icon(icon, color: color, size: 24),
-            SizedBox(height: 4),
-            Text(label, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600)),
+            Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    color.withOpacity(0.25),
+                    color.withOpacity(0.06),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: color.withOpacity(0.4), width: 1.2),
+              ),
+              child: Center(
+                child: Icon(icon, color: color, size: 22),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Rabar',
+                color: Colors.white,
+              ),
+            ),
           ],
         ),
       ),
